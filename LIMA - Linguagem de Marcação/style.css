@@ -1,66 +1,89 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f8f8f8;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #c9b9e2;
+}
 
-  header {
-    background-color: #815f91;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
+header {
+  background-color: #815f91;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
 
-  nav {
-    background-color: #63496f;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
-  }
+nav {
+  background-color: #63496f;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  height: 35px;
+}
 
-  nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 22px;
+  padding-top: 20px;
+  font-weight: 600;
+}
 
-  main {
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-  }
+nav a:hover {
+  color: #200f27;
+  font-weight: 600;
+  transition: background .5s;
+}
 
-  article {
-    flex: 3;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-  }
+main {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
 
-  .product {
-    background-color: white;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-  }
+aside { /*Categoria dos produtos*/
+  display: flex;
+  gap: 16px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
 
-  .product img {
-    max-width: 100%;
-    height: auto;
-  }
+aside li {
+  margin: 0;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
 
-  aside {
-    flex: 1;
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 8px;
-  }
+article {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
 
-  footer {
-    background-color: #63496f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
-  }
+.product {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #63496f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
