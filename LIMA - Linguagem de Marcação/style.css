@@ -1,7 +1,7 @@
 * {
   padding: 0;
-  border: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: Arial, sans-serif;
@@ -9,35 +9,88 @@ body {
   background-color: #c9b9e2;
 }
 
-header {
-  background-color: #815f91;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+/*Estilização Navbar*/
+.navbar {
+  width: 100%;
+  height: 20%;
+  background-color: #63496f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 2px;
 }
 
-nav {
+.logo-nav {
+  color: white;
+  font-size: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links-nav {
+  gap: 1.5rem;
+  display: flex;
+  list-style: none;
+}
+
+.links-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.5s ease;
+}
+
+.links-nav a:hover {
+  color: #8e7898;
+}
+
+/*Estilização Rodapé*/
+.site-footer {
   background-color: #63496f;
   color: white;
-  padding: 20px;
-  text-align: right;
-  height: 35px;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
 }
 
-nav a {
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: #3c1f4f;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
   color: white;
-  margin: 0 1rem;
   text-decoration: none;
-  margin-right: 40px;
-  font-size: 22px;
-  padding-top: 20px;
-  font-weight: 600;
+  display: block;
+  margin: 0.5rem 0;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #200f27;
-  font-weight: 600;
-  transition: background .5s;
+.footer-section ul li a:hover {
+  color: #8e7898;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ffffff;
+  padding-top: 1rem;
+  font-size: 0.9rem;
 }
 
 main {
@@ -78,12 +131,4 @@ article {
 .product img {
   max-width: 100%;
   height: auto;
-}
-
-footer {
-  background-color: #63496f;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 1rem;
 }
