@@ -1,419 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Inicial | NutriCore</title>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
-  <body>
-    <section class="aviso-carrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-      <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">❮</button>
-      <ul class="mensagens">
-        <li class="mensagem">NOVO POR AQUI? USE O CUPOM PRIMEIRACOMPRA</li>
-        <li class="mensagem">FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL</li>
-        <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Inicial | NutriCore</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!--
+  <section class="aviso-carrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+    <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">❮</button>
+    <ul class="mensagens">
+      <li class="mensagem">NOVO POR AQUI? USE O CUPOM PRIMEIRACOMPRA</li>
+      <li class="mensagem">FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL</li>
+      <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+    </ul>
+    <button class="setas_aviso seta_direita_aviso" aria-hidden="true">❯</button> 
+  </section> -->
+  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
+  
+  
+  <header class="header-site">
+    <h1 class="logo-site">
+      <a href="home.html" aria-label="Página inicial - Miaunarquia">
+        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logo-imagem"/>
+        <h2 id="nome-ecommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <nav class="nav-top" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+      <ul>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
-      <button class="setas_aviso seta_direita_aviso" aria-hidden="true">❯</button> <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
-    </section>
-
-
-    <header class="header_site">
-      <h1 class="logo_site">
-        <a href="/" aria-label="Página inicial - Miaunarquia">
-          <img src="../imagens/banner_promocional.png" alt="Banner indicando o tempo de promoção" class="logo_imagem"/>
-          <span id="nome_logo">Miaunarquia</span>
-        </a>
-      </h1>
-
-      <nav class="nav_menu" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-
-      <nav class="nav_usuario" aria-label="Menu Usuário">
-        <ul>
-          <li>
-            <a href="#" aria-label="Pesquisar">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_pesquisar.png" class="icones_nav" alt="Ícone de Lupa"/>
-                <figcaption class="legendas_icones">Pesquisar</figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Favoritos">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_favoritos.png" class="icones_nav" alt="Ícone de Coração"/>
-                <figcaption class="legendas_icones">Favoritos</figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Pefil">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_usuario.png" class="icones_nav" alt="Ícone de Perfil"/>
-                <figcaption class="legendas_icones">Perfil</figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Carrinho">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_carrinho.png" class="icones_nav" alt="Ícone de Carrinho"/>
-                <figcaption class="legendas_icones">Carrinho</figcaption>
-              </figure>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-
-    <section class="carrossel" aria-label="Carrossel de Imagens">
-      <span class="seta_esquerda_carrossel" aria-hidden="true">❮</span>
-      <ul class="slides">
-        <li class="slide">
-          <figure>
-            <img src="../imagens/slide_um.png" class="imagens_carrossel" alt="Slide com Gato Cinza e Texto Escrito 'Seja bem-vindo'" />
-          </figure>
-        </li>
-
-        <li class="slide">
-          <figure>
-            <img src="../imagens/slide_dois.png" class="imagens_carrossel" alt="Slide com Categorias: Roupas, Petiscos e Brinquedos. Cada uma com gatos realizando as respectivas atividades" />
-          </figure>
-        </li>
-
-        <li class="slide">
-          <figure>
-            <img src="../imagens/slide_tres.png" class="imagens_carrossel" alt="Slide que incentiva a adoção de animais e Avisando que parte das nossas vendas vai para ONGs de resgate e cuidado animal" />
-          </figure>
-        </li>
-      </ul>
-      <span class="seta_direita_carrossel" aria-hidden="true">❯</span>
-
-      <nav class="indicadores_carrossel" aria-label="Indicadores do carrossel de imagens">
-        <span class="bolinha"></span>
-        <span class="bolinha"></span>
-        <span class="bolinha"></span>
-      </nav>
-    </section>
-
-
-    <hr class="divisoes" aria-hidden="true">
-
-
-    <section class="categorias_catalogo" aria-label="Categorias do Catálogo">
-      <h2 id="titulo_categorias">Nossos Produtos</h2>
-      <ul class="lista_categorias">
+    </nav>
+    
+    <nav class="nav-usuario" aria-label="Menu Usuário">
+      <ul>
         <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagens_whey/whey13.png" alt="" class="imagens_categorias" />
-            <span>Whey Protein</span>
+          <a href="#" aria-label="Pefil">
+            <figure class="nav-icones">
+              <img src="../imagens/icones/icon-perfil.png" class="nav-icones" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legenda-icones">Perfil</figcaption>
+            </figure>
           </a>
         </li>
-
+        
         <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagens_creatina/creatina11.png" alt="" class="imagens_categorias" />
-            <span>Creatina</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagens_pre-treino/p11.png" alt="" class="imagens_categorias" />
-            <span>pré-Treino</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagens_snacks/snack_b4.png" alt="" class="imagens_categorias" />
-            <span>Snacks</span>
+          <a href="carrinho.html" aria-label="Carrinho">
+            <figure class="nav-icones">
+              <img src="../imagens/icones/icon-carrinho.png" class="nav-icones" alt="Ícone de Carrinho de Compras"/>
+              <figcaption class="legenda_icones">Carrinho</figcaption>
+            </figure>
           </a>
         </li>
       </ul>
-    </section>
+    </nav>
+  </header>
+  
+  <nav class="nav-bottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+    <a href="#" class="nav-logo">NutriCore</a>
+    <ul class="nav-links">
+      <li><a href="#">Whey-Protein</a></li>
+      <li><a href="#">Creatina</a></li>
+      <li><a href="#">Pré-Treino</a></li>
+      <li><a href="#">Snacks</a></li>
+    </ul>
+  </nav>
+  
+  
+  <section class="banner" aria-label="Banner com o tempo restante da promoção do site">
+    <figure class="slide">
+      <img src="../imagens/banner_promocional.png" class="imagens_carrossel" alt="Banner indicando o tempo promocional do e-commerce" />
+    </figure>
+  </nav>
+</section>
 
 
-    <hr class="divisoes" aria-hidden="true">
-
-    <section class="produtos_mais_vendidos" aria-label="Carrossel de Mais Vendidos">
-      <h2 id="titulo_mais_vendidos">Mais Vendidos</h2>
-      <span class="setas_mais_vendidos seta_esquerda_mais_vendidos" aria-hidden="true">❮</span>
-      <article class="container_carrossel_mais_vendidos">
-        <ul class="carrossel_mais_vendidos">
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_arranhador_bege.png" class="imagens_cards" alt="Arranhador Chalesco na Cor Bege" />
-            <h3>Arranhador - Chalesco</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(234)</span></p>
-            <p>
-              <strong>R$ 263,90</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_abacate_catnip.png" class="imagens_cards" alt="Brinquedo Catnip em Formato de Abacate" />
-            <h3>Catnip Erva Natural - Formato Abacate</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(424)</span></p>
-            <p>
-              <strong>R$ 19,44</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_arranhador_4_brinquedos.png" class="imagens_cards" alt="Arranhador Poste com 4 Brinquedos na cor Preto" />
-            <h3>Arranhador Poste com 4 Bolas - Preto</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(236)</span></p>
-            <p>
-              <strong>R$ 54,99</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_vaca.png" class="imagens_cards" alt="Gato com Fantasia de Vaca" />
-            <h3>Fantasia de Vaca com Touca</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(455)</span></p>
-            <p>
-              <strong>R$ 136,99</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_lagosta.png" class="imagens_cards" alt="Gato com Fantasia de Lagosta com Touca" />
-            <h3>Fantasia de Lagosta com Touca</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(354)</span></p>
-            <p>
-              <strong>R$ 134,44</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_petisco_whiskas.png" class="imagens_cards" alt="Petisco Whiskas Temptations para Gatos" />
-            <h3>Petisco Whiskas Temptations - Adulto</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(167)</span></p>
-            <p>
-              <strong>R$ 11,26</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_cama_cinza.png" class="imagens_cards" alt="Cama para Gato na Cor Cinza" />
-            <h3>Cama Grande Quadrada - Cinza</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(437)</span></p>
-            <p>
-              <strong>R$ 239,92</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_colegial.png" class="imagens_cards" alt="Gato com Fantasia de Colegial" />
-            <h3>Fantasia de Colegial com Saia</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(276)</span></p>
-            <p>
-              <strong>R$ 163,87</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_bebedouro_inox.png" class="imagens_cards" alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox" />
-            <h3>Bebedouro Fonte Água (2L) - Silencioso</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(355)</span></p>
-            <p>
-              <strong>R$ 189,22</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_caixote_areia_rosa.png" class="imagens_cards" alt="Caixote de Areia para Gatos na Cor Lilás" />
-            <h3>Caixote de Areia - Lilás</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(529)</span></p>
-            <p>
-              <strong>R$ 119,10</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-        </ul>
-      </article>
-      <span class="setas_mais_vendidos seta_direita_mais_vendidos" aria-hidden="true">❯</span>
-
-      <nav class="indicadores_carrossel" aria-label="Indicadores do carrossel de produtos">
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-      </nav>
-    </section>
+<section class="categorias-catalogo" aria-label="Categorias do Catálogo">
+  <h2 id="titulo-categorias">Nossos Produtos</h2>
+  <ul class="lista-categorias">
+    <li>
+      <a href="#" class="links-categorias">
+        <img src="../imagens/imagens_whey/whey13.png" alt="" class="imagens-categorias" />
+        <span>Whey Protein</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="links-categorias">
+        <img src="../imagens/imagens_creatina/creatina11.png" alt="" class="imagens-categorias" />
+        <span>Creatina</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="links-categorias">
+        <img src="../imagens/imagens_pre-treino/p11.png" alt="" class="imagens-categorias" />
+        <span>Pré-Treino</span>
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="links-categorias">
+        <img src="../imagens/imagens_snacks/snack_b4.png" alt="" class="imagens-categorias" />
+        <span>Snacks</span>
+      </a>
+    </li>
+  </ul>
+</section>
 
 
-    <hr class="divisoes" aria-hidden="true" />
+<section class="produtos-mais-vendidos" aria-label="Carrossel de Mais Vendidos">
+  <h2 id="titulo-mais-vendidos">Mais Vendidos</h2>
+  
+  <span class="setas_mais_vendidos seta_esquerda_mais_vendidos" aria-hidden="true">❮</span>
+  <article class="container_carrossel_mais_vendidos">
+    <ul class="carrossel_mais_vendidos">
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_whey/whey3.png" class="imagens_cards" alt="Whey Protein 900 gramas - Sabor Avelã" />
+        <h3>Whey Protein Sabor Avelã - 900g</h3>
+        <p>
+          <strong>R$ 110,90</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_creatina/creatina3.png" class="imagens_cards" alt="Suplemento alimentar de creatina em pó - 100g" />
+        <h3>Suplemento alimentar de creatina em pó - 100g</h3>
+        <p>
+          <strong>R$49,44</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_creatina/creatina17.png" class="imagens_cards" alt="Suplemento alimentar de creatina em pó - 250g" />
+        <h3>Suplemento alimentar de creatina em pó - 250g</h3>
+        <p>
+          <strong>R$ 54,99</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_pre-treino/p2.png" class="imagens_cards" alt="Gato com Fantasia de Vaca" />
+        <h3>Suplemento alimentar de creatina em pó Sabor Laranja - 300g</h3>
+        <p>
+          <strong>R$ 136,99</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_snacks/snack_p3.png" class="imagens_cards" alt="Pasta de Amendoim Sabor Bueníssimo - 600g" />
+        <h3>Pasta de Amendoim Sabor Bueníssimo - 600g</h3>
+        <p>
+          <strong>R$ 134,44</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_snacks/snack_d7.png" class="imagens_cards" alt="Chocolate Branco com Whey Protein - 25g" />
+        <h3>Chocolate Branco com Whey Protein - 25g</h3>
+        <p>
+          <strong>R$ 11,26</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_whey/whey8.png" class="imagens_cards" alt="Whey Protein Sabor achocolatado Toddy  900g" />
+        <h3>Whey Protein Sabor achocolatado Toddy  900g</h3>
+        <p>
+          <strong>R$ 239,92</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_snacks/snack_p7.png" class="imagens_cards" alt="Pasta de Amendoim Sabor Doce de Leite - 600g" />
+        <h3>Pasta de Amendoim Sabor Doce de Leite - 600g</h3>
+        <p>
+          <strong>R$ 189,22</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+      
+      <li class="card_produto">
+        <img src="../imagens/imagens_whey/whey4.png" class="imagens_cards" alt="Whey Protein Sabor Baunilha - 900gs" />
+        <h3>Whey Protein Sabor Baunilha - 900g</h3>
+        <p>
+          <strong>R$ 119,10</strong>
+        </p>
+        <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
+          <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração para favoritar item" aria-hidden="true" />
+        </button>
+        <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
+      </li>
+    </ul>
+  </article>
+  <span class="setas_mais_vendidos seta_direita_mais_vendidos" aria-hidden="true">❯</span>
+  
+  <nav class="indicadores_carrossel" aria-label="Indicadores do carrossel de produtos">
+    <span class="retangulo"></span>
+    <span class="retangulo"></span>
+    <span class="retangulo"></span>
+  </nav>
+</section>
 
-    <section class="carrossel_feedbacks">
-      <h2 id="titulo_feedbacks">O que dizem nossos clientes</h2>
-      <span class="setas_feedbacks seta_esquerda_feedbacks" aria-hidden="true">❮</span>
-      <ul class="feedbacks">
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Produtos excelentes, meu gato adorou!</p>
-          <span class="autor_feedback">Ana, RJ</span>
-          <span class="aspas">“</span>
-        </li>
+<!--Rodapé -->
+<footer class="rodape">
+  <img
+  src="../imagens/icones/icon-ecommerce.png"
+  alt="Logo NutriCore"
+  class="logo"
+  />
+  
+  <nav class="informacoes">
+    <h2>Informações</h2>
+    <ul>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Termos e Condições de Uso</a></li>
+      <li><a href="#">Política de Privacidade</a></li>
+      <li><a href="#">Direito do Consumidor</a></li>
+    </ul>
+  </nav>
+  
+  <address class="contato">
+    <h2>Contato</h2>
+    <p>
+      <a href="mailto:contato@miauanarquia.com.br"
+      >contato@miauanarquia.com.br</a
+      >
+      <!-- mailto = Identificar como e-mail -->
+    </p>
+  </address>
+  
+  <nav class="redes" aria-label="Nos Siga">
+    <h2>Nos siga</h2>
+    <ul class="listaRedesSociais">
+      <li>
+        <a href="#"
+        ><img
+        src="../imagens/icone_facebook.png"
+        class="iconesRedesSociais"
+        alt="Ícone do Facebook"
+        />
+      </a>
+    </li>
+    <li>
+      <a href="#"
+      ><img
+      src="../imagens/icone_instagram.png"
+      class="iconesRedesSociais"
+      alt="Ícone do Instagram"
+      /></a>
+    </li>
+    <li>
+      <a href="#"
+      ><img
+      src="../imagens/icone_linkedin.png"
+      class="iconesRedesSociais"
+      alt="Ícone do LinkedIn"
+      /></a>
+    </li>
+    <li>
+      <a href="#"
+      ><img
+      src="../imagens/icone_discord.png"
+      class="iconesRedesSociais"
+      alt="Ícone do Discord"
+      /></a>
+    </li>
+  </ul>
+</nav>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Entrega rápida e produtos de qualidade.</p>
-          <span class="autor_feedback">Carlos, SP</span>
-          <span class="aspas">“</span>
-        </li>
+<section class="pagamentos">
+  <h2>Formas de pagamento:</h2>
+  <ul>
+    <li>
+      <img
+      src="../imagens/icone_american_express.png"
+      alt="Ícone do American Express"
+      />
+    </li>
+    <li>
+      <img
+      src="../imagens/icone_visa.png"
+      alt="Ícone do Visa"
+      />
+    </li>
+    <li>
+      <img
+      src="../imagens/icone_mastercard.png"
+      alt="Ícone do Mastercard"
+      />
+    </li>
+    <li>
+      <img
+      src="../imagens/icone_discover.png"
+      alt="Ícone do Discover"
+      />
+    </li>
+    <li>
+      <img
+      src="../imagens/icone_elo.png"
+      alt="Ícone do Elo"
+      />
+    </li>
+    <li>
+      <img
+      src="../imagens/icone_boleto.png"
+      alt="Ícone do Boleto bancário"
+      />
+    </li>
+    <li>
+      <img
+      src="../imagens/icone_pix.png"
+      alt="Ícone do Pix"
+      />
+    </li>
+  </ul>
+  <p class="seguro">
+    <img
+    src="../imagens/icone_seguranca_footer.png"
+    alt="Ícone que simboliza Segurança"
+    />
+    PAGAMENTO 100% SEGURO
+  </p>
+  <br />
+  <div class="copyright">
+    <p>
+      &copy; 2025 Miau Anarquia. Todos os direitos reservados.
+    </p>
+  </div>
+</section>
+</footer>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Atendimento impecável e entrega rápida!</p>
-          <span class="autor_feedback">Marina, MG</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Melhor site para quem ama gatos!</p>
-          <span class="autor_feedback">Yasmin, SP</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Amo os produtos da Miaunarquia. Sempre vêm com qualidade!</p>
-          <span class="autor_feedback">Solange, PA</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Meu gato já virou cliente fiel KKKKK</p>
-          <span class="autor_feedback">Larissa, BA</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>O Fumaça amou os produtos da Miaunarquia que comprei para ele!</p>
-          <span class="autor_feedback">Daniel, SO</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Não tenho reclamações, apenas elogios!</p>
-          <span class="autor_feedback">José, TO</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Produtos de ótima qualidade!</p>
-          <span class="autor_feedback">Maria, SP</span>
-          <span class="aspas">“</span>
-        </li>
-
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Recomendo sempre a Miaunarquia. Nunca me decepcionou!</p>
-          <span class="autor_feedback">Heber, GO</span>
-          <span class="aspas">“</span>
-        </li>
-      </ul>
-      <span class="setas_feedbacks seta_direita_feedbacks" aria-hidden="true">❯</span>
-      <nav class="indicadores_feedbacks" aria-label="Indicadores do carrossel de feedbacks">
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-      </nav>
-    </section>
-
-
-    <hr class="divisoes" aria-hidden="true" />
-
-
-    <section class="vantagens">
-      <ul class="lista-vantagens">
-        <li>
-          <img src="../imagens/icone_gato.png" alt="Ícone de um gato" />
-          <p><strong>Produtos pensados<br>milimetricamente para felinos</strong></p>
-        </li>
-
-        <li>
-          <img src="../imagens/icone_carteira.png" alt="Ícone carteira" />
-          <p><strong>Parcelamento em até 4x<br>sem juros com parcela mínima de R$ 80</strong></p>
-        </li>
-
-        <li>
-          <img src="../imagens/icone_seguranca.png" alt="Ícone segurança" />
-          <p><strong>Ambiente 100% seguro<br>para suas compras</strong></p>
-        </li>
-
-        <li>
-          <img src="../imagens/icone_caminhao.png" alt="Ícone caminhão" />
-          <p><strong>Frete grátis para todo o<br>Brasil nas compras acima<br>de R$ 299</strong></p>
-        </li>
-
-      </ul>
-    </section>
-
-    <hr class="divisoes" aria-hidden="true" />
-
-  </body>
+</body>
 </html>
