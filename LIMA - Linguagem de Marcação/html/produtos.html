@@ -1,128 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página Inicial | NutriCore</title>
-  <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial | NutriCore</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-  <!--Carrosel de frases no início da página-->
-  <section class="aviso-carrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-    <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">❮</button>
-    <ul class="mensagens">
-      <li class="mensagem">Frete grátis em compras acima de R$159</li>
-      <li class="mensagem">Segurança e Entrega Rápida</li>
-      <li class="mensagem">30% de Desconto em todos os produtos (por tempo limitado)</li>
-    </ul>
-    <button class="setas_aviso seta_direita_aviso" aria-hidden="true">❯</button> 
-  </section>
-  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
-  
-  <!--Primeira navbar (Principal)-->
-  <header class="header-site">
-    <h1 class="logo-site">
-      <a href="home.html" aria-label="Página inicial - Miaunarquia">
-        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logo-imagem"/>
-        <h2 id="nome-ecommerce">NutriCore</h2>
-      </a>
-    </h1>
+    <!--Carrosel de frases no início da página-->
+    <section class="aviso-carrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+        <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">❮</button>
+        <ul class="mensagens">
+            <li class="mensagem">Frete grátis em compras acima de R$159</li>
+            <li class="mensagem">Segurança e Entrega Rápida</li>
+            <li class="mensagem">30% de Desconto em todos os produtos (por tempo limitado)</li>
+        </ul>
+        <button class="setas_aviso seta_direita_aviso" aria-hidden="true">❯</button> 
+    </section>
+    <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
     
-    <nav class="nav-top" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
-      <ul>
-        <li><a href="home.html">Início</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="">Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-    
-    <nav class="nav-usuario" aria-label="Menu Usuário">
-      <ul>
-        <li>
-          <a href="perfil.html" aria-label="Pefil">
-            <figure class="nav-icones">
-              <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
-              <figcaption class="legenda-icones">Perfil</figcaption>
-            </figure>
-          </a>
-        </li>
+    <!--Primeira navbar (Principal)-->
+    <header class="header-site">
+        <h1 class="logo-site">
+            <a href="home.html" aria-label="Página inicial - Miaunarquia">
+                <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logo-imagem"/>
+                <h2 id="nome-ecommerce">NutriCore</h2>
+            </a>
+        </h1>
         
-        <li>
-          <a href="carrinho.html" aria-label="Carrinho">
-            <figure class="nav-icones">
-              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Carrinho de Compras"/>
-              <figcaption class="legenda-icones">Carrinho</figcaption>
-            </figure>
-          </a>
-        </li>
-      </ul>
+        <nav class="nav-top" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="nav-usuario" aria-label="Menu Usuário">
+            <ul>
+                <li>
+                    <a href="perfil.html" aria-label="Pefil">
+                        <figure class="nav-icones">
+                            <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+                            <figcaption class="legenda-icones">Perfil</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="carrinho.html" aria-label="Carrinho">
+                        <figure class="nav-icones">
+                            <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Carrinho de Compras"/>
+                            <figcaption class="legenda-icones">Carrinho</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Segunda Navbar (secundária)-->
+    <nav class="nav-bottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+        <a href="#" class="nav-logo">NutriCore</a>
+        <ul class="nav-links">
+            <li><a href="#">Whey-Protein</a></li>
+            <li><a href="#">Creatina</a></li>
+            <li><a href="#">Pré-Treino</a></li>
+            <li><a href="#">Snacks</a></li>
+        </ul>
     </nav>
-  </header>
-  
-  <!--Segunda Navbar (secundária)-->
-  <nav class="nav-bottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
-    <a href="#" class="nav-logo">NutriCore</a>
-    <ul class="nav-links">
-      <li><a href="#">Whey-Protein</a></li>
-      <li><a href="#">Creatina</a></li>
-      <li><a href="#">Pré-Treino</a></li>
-      <li><a href="#">Snacks</a></li>
-    </ul>
-  </nav>
-  
-  <main>
+    <main>
+        <section class="container-produtos">
+            <!--Primeira fileira Catálogo dos produtos - Categoria Whey-->
+            <section class="catalogo-produtos">
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+            </section>
+            
+            <!--Segunda fileira Catálogo dos produtos - Categoria Whey-->
+            <section class="catalogo-produtos">
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+            </section>
+            
+            <!--Terceira fileira Catálogo dos produtos - Categoria Whey-->
+            <section class="catalogo-produtos">
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+            </section>
+            
+            <!--Quarta fileira Catálogo dos produtos - Categoria Whey-->
+            <section class="catalogo-produtos">
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+                
+                <article class="card-produto-whey">
+                    <i class="nao-ssei"></i>
+                    <figure>
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                    </figure>
+                    <p class="nome-produto">Whey Protein</p>
+                    <p class="preco-produto">R$198,90</p>
+                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                </article>
+            </section>
+        </section> 
+    </main>
     
-    
-  </main>
-  
-  <!--Rodapé -->
-  <footer>
-    <section>
-      <!-- Coluna 1: Marca -->
-      <article>
-        <p class="logo">
-          <span style="background:white; border-radius:50%; width:20px; height:20px; display:inline-block;"></span>
-          NutriCore
-        </p>
-        <p class="description">Lorem Ipsum is simply dummy text of the printing.</p>
-        <nav class="social" aria-label="Redes sociais">
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Instagram">📷</a>
-          <a href="#" aria-label="WhatsApp">💬</a>
-        </nav>
-      </article>
-      
-      <!-- Coluna 2: Links úteis -->
-      <article>
-        <h4>Links Úteis</h4>
-        <nav aria-label="Links úteis">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Sobre nós</a></li>
-          </ul>
-        </nav>
-      </article>
-      
-      <!-- Coluna 3: Contato -->
-      <article>
-        <h4>Contato</h4>
-        <address>
-          <a href="tel:0000000000">(00) 00000-0000</a>
-          <a href="mailto:nutricore@empresa.com" class="email">nutricore@empresa.com</a>
-        </address>
-      </article>
-    </section>
-    
-    <!-- Rodapé inferior -->
-    <section class="footer-bottom">
-      <p>© 2025 . Todos Direitos Reservados</p>
-      <p>
-        <a href="#">Sobre Nós</a> |
-        <a href="#">Política de Privacidade</a>
-      </p>
-    </section>
-  </footer>
+    <!--Rodapé -->
+    <footer>
+        <section>
+            <!-- Coluna 1: Marca -->
+            <article>
+                <p class="logo">
+                    <span style="background:white; border-radius:50%; width:20px; height:20px; display:inline-block;"></span>
+                    NutriCore
+                </p>
+                <p class="description">Lorem Ipsum is simply dummy text of the printing.</p>
+                <nav class="social" aria-label="Redes sociais">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                </nav>
+            </article>
+            
+            <!-- Coluna 2: Links úteis -->
+            <article>
+                <h4>Links Úteis</h4>
+                <nav aria-label="Links úteis">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </article>
+            
+            <!-- Coluna 3: Contato -->
+            <article>
+                <h4>Contato</h4>
+                <address>
+                    <a href="tel:0000000000">(00) 00000-0000</a>
+                    <a href="mailto:nutricore@empresa.com" class="email">nutricore@empresa.com</a>
+                </address>
+            </article>
+        </section>
+        
+        <!-- Rodapé inferior -->
+        <section class="footer-bottom">
+            <p>© 2025 . Todos Direitos Reservados</p>
+            <p>
+                <a href="#">Sobre Nós</a> |
+                <a href="#">Política de Privacidade</a>
+            </p>
+        </section>
+    </footer>
 </body>
