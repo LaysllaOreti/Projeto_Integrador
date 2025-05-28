@@ -8,7 +8,9 @@
 </head>
 
 <body>
+  
   <!--Carrosel de frases no início da página-->
+  <!--
   <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
     <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
     <ul class="mensagensAvisos">
@@ -17,14 +19,14 @@
       <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
     </ul>
     <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
-  </section>
+  </section>-->
   <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
   
   <!--Primeira navbar (Principal)-->
   <header class="headerSite">
     <h1 class="logoSite">
       <a href="home.html" aria-label="Página inicial - NutriCore">
-        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logooImagem"/>
+        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
         <h2 id="nomeEcommerce">NutriCore</h2>
       </a>
     </h1>
@@ -87,7 +89,7 @@
     <section class="categoriaProdutos">
       
       <article class="produto">
-        <a href="produtos.html" class="linkCategoria">
+        <a href="#" id="produtosWhey" class="linkCategoria">
           <figure>
             <img src="../imagens/imagens_whey/whey13.png" id="imagemWhey" alt="100% Whey">
             <figcaption class="nomeCategoria">Whey Protein</figcaption>
@@ -96,7 +98,7 @@
       </article>
       
       <article class="produto">
-        <a href="produtos.html" class="linkCategoria">
+        <a href="produtosCreatina" id="produtosCreatina" class="linkCategoria">
           <figure>
             <a href="produtos.html" class="linkCategoria">
               <img src="../imagens/imagens_creatina/creatina12.png" alt="Creatina">
@@ -145,11 +147,11 @@
             </button>
             
             <figure>
-              <img src="../imagens/imagens_whey/whey13.png" class="imagemCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+              <img src="../imagens/imagens_whey/whey5.png" class="imagemCard" alt="Alfajor com Whey Protein com 6 Unidades Marca -Growth Suplementos" />
               <figcaption></figcaption>
             </figure>
             
-            <h3 class="produtosMaisVendidos">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+            <h3 class="nomeProdutosVendidos">Alfajor com Whey Protein - 6 Unidades (Growth Suplementos)</h3>
             
             <!--<p aria-label="Avaliação: 4 de 5 estrelas">
               ★★★★☆ <span>(34)</span>
@@ -157,7 +159,7 @@
             -->
             
             <p class="precoProduto">
-              R$ 100,90
+              R$ 36,70
             </p>
             
             <button class="botaoCarrinho">
@@ -447,4 +449,5 @@
       </p>
     </section>
   </footer>
+  
   

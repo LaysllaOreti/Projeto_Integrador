@@ -9,6 +9,7 @@
 
 <body>
     <!--Carrosel de frases no início da página-->
+    <!--
     <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
         <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
         <ul class="mensagensAvisos">
@@ -17,14 +18,14 @@
             <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
         </ul>
         <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
-    </section>
+    </section>-->
     <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
     
     <!--Primeira navbar (Principal)-->
     <header class="headerSite">
         <h1 class="logoSite">
             <a href="home.html" aria-label="Página inicial - NutriCore">
-                <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logo-imagem"/>
+                <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
                 <h2 id="nomeEcommerce">NutriCore</h2>
             </a>
         </h1>
@@ -71,183 +72,1791 @@
             <li><a href="#">Snacks</a></li>
         </ul>
     </nav>
+    
     <main>
+        <!--Catálogo de Produtos--> 
         
-        <section class="containerProdutos">
-            <!--Primeira fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogoProdutos">
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-            </section> 
+        <!-------------------------------------------Catálogo de Produtos Whey------------------------------------------->
+        <section class="containerCatalogoProdutos" id="produtosWhey" aria-label="Catálogo exibindo os produtos do E-commerce">
             
-            <!--Segunda fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogoProdutos">
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-            </section>
+            <h2 class="tituloCatalogoProdutos">
+                Whey Protein
+            </h2>
+            <p class="subtituloCatalogoProdutos">
+                Ganhe Massa, Defina Seus Resultados — Encontre o Whey Protein ideal para você e sua rotina!
+            </p>
             
-            <!--Terceira fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogoProdutos">
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
+            <article class="catalogoProduto">
                 
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
+                <!--Primeira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 1-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey1.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 2-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey3.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 3-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey2.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 4-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey4.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 5-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey5.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 6-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey6.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
                 
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
+                <!--Segunda linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 7-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey7.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 8-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey8.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 9-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey9.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 10-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey10.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 11-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey12.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 13-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey13.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
                 
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-            </section>
+                <!--Terceira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 14-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey19.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 15-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey15.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 16-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey20.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 17-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey18.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 18-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey17.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 19-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey16.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+            </article>
+        </section>   
+        
+        <!-------------------------------------------Catálogo de Produtos Creatina------------------------------------------->
+        <section class="containerCatalogoProdutos" id="produtosCreatina" aria-label="Catálogo exibindo os produtos do E-commerce">
             
-            <!--Quarta fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogoProdutos">
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-                
-                <article class="cardProdutoWhey">
-                    <i class="nao-ssei"></i>
-                    <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
-                    </figure>
-                    <p class="nomeProduto">Whey Protein</p>
-                    <p class="precoProduto">R$198,90</p>
-                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
-                </article>
-            </section>
+            <h2 class="tituloCatalogoProdutos">
+                Creatina
+            </h2>
+            <p class="subtituloCatalogoProdutos">
+                Força pura em cada dose — Eleve seu treino com a creatina certa para você!
+            </p>
             
+            <article class="catalogoProduto">
+                
+                <!--Primeira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 1-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina1.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 2-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina12.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 3-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina15.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 4-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina14.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 5-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina13.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 6-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina16.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Segunda linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 7-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina2.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 8-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina4.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 9-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina10.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 10-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina11.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 11-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina20.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 13-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina9.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Terceira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 14-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina5.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 15-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina17.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 16-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina7.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 17-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina3.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 18-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina19.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 19-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_creatina/creatina6.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+            </article>
+        </section>
+        
+        <!-------------------------------------------Catálogo de Produtos Pré-Treino------------------------------------------->
+        <section class="containerCatalogoProdutos" id="produtosPreTreino" aria-label="Catálogo exibindo os produtos do E-commerce">
+            
+            <h2 class="tituloCatalogoProdutos">
+                Pré-Treino
+            </h2>
+            <p class="subtituloCatalogoProdutos">
+                Potencialize sua performance — Pré-Treino para energia e resistência máxima!
+            </p>
+            
+            <article class="catalogoProduto">
+                
+                <!--Primeira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 1-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_pre-treino/p1.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 2-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_pre-treino/p2.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 3-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_pre-treino/p3.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 4-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_pre-treino/p4.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 5-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_pre-treino/p5.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Segunda linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 6-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey6.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 7-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey7.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 8-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey8.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 9-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey9.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 10-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey10.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Terceira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 14-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey19.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 15-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey15.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 16-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey20.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 17-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey18.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 18-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey17.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Quarta linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    <!--Produto 11-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey12.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 13-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey13.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>   
+                    
+                    <!--Produto 19-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey16.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                </ul>
+                
+            </article>
+        </section>
+        
+        <!-------------------------------------------Catálogo de Produtos Snacks------------------------------------------->
+        <section class="containerCatalogoProdutos" id="produtosPreTreino" aria-label="Catálogo exibindo os produtos do E-commerce">
+            
+            <h2 class="tituloCatalogoProdutos">
+                Snacks
+            </h2>
+            <p class="subtituloCatalogoProdutos">
+                Energia, sabor e saúde — Snacks que acompanham seu ritmo!
+            </p>
+            
+            <article class="catalogoProduto">
+                
+                <!--Primeira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 1-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey1.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 2-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey3.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 3-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey2.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 4-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey4.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 5-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey5.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 6-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey6.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Segunda linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 7-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey7.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 8-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey8.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 9-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey9.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 10-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey10.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 11-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey12.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 13-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey13.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+                <!--Terceira linha do Catálogo de Whey-->
+                <ul class="secaoProdutos">
+                    
+                    <!--Produto 14-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey19.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 15-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey15.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 16-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey20.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 17-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey18.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 18-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey17.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                    <!--Produto 19-->
+                    <li class="produtoCardCatalogo">
+                        
+                        <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+                        </button>
+                        
+                        <figure>
+                            <img src="../imagens/imagens_whey/whey16.png" class="imagemCatalogoCard" alt="Whey Protein 900g Sabor Capuccino - Marca Max Suplementos" />
+                            <figcaption></figcaption>
+                        </figure>
+                        
+                        <h3 class="nomeProdutoCatalogo">Whey Protein 900g - Sabor Capuccino (Max Suplementos)</h3>
+                        
+                        <p class="precoProduto">
+                            R$ 100,90
+                        </p>
+                        
+                        <button class="botaoEspecificarProduto">
+                            Ver Mais
+                        </button>       
+                    </li>
+                    
+                </ul>
+                
+            </article>
         </section>
     </main>
+    
+    
     <!--Rodapé -->
     <footer>
         <section>
@@ -313,4 +1922,5 @@
             </p>
         </section>
     </footer>
+    
     
