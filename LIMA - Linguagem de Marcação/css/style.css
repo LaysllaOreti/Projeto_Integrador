@@ -14,7 +14,7 @@ header, nav {
 }
 
 /*Estilização Navbar*/
-.header-site {
+.headerSite {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,13 +24,13 @@ header, nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo-site {
+.logoSite {
   margin: 0;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.logo-site a {
+.logoSite a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -38,26 +38,26 @@ header, nav {
   color: #F2F0EF;
 }
 
-.logo-imagem {
+.logoImagem {
   height: 70px;
   width: auto;
 }
 
-#nome-ecommerce {
+#nomeEcommerce {
   font-size: 2.2rem; 
   font-weight: bold;
   color: #F2F0EF;
   text-decoration: none;
 }
 
-.nav-top ul,
-.nav-usuario ul {
+.navTop ul,
+.navUsuario ul {
   list-style: none; 
   display: flex;
   gap: 4rem; /*espaçamento*/
 }
 
-.nav-top a {
+.navTop a {
   text-decoration: none;
   color: #F2F0EF;
   font-size: 34;
@@ -67,14 +67,14 @@ header, nav {
   transition: color .5s;
 }
 
-.nav-top a:hover,
-.nav-top a:focus {
+.navTop a:hover,
+.navTop a:focus {
   outline: none;
   transform: scale(1.10);
   color: #30072F;
 }
 
-.nav-usuario li a {
+.navUsuario li a {
   color: #F2F0EF;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ header, nav {
   text-decoration: none;
 }
 
-.nav-icones {
+.navIcones {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,8 +92,8 @@ header, nav {
   gap: 0.30rem;
 }
 
-.nav-usuario a:hover,
-.nav-usuario a:focus {
+.navUsuario a:hover,
+.navUsuario a:focus {
   transform: scale(1.06);
   outline: none;
 }
@@ -103,13 +103,13 @@ header, nav {
   width: 28px;
 }
 
-.legenda_icones {
+.legendaIcones {
   font-size: 18px;
   font-weight: 500;
 }
 
 /*Estilização segunda Navbar*/
-.nav-bottom {
+.navBottom {
   background-color: #F2F0EF;
   padding: 12px 22px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -117,7 +117,7 @@ header, nav {
   margin-top: 10px;
 }
 
-.nav-bottom ul {
+.navBottom ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -127,14 +127,14 @@ header, nav {
   justify-content: flex-end;
 }
 
-.nav-bottom a {
+.navBottom a {
   color: #A753A4;
   text-decoration: none;
   font-size: 32;
   font-weight: 500;
 }
 
-.nav-bottom a {
+.navBottom a {
   text-decoration: none;
   color: #7c377a;
   font-size: 32;
@@ -144,15 +144,15 @@ header, nav {
   transition: color .5s;
 }
 
-.nav-bottom a:hover,
-.nav-bottom a:focus {
+.navBottom a:hover,
+.navBottom a:focus {
   outline: none;
   transform: scale(1.10);
   color: #F56511;
 }
 
 /*Estilização Banner*/
-.container-banner {
+.containerBanner {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -166,18 +166,18 @@ header, nav {
   margin-top: 18px;
 }
 
-.imagem-banner {
+.imagemBanner {
   width: 100%;
   height: 100%;
 }
 
-.divisores-partes {
+.divisoresPartes {
   border-color: #63496f;
   opacity: 0.1;
 }
 
 /*Categoria dos Produtos*/
-.container-categorias {
+.containerCategorias {
   width: 100%;
   height: 370px;
   background-color: #E1E0E0;
@@ -187,14 +187,14 @@ header, nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#titulo-categorias {
+#tituloCategorias {
   color: #30072F;
   font-size: 2.2em;
   margin-bottom: 60px;
   text-align: center;
 }
 
-.categoria-produtos {
+.categoriaProdutos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -223,19 +223,19 @@ header, nav {
   transform: scale(1.18);
 }
 
-#imagem-snack {
+#imagemSnack {
   width: 210px;
   height: auto;
   transition: transform 0.5s ease;
 }
 
-#imagem-whey {
+#imagemWhey {
   width: 160px;
   height: auto;
   transition: transform 0.5s ease;
 }
 
-.nome-categoria {
+.nomeCategoria {
   font-size: 20px;
   font-weight: 600;
   color: #30072F;
@@ -243,13 +243,13 @@ header, nav {
   margin-top: 30px;
 }
 
-.link-categoria {
+.linkCategoria {
   text-decoration: none; 
   color: inherit;       
 }
 
 /*Estilização Produtos mais Vendidos*/
-.produtos-mais-vendidos {
+.produtosMaisVendidos {
   background-color: #c6b6f8;
   width: 100%;
   height: auto;
@@ -259,14 +259,14 @@ header, nav {
   margin-bottom: 30px;
 }
 
-#titulo-produtos-vendidos {
+#tituloProdutosVendidos {
   color: #30072F;
   font-size: 2.2em;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.nome-produtos-vendidos {
+.nomeProdutosVendidos{
   font-size: 16px;
   font-weight: 500;
   color: #000000;
@@ -275,12 +275,12 @@ header, nav {
   margin-bottom: 12px;
 }
 
-.container-carrossel-vendidos {
+.containerCarrosselVendidos {
   overflow: hidden;
   margin: 0 6rem;
 }
 
-.carrossel-mais-vendidos {
+.carrosselMaisVendidos {
   display: flex;
   gap: 1.6rem;
   list-style: none;
@@ -289,7 +289,7 @@ header, nav {
   animation: moverProdutos 30s infinite;
 }
 
-.produto-card {
+.produtoCard {
   position: relative;
   background-color: #F2F0EF;
   border-radius: 12px;
@@ -302,12 +302,12 @@ header, nav {
   overflow: hidden;
 }
 
-.produto-card:hover {
+.produtoCard:hover {
   cursor: pointer;
 }
 
 
-.botao-favorito-card {
+.botaoFavoritoCard {
   position: absolute;
   top: 0.8rem;
   right: 0.6rem;
@@ -319,18 +319,18 @@ header, nav {
   z-index: 5;
 }
 
-.botao-favorito-card img {
+.botaoFavoritoCard img {
   width: 22px;
   height: 22px;
 }
 
-.imagem-card {
+.imagemCard {
   height: auto;
   width: 150px;
   margin: 1rem auto;
 }
 
-.preco-produto {
+.precoProduto {
   font-size: 19px;
   font-weight: 600;
   color: #18530e;
@@ -338,7 +338,7 @@ header, nav {
   margin-bottom: 10px;
 }
 
-.botao-carrinho {
+.botaoCarrinho {
   display: block;
   background-color: #92488F;
   color: #F2F0EF;
@@ -353,12 +353,12 @@ header, nav {
   transition: background-color 0.5s ease;
 }
 
-.botao-carrinho:hover {
+.botaoCarrinho:hover {
   background-color: #370b36;
   transform: scale(1.05);
 }
 
-.seta-vendidos {
+.setaVendidos {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -375,15 +375,15 @@ header, nav {
   z-index: 10;
 }
 
-.seta-esquerda-vendidos {
+.setaEsquerdaVendidos {
   left: 1.5rem;
 }
 
-.seta-direita-vendidos {
+.setaDireitaVendidos {
   right: 1.5rem;
 }
 
-.seta-vendidos:hover {
+.setaVendidos:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -495,7 +495,7 @@ footer article {
   color: #eee;
 }
 
-.icon-redes-sociais {
+.iconRedesSociais {
   width: 24px;
   height: 24px;
   display: flex;
@@ -540,7 +540,7 @@ address a.email::before {
   text-decoration: none;
 }
 
-.footer-bottom {
+.footerBottom {
   margin-top: 40px;
   border-top: 1px solid #ccc;
   padding-top: 20px;
@@ -550,7 +550,7 @@ address a.email::before {
   color: #ddd;
 }
 
-.footer-bottom a {
+.footerBottom a {
   color: #ddd;
   text-decoration: none;
   margin-left: 10px;
