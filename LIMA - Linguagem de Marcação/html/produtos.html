@@ -9,27 +9,27 @@
 
 <body>
     <!--Carrosel de frases no início da página-->
-    <section class="aviso-carrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-        <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">❮</button>
-        <ul class="mensagens">
-            <li class="mensagem">Frete grátis em compras acima de R$159</li>
-            <li class="mensagem">Segurança e Entrega Rápida</li>
-            <li class="mensagem">30% de Desconto em todos os produtos (por tempo limitado)</li>
+    <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+        <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
+        <ul class="mensagensAvisos">
+            <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
+            <li class="mensagemAviso">Segurança e Entrega Rápida</li>
+            <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
         </ul>
-        <button class="setas_aviso seta_direita_aviso" aria-hidden="true">❯</button> 
+        <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
     </section>
     <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
     
     <!--Primeira navbar (Principal)-->
-    <header class="header-site">
-        <h1 class="logo-site">
-            <a href="home.html" aria-label="Página inicial - Miaunarquia">
+    <header class="headerSite">
+        <h1 class="logoSite">
+            <a href="home.html" aria-label="Página inicial - NutriCore">
                 <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logo-imagem"/>
-                <h2 id="nome-ecommerce">NutriCore</h2>
+                <h2 id="nomeEcommerce">NutriCore</h2>
             </a>
         </h1>
         
-        <nav class="nav-top" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+        <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
             <ul>
                 <li><a href="home.html">Início</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
@@ -38,22 +38,22 @@
             </ul>
         </nav>
         
-        <nav class="nav-usuario" aria-label="Menu Usuário">
+        <nav class="navUsuario" aria-label="Menu Usuário">
             <ul>
                 <li>
                     <a href="perfil.html" aria-label="Pefil">
-                        <figure class="nav-icones">
+                        <figure class="navIcones">
                             <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
-                            <figcaption class="legenda-icones">Perfil</figcaption>
+                            <figcaption class="legendaIcones">Perfil</figcaption>
                         </figure>
                     </a>
                 </li>
                 
                 <li>
                     <a href="carrinho.html" aria-label="Carrinho">
-                        <figure class="nav-icones">
+                        <figure class="navIcones">
                             <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Carrinho de Compras"/>
-                            <figcaption class="legenda-icones">Carrinho</figcaption>
+                            <figcaption class="legendaIcones">Carrinho</figcaption>
                         </figure>
                     </a>
                 </li>
@@ -62,9 +62,9 @@
     </header>
     
     <!--Segunda Navbar (secundária)-->
-    <nav class="nav-bottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
-        <a href="#" class="nav-logo">NutriCore</a>
-        <ul class="nav-links">
+    <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+        <a href="#" class="navLogo">NutriCore</a>
+        <ul class="navLinks">
             <li><a href="#">Whey-Protein</a></li>
             <li><a href="#">Creatina</a></li>
             <li><a href="#">Pré-Treino</a></li>
@@ -72,181 +72,182 @@
         </ul>
     </nav>
     <main>
-        <section class="container-produtos">
+        
+        <section class="containerProdutos">
             <!--Primeira fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogo-produtos">
-                <article class="card-produto-whey">
+            <section class="catalogoProdutos">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
-            </section>
+            </section> 
             
             <!--Segunda fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogo-produtos">
-                <article class="card-produto-whey">
+            <section class="catalogoProdutos">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
             </section>
             
             <!--Terceira fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogo-produtos">
-                <article class="card-produto-whey">
+            <section class="catalogoProdutos">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
             </section>
             
             <!--Quarta fileira Catálogo dos produtos - Categoria Whey-->
-            <section class="catalogo-produtos">
-                <article class="card-produto-whey">
+            <section class="catalogoProdutos">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
                 
-                <article class="card-produto-whey">
+                <article class="cardProdutoWhey">
                     <i class="nao-ssei"></i>
                     <figure>
-                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagem-produto-whey" />
+                        <img src="../imagens/imagens_whey/" alt="Imagem Whey" class="imagemProdutoWhey" />
                     </figure>
-                    <p class="nome-produto">Whey Protein</p>
-                    <p class="preco-produto">R$198,90</p>
-                    <a href="#"><button class="botao-comprar-produto">Adicionar ao carrinho</button></a>
+                    <p class="nomeProduto">Whey Protein</p>
+                    <p class="precoProduto">R$198,90</p>
+                    <a href="#"><button class="botaoAdicionarCarrinho">Adicionar ao carrinho</button></a>
                 </article>
             </section>
-        </section> 
+            
+        </section>
     </main>
-    
     <!--Rodapé -->
     <footer>
         <section>
@@ -258,9 +259,26 @@
                 </p>
                 <p class="description">Lorem Ipsum is simply dummy text of the printing.</p>
                 <nav class="social" aria-label="Redes sociais">
-                    <a href="#" aria-label="Facebook">📘</a>
-                    <a href="#" aria-label="Instagram">📷</a>
-                    <a href="#" aria-label="WhatsApp">💬</a>
+                    <a href="#" aria-label="Facebook" class="iconRedesSociais">
+                        <figure>
+                            <img src="../imagens/icones/facebook.png"/>
+                            <figcaption></figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="#" aria-label="Instagram" class="iconRedesSociais">
+                        <figure>
+                            <img src="../imagens/icones/instagram.png"/>
+                            <figcaption></figcaption>
+                        </figure>
+                    </a>
+                    
+                    <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
+                        <figure>
+                            <img src="../imagens/icones/whatsapp.png"/>
+                            <figcaption></figcaption>
+                        </figure>
+                    </a>
                 </nav>
             </article>
             
@@ -287,7 +305,7 @@
         </section>
         
         <!-- Rodapé inferior -->
-        <section class="footer-bottom">
+        <section class="footerBottom">
             <p>© 2025 . Todos Direitos Reservados</p>
             <p>
                 <a href="#">Sobre Nós</a> |
@@ -295,4 +313,4 @@
             </p>
         </section>
     </footer>
-</body>
+    
