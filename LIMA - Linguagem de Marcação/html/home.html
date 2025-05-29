@@ -35,7 +35,7 @@
       <ul>
         <li><a href="home.html">Início</a></li>
         <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="">Sobre Nós</a></li>
+        <li><a href="sobreNos.html">Sobre Nós</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
@@ -89,7 +89,7 @@
     <section class="categoriaProdutos">
       
       <article class="produto">
-        <a href="#" id="produtosWhey" class="linkCategoria">
+        <a href="produtos.html#produtosWhey"class="linkCategoria">
           <figure>
             <img src="../imagens/imagens_whey/whey13.png" id="imagemWhey" alt="100% Whey">
             <figcaption class="nomeCategoria">Whey Protein</figcaption>
@@ -98,7 +98,7 @@
       </article>
       
       <article class="produto">
-        <a href="produtosCreatina" id="produtosCreatina" class="linkCategoria">
+        <a href="produtos.html#produtosCreatina" class="linkCategoria">
           <figure>
             <a href="produtos.html" class="linkCategoria">
               <img src="../imagens/imagens_creatina/creatina12.png" alt="Creatina">
@@ -119,7 +119,7 @@
         <article class="produto">
           <a href="produtos.html" class="linkCategoria">
             <figure>
-              <img src="../imagens/imagens_snacks/snack_p5.png" id="imagem-snack" alt="Pasta de Amendoim Dr. Peanut">
+              <img src="../imagens/imagens_snacks/snack_p5.png" id="imagemSnack" alt="Pasta de Amendoim Dr. Peanut">
               <figcaption class="nomeCategoria">Snacks</figcaption>
             </figure>
           </a>
@@ -384,59 +384,74 @@
   </main>
   
   
-  <!--Rodapé -->
-  <footer>
+  <!-------------------------------- Rodapé -------------------------------->
+  <footer class="containerFooter">
     <section>
-      <!-- Coluna 1: Marca -->
-      <article>
-        <p class="logo">
-          <span style="background:white; border-radius:50%; width:20px; height:20px; display:inline-block;"></span>
+      <!-- Marca + Ícones das Redes Sociais -->
+      <article class="colunaFooter">
+        <figure>
+          <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
+          <figcaption></figcaption>
+        </figure>
+        
+        <p class="logoEcommerce">
           NutriCore
         </p>
-        <p class="description">Lorem Ipsum is simply dummy text of the printing.</p>
-        <nav class="social" aria-label="Redes sociais">
+
+        <p class="sloganEcommerceFooter">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+
+        <nav class="redesSociaisFooter" aria-label="Redes sociais">
           <a href="#" aria-label="Facebook" class="iconRedesSociais">
+
             <figure>
-              <img src="../imagens/icones/facebook.png"/>
+              <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
               <figcaption></figcaption>
             </figure>
+
           </a>
           
           <a href="#" aria-label="Instagram" class="iconRedesSociais">
             <figure>
-              <img src="../imagens/icones/instagram.png"/>
+              <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
               <figcaption></figcaption>
             </figure>
           </a>
           
           <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
             <figure>
-              <img src="../imagens/icones/whatsapp.png"/>
+              <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
               <figcaption></figcaption>
             </figure>
           </a>
         </nav>
       </article>
       
-      <!-- Coluna 2: Links úteis -->
-      <article>
-        <h4>Links Úteis</h4>
-        <nav aria-label="Links úteis">
+      <!-- Links Úteis de Navegação -->
+      <article class="colunaFooter">
+        <h4 class="tituloNavegacaoFooter">
+          Links Úteis
+        </h4>
+        <nav aria-label="Links úteis" class="linksNavegacaoFooter">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
             <li><a href="#">Sobre nós</a></li>
           </ul>
         </nav>
       </article>
       
-      <!-- Coluna 3: Contato -->
-      <article>
-        <h4>Contato</h4>
-        <address>
-          <a href="tel:0000000000">(00) 00000-0000</a>
-          <a href="mailto:nutricore@empresa.com" class="email">nutricore@empresa.com</a>
+      <!-- Números de Contato -->
+      <article class="colunaFooter">
+
+        <h4 class="tituloNavegacaoFooter">Contato</h4>
+
+        <address class="informacoesContato">
+          <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
+          <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
         </address>
+
       </article>
     </section>
     

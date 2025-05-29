@@ -30,6 +30,7 @@ header, nav {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
+  margin-left: 80px;
 }
 
 .logoSite a {
@@ -57,6 +58,7 @@ header, nav {
   list-style: none; 
   display: flex;
   gap: 4rem; /*espaçamento*/
+  margin-right: 80px;
 }
 
 .navUsuario a {
@@ -133,6 +135,7 @@ header, nav {
   gap: 6rem;
   padding: 0 20px;
   justify-content: flex-end;
+  margin-right: 80px;
 }
 
 .navBottom li a {
@@ -143,6 +146,16 @@ header, nav {
   transition: color 0.3s;
   display: inline-block;
   transition: color .5s;
+}
+
+.navLogo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  padding: 0 20px;
+  margin-left : 80px;
 }
 
 .navBottom a:hover,
@@ -251,7 +264,7 @@ header, nav {
 
 /*Estilização Produtos mais Vendidos*/
 .produtosMaisVendidos {
-  background-color: #c6b6f8;
+  background-color: #eee;
   width: 100%;
   height: auto;
   padding: 30px;
@@ -461,7 +474,7 @@ header, nav {
 
 /*Estilização Página Produtos*/
 .containerCatalogoProdutos {
-  background-color: #c6b6f8;
+  background-color: #eee;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -553,21 +566,70 @@ header, nav {
   transform: scale(1.05);
 }
 
+/*Estilização Página Sobre Nós*/
+.empresa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.info {
+  flex: 1;
+  text-align: right;
+  padding-left: 20px;
+  margin: 0 80px;
+}
+
+.info h1 {
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .empresa {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
 /*Estilização Rodapé*/
-footer {
+.containerFooter {
   background-color: #893d88;
   color: #fff;
   padding: 40px 60px;
 }
 
-footer section {
+.containerFooter section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-footer article {
+.colunaFooter {
   flex: 1;
   min-width: 200px;
 }
@@ -580,11 +642,12 @@ footer article {
   font-weight: bold;
 }
 
-.logo span {
-  color: orange;
+.iconEcommerceFooter {
+  height: 50px;
+  width: 50px;
 }
 
-.description {
+.sloganEcommerceFooter {
   margin: 15px 0;
   font-size: 14px;
   color: #eee;
@@ -598,48 +661,52 @@ footer article {
   margin-top: 10px;
 }
 
-footer nav ul {
+.redesSociaisFooter ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-footer nav ul li {
-  margin: 6px 0;
+.iconRedeSocialFooter {
+  height: 40px;
+  width: 40px;
 }
 
-footer nav a {
-  color: white;
+.tituloNavegacaoFooter {
+  font-size: 24px;
+  color: #30072F;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.linksNavegacaoFooter a{
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
 }
 
-address a {
+.informacoesContato {
   display: block;
   margin: 6px 0;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
 }
 
-address a::before {
-  content: "📞 ";
-}
-
-address a.email::before {
-  content: "✉️ ";
-}
-
-.social a {
-  font-size: 20px;
-  color: white;
+.fonteContato {
   text-decoration: none;
+  font-size: 14px;
+  display: block;
+  color: #ffffff;
+  padding-bottom: 12px;
 }
 
 .footerBottom {
   margin-top: 40px;
   border-top: 1px solid #ccc;
   padding-top: 20px;
-  font-size: 12px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   color: #ddd;
@@ -649,4 +716,9 @@ address a.email::before {
   color: #ddd;
   text-decoration: none;
   margin-left: 10px;
+  transition: transform .5s;
+}
+
+.footerBottom a:hover {
+  color: #30072F;
 }
