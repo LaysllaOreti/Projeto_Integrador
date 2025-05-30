@@ -567,53 +567,216 @@ header, nav {
 }
 
 /*Estilização Página Sobre Nós*/
-.empresa {
+.containerInicialSobreNos {
+  background: linear-gradient(135deg, #6c63ff, #8e8df9);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+#tituloQuemSomos {
+  color: #30072F;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subtituloQuemSomos {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.imagemEmpresa {
+  flex: 1 1 50%;
+}
+
+.imagemSobreNos {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.containerSobreNos {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 2rem;
+  width: 100%;
+  margin: 90px;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.informacoesSobreNos {
+  margin-bottom: 1px;
+  width: 50%;
+}
+
+.tituloInformacoesSobreNos {
+  color: #30072F;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tituloPrincipalInformacoesSobreNos {
+  color: #30072F;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.textoInformacoesSobreNos {
+  font-size: 16px;
+}
+
+.containerBottomSobreNos {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  text-align: right;
+}
+
+.cardInformacoesSobreNos {
+  position: relative;
+  background-color: #F2F0EF;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 260px;
+  transition: transform 0.5s;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.cardInformacoesSobreNos:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.tituloCardInformacoes {
+  margin-bottom: 1rem;
+  color: #6c63ff;
+}
+
+.valoresECommerce {
+  list-style: none;
+  padding-left: 0;
+}
+
+.valores   {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/*Estilização Página Contato*/
+.containerContato {
+  background: #fff;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  margin: 30px;
+  justify-content: center;
+}
+
+/* Área do formulário */
+.formContainer {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.tituloContato {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.formmularioContato {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelContato {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.inputContato {
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.textAreaContato {
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.3s ease;
+}
+
+.inputContato:focus, .textAreaContato:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.botaoContato {
+  padding: 12px 20px;
+  background-color: #63496f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoContato:hover {
+  background-color: #370b36;
+}
+
+/* Área das infos */
+.contact-info {
+  width: 320px;
+  background-color: #370b36;
+  color: #ecf0f1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tituloInformacoesContato {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 1.1rem;
+  line-height: 1.4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  gap: 12px;
 }
 
-.logo img {
-  max-width: 200px;
-  height: auto;
-}
+/*Estilização Página Perfil do Usuário*/
 
-.info {
-  flex: 1;
-  text-align: right;
-  padding-left: 20px;
-  margin: 0 80px;
-}
-
-.info h1 {
-  margin-bottom: 20px;
-  color: #004aad;
-}
-
-article {
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-@media (max-width: 768px) {
-  .empresa {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .info {
-    text-align: center;
-    padding-left: 0;
-  }
-}
 
 /*Estilização Rodapé*/
 .containerFooter {
