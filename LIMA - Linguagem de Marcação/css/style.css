@@ -337,10 +337,16 @@ header, nav {
   height: 22px;
 }
 
+.imagemCardCarrossel {
+  align-items: center;
+  justify-content: center;
+}
+
 .imagemCard {
   height: 200px;
   width: auto ;
   margin: 1rem auto;
+  margin-bottom: 15px;
 }
 
 .precoProduto {
@@ -348,10 +354,10 @@ header, nav {
   font-weight: 600;
   color: #18530e;
   padding: 6px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.botaoCarrinho {
+.botaoVerMais {
   display: block;
   background-color: #92488F;
   color: #F2F0EF;
@@ -367,7 +373,7 @@ header, nav {
   transition: background-color 0.5s ease;
 }
 
-.botaoCarrinho:hover {
+.botaoVerMais:hover {
   background-color: #370b36;
   transform: scale(1.05);
 }
@@ -410,12 +416,12 @@ header, nav {
   
   16.66%,
   24.99% {
-    transform: translateX(-33.33%);
+    transform: translateX(-42.42%);
   }
   
   33.33%,
   41.66% {
-    transform: translateX(-66.66%);
+    transform: translateX(-82.82%);
   }
   
   50%,
@@ -425,12 +431,12 @@ header, nav {
   
   66.66%,
   74.99% {
-    transform: translateX(-33.33%);
+    transform: translateX(-42.42%);
   }
   
   83.33%,
   91.66% {
-    transform: translateX(-66.66%);
+    transform: translateX(-82.82%);
   }
   
   100% {
@@ -514,8 +520,8 @@ header, nav {
 .produtoCardCatalogo {
   position: relative;
   background-color: #F2F0EF;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
   width: 280px;
@@ -527,7 +533,7 @@ header, nav {
 .produtoCardCatalogo:hover {
   cursor: pointer;
   transform: scale(1.02);
-  border: 1PX solid #7c377a;
+  border: 1px solid #7c377a;
 }
 
 .imagemCatalogoCard {
@@ -567,24 +573,15 @@ header, nav {
 }
 
 /*Estilização Página Sobre Nós*/
-.containerInicialSobreNos {
-  background: linear-gradient(135deg, #6c63ff, #8e8df9);
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-#tituloQuemSomos {
-  color: #30072F;
-  font-size: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.subtituloQuemSomos {
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
+.containerSobreNos {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 2rem;
+  margin: 30px 90px;
+  padding: 0 2rem;
+  align-items: center;
 }
 
 .imagemEmpresa {
@@ -597,27 +594,17 @@ header, nav {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.containerSobreNos {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  text-align: left;
-  gap: 2rem;
-  width: 100%;
-  margin: 90px;
-  padding: 0 2rem;
-  align-items: center;
-}
-
 .informacoesSobreNos {
   margin-bottom: 1px;
   width: 50%;
+  text-align: left;
 }
 
 .tituloInformacoesSobreNos {
   color: #30072F;
   font-size: 26px;
   font-weight: 600;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -629,50 +616,59 @@ header, nav {
 }
 
 .textoInformacoesSobreNos {
-  font-size: 16px;
+  font-size: 19px;
+  text-align: justify;
 }
 
-.containerBottomSobreNos {
-  max-width: 1000px;
-  margin: 3rem auto;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  text-align: right;
-}
-
-.cardInformacoesSobreNos {
-  position: relative;
-  background-color: #F2F0EF;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/*Estilização Valores da Empresa*/
+.containerValoresEmpresa {
+  width: 100%;
+  height: 370px;
   padding: 30px;
+  margin-top: 90px;
+  margin-bottom: 8px;
+}
+
+.fileiraValores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.valoresEmpresa {
+  padding: 20px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagemIconValores {
+  width: 120px; 
+  height: auto;
+}
+
+.nomeVantagem {
+  font-size: 16px;
+  font-weight: 600;
+  color: #30072F;
   text-align: center;
-  width: 260px;
-  transition: transform 0.5s;
-  flex: 0 0 auto;
-  overflow: hidden;
+  margin-top: 30px;
 }
 
-.cardInformacoesSobreNos:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+.divisaoEmLinha {
+  height: 0.5px;
+  background-color: #30072F;
+  margin: 12px;
+  justify-content: center;
 }
 
-.tituloCardInformacoes {
-  margin-bottom: 1rem;
-  color: #6c63ff;
-}
-
-.valoresECommerce {
-  list-style: none;
-  padding-left: 0;
-}
-
-.valores   {
-  margin-bottom: 10px;
-  font-size: 26px;
+.textoVantagem {
+  font-size: 14px;
+  text-align: center;
 }
 
 /*Estilização Página Contato*/
