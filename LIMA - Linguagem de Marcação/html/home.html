@@ -67,10 +67,10 @@
   <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
     <a href="#" class="navLogo">NutriCore</a>
     <ul class="navLinks">
-      <li><a href="#">Whey-Protein</a></li>
-      <li><a href="#">Creatina</a></li>
-      <li><a href="#">Pré-Treino</a></li>
-      <li><a href="#">Snacks</a></li>
+      <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
     </ul>
   </nav>
   
@@ -85,384 +85,399 @@
   
   <!--Navegação por produtos separados em categorias-->
   <section class="containerCategorias">
-    <h2 id="tituloCategorias">Nossos Produtos</h2>
+    <h2 id="tituloCategorias">
+      Nossos Produtos
+    </h2>
     <section class="categoriaProdutos">
       
       <article class="produto">
-        <a href="produtos.html#produtosWhey"class="linkCategoria">
+        <a href="produtos.html#categoriaWhey"class="linkCategoria">
           <figure>
             <img src="../imagens/imagens_whey/whey13.png" id="imagemWhey" alt="100% Whey">
-            <figcaption class="nomeCategoria">Whey Protein</figcaption>
+            <figcaption></figcaption>
+            <p class="nomeCategoria">
+              Whey
+            </p>
           </figure>
         </a>
       </article>
       
       <article class="produto">
-        <a href="produtos.html#produtosCreatina" class="linkCategoria">
+        <a href="produtos.html#categoriaCreatina" class="linkCategoria">
           <figure>
-            <a href="produtos.html" class="linkCategoria">
-              <img src="../imagens/imagens_creatina/creatina12.png" alt="Creatina">
-              <figcaption class="nomeCategoria">Creatina</figcaption>
-            </figure>
-          </a>
-        </article>
-        
-        <article class="produto">
-          <a href="produtos.html" class="linkCategoria">
-            <figure>
-              <img src="../imagens/imagens_pre-treino/p2.png" alt="Pré-treino Baba Yaga">
-              <figcaption class="nomeCategoria">Pré-Treino</figcaption>
-            </figure>
-          </a>
-        </article>
-        
-        <article class="produto">
-          <a href="produtos.html" class="linkCategoria">
-            <figure>
-              <img src="../imagens/imagens_snacks/snack_p5.png" id="imagemSnack" alt="Pasta de Amendoim Dr. Peanut">
-              <figcaption class="nomeCategoria">Snacks</figcaption>
-            </figure>
-          </a>
-        </article>
-        
-      </section>
-    </section>
-    
-    <!--Carrossel de itens mais vendidos na semana-->
-    <section class="produtosMaisVendidos" aria-label="Carrossel de Produtos mais vendidos na Semana">
-      
-      <h2 id="tituloProdutosVendidos">Produtos mais vendidos da semana</h2>
-      
-      <!--<span class="setaVendidos setaEsquerdaVendidos" aria-hidden="true">❮</span>-->
-      
-      <article class="containerCarrosselVendidos">
-        
-        <ul class="carrosselMaisVendidos">
-          
-          <!--Produto 1-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_whey/whey5.png" class="imagemCard" alt="Top Whey 3W (Mais Natural) Max Titanium - 900g Sabor Cacaux  " />
-              <figcaption></figcaption>
-            </figure>
-            
-            <h3 class="nomeProdutosVendidos">Top Whey 3W (Mais Natural) Max Titanium - 900g Sabor Cacau</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
+            <img src="../imagens/imagens_creatina/creatina12.png" alt="Creatina">
+            <figcaption ></figcaption>
+            <p class="nomeCategoria">
+              Creatina
             </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 197,00
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 2-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_snacks/snack_d1.png" class="imagemCard" alt="Alfajor com Whey Protein Growth Suplements - 6 Unidades" />
-              <figcaption></figcaption>
-            </figure>
-            
-            <h3 class="nomeProdutosVendidos">Alfajor com Whey Protein Growth Suplements - 6 Unidades</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 14,60
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 3-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_creatina/creatin8.png" class="imagemCard" alt="Creatina Monohhidratada - Max Titanium 300g" />
-              <figcaption></figcaption>
-            </figure>
-            
-            <h3 class="nomeProdutosVendidos">Creatina Monohhidratada - Max Titanium 300g</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 85,20
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 4-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_creatina/creatina15.png" class="imagemCard" alt="Creatina 100% pura 500g - Marca Espartanos" />
-              <figcaption></figcaption>
-            </figure>
-            
-            <h3 class="nomeProdutosVendidos">Creatina 100% Pura 100% Pura - Espartanos 500g</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 100,90
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 5-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_whey/whey1.png" class="imagemCard" alt="Whey Protein Concentrado 80% Growth Supplements – 1kg, Sabor Natural" />
-              <figcaption></figcaption>
-            </figure>
-            <h3 class="nomeProdutosVendidos">Whey Protein Concentrado 80% Growth Supplements – 1kg, Sabor Natural</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 94,70
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 6-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_pre-treino/p10.png" class="imagemCard" alt="Pré-Treino Scalp Sabor Abacaxi com Hortelã 300g Marca - Black Skull" />
-              <figcaption></figcaption>
-            </figure>
-            
-            <h3 class="nomeProdutosVendidos">Pré-Treino Scalp Sabor Abacaxi com Hortelã 300g (Black Skull)</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 99,90
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 7-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <figure>
-              <img src="../imagens/imagens_whey/whey3.png" class="imagemCard" alt="Whey Protein 900g Sabor Avelã - Marca Max Suplementos" />
-              <figcaption></figcaption>
-            </figure>
-            
-            <h3 class="nomeProdutosVendidos">Whey Protein 900g - Sabor Avelã (Max Suplementos)</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 109,00
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-          <!--Produto 8-->
-          <li class="produtoCard">
-            
-            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            
-            <img src="../imagens/imagens_snacks/snack_d3.png" class="imagemCard" alt="Paçoca com Whey Protein - 12 Unidades - Marca Growth Suplementos" />
-            
-            <h3 class="nomeProdutosVendidos">Paçoca com Whey Protein - 12 Unidades (Growth Suplementos)</h3>
-            
-            <!--<p aria-label="Avaliação: 4 de 5 estrelas">
-              ★★★★☆ <span>(34)</span>
-            </p>
-            -->
-            
-            <p class="precoProduto">
-              R$ 40,52
-            </p>
-            
-            <button class="botaoCarrinho">
-              Adicionar ao Carrinho
-            </button>
-            
-          </li>
-          
-        </ul>
-        
+          </figure>
+        </a>
       </article>
       
-      <!--<span class="setaVendidos setaDireitaVendidos" aria-hidden="true">❯</span>-->
+      <article class="produto">
+        <a href="produtos.html#categoriaPreTreino" class="linkCategoria">
+          <figure>
+            <img src="../imagens/imagens_pre-treino/p2.png" alt="Pré-treino Baba Yaga">
+            <figcaption></figcaption>
+            <p class="nomeCategoria">
+              Pré-Treino
+            </p>
+          </figure>
+        </a>
+      </article>
       
-      <nav class="carrosselIndicadores" aria-label="Indicadores do carrossel de produtos">
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-      </nav>
+      <article class="produto">
+        <a href="produtos.html#categoriaSnacks" class="linkCategoria">
+          <figure>
+            <img src="../imagens/imagens_snacks/snack_p5.png" id="imagemSnack" alt="Pasta de Amendoim Dr. Peanut">
+            <figcaption></figcaption>
+            <p class="nomeCategoria">
+              Snacks
+            </p>
+          </figure>
+        </a>
+      </article>
       
     </section>
-    
-  </main>
+  </section>
   
-  
-  <!-------------------------------- Rodapé -------------------------------->
-  <footer class="containerFooter">
-    <section>
-      <!-- Marca + Ícones das Redes Sociais -->
-      <article class="colunaFooter">
-        <figure>
-          <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
-          <figcaption></figcaption>
-        </figure>
-        
-        <p class="logoEcommerce">
-          NutriCore
-        </p>
-
-        <p class="sloganEcommerceFooter">
-          Lorem Ipsum is simply dummy text of the printing.
-        </p>
-
-        <nav class="redesSociaisFooter" aria-label="Redes sociais">
-          <a href="#" aria-label="Facebook" class="iconRedesSociais">
-
-            <figure>
-              <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-              <figcaption></figcaption>
-            </figure>
-
-          </a>
-          
-          <a href="#" aria-label="Instagram" class="iconRedesSociais">
-            <figure>
-              <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-              <figcaption></figcaption>
-            </figure>
-          </a>
-          
-          <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
-            <figure>
-              <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-              <figcaption></figcaption>
-            </figure>
-          </a>
-        </nav>
-      </article>
-      
-      <!-- Links Úteis de Navegação -->
-      <article class="colunaFooter">
-        <h4 class="tituloNavegacaoFooter">
-          Links Úteis
-        </h4>
-        <nav aria-label="Links úteis" class="linksNavegacaoFooter">
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="#">Sobre nós</a></li>
-          </ul>
-        </nav>
-      </article>
-      
-      <!-- Números de Contato -->
-      <article class="colunaFooter">
-
-        <h4 class="tituloNavegacaoFooter">Contato</h4>
-
-        <address class="informacoesContato">
-          <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
-          <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
-        </address>
-
-      </article>
-    </section>
+  <!--Carrossel de itens mais vendidos na semana-->
+  <section class="produtosMaisVendidos" aria-label="Carrossel de Produtos mais vendidos na Semana">
     
-    <!-- Rodapé inferior -->
-    <section class="footerBottom">
-      <p>© 2025 . Todos Direitos Reservados</p>
-      <p>
-        <a href="#">Sobre Nós</a> |
-        <a href="#">Política de Privacidade</a>
+    <h2 id="tituloProdutosVendidos">Produtos mais vendidos da semana</h2>
+    
+    <!--<span class="setaVendidos setaEsquerdaVendidos" aria-hidden="true">❮</span>-->
+    
+    <article class="containerCarrosselVendidos">
+      
+      <ul class="carrosselMaisVendidos">
+        
+        <!--Produto 1-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_whey/whey5.png" class="imagemCard" alt="Top Whey 3W (Mais Natural) Max Titanium - 900g Sabor Cacaux  " />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Top Whey 3W (Mais Natural) Max Titanium - 900g Sabor Cacau</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 197,00
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 2-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_snacks/snack_d1.png" class="imagemCard" alt="Alfajor com Whey Protein Growth Suplements - 6 Unidades" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Alfajor com Whey Protein Growth Suplements - 6 Unidades</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 14,60
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 3-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_whey/whey21.png" class="imagemCard" alt="Whey Protein Isolado DUX – 900g, Sabor Cookies" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Whey Protein Isolado DUX – 900g, Sabor Cookies</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 149,70
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 4-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_whey/whey3.png" class="imagemCard" alt="100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 145,60
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 5-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_creatina/creatina17.png" class="imagemCard" alt="Pré-Treino All Day (Jorlan Vieira) Max Titanium - Sabor Frutas Amarelas 300g" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Pré-Treino All Day (Jorlan Vieira) Max Titanium - Sabor Frutas Amarelas 300g</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 86,00
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 6-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_snacks/snack_b7.png" class="imagemCard" alt="Alfajor com Whey Protein Growth Suplements - 6 Unidades" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Chocowheyfer +Mu Caixa 12 unidades - Sabor Chocolate Branco 300g</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 90,50
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 7-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_snacks/snack_p3.png" class="imagemCard" alt="Pasta de Amendoim Dr. Peanut - Sabor Bueníssimo 600g" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Pasta de Amendoim Dr. Peanut - Sabor Bueníssimo 600g</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 87,90
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+        
+        <!--Produto 8-->
+        <li class="produtoCard">
+          
+          <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+            <img src="../imagens/icones/icon-coracao.png" alt="Ícone de Coração" aria-hidden="true" />
+          </button>
+          
+          <figure class="imagemCardCarrossel">
+            <img src="../imagens/imagens_creatina/creatina16.png" class="imagemCard" alt="Creatina Monohidratada 100% - Nutrify Real Foods 300g" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <h3 class="nomeProdutosVendidos">Creatina Monohidratada 100% - Nutrify Real Foods 300g</h3>
+          
+          <!--<p aria-label="Avaliação: 4 de 5 estrelas">
+            ★★★★☆ <span>(34)</span>
+          </p>
+          -->
+          
+          <p class="precoProduto">
+            R$ 78,00
+          </p>
+          
+          <button class="botaoVerMais">
+            Ver Mais
+          </button>
+          
+        </li>
+      </ul>
+      
+    </article>
+    
+    <!--<span class="setaVendidos setaDireitaVendidos" aria-hidden="true">❯</span>-->
+    
+    <!--<nav class="carrosselIndicadores" aria-label="Indicadores do carrossel de produtos">
+      <span class="retangulo"></span>
+      <span class="retangulo"></span>
+      <span class="retangulo"></span>
+    </nav>-->
+    
+  </section>
+  
+</main>
+
+
+<!-------------------------------- Rodapé -------------------------------->
+<footer class="containerFooter">
+  <section>
+    <!-- Marca + Ícones das Redes Sociais -->
+    <article class="colunaFooter">
+      <figure>
+        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
+        <figcaption></figcaption>
+      </figure>
+      
+      <p class="logoEcommerce">
+        NutriCore
       </p>
-    </section>
-  </footer>
+      
+      <p class="sloganEcommerceFooter">
+        Lorem Ipsum is simply dummy text of the printing.
+      </p>
+      
+      <nav class="redesSociaisFooter" aria-label="Redes sociais">
+        <a href="#" aria-label="Facebook" class="iconRedesSociais">
+          
+          <figure>
+            <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+            <figcaption></figcaption>
+          </figure>
+          
+        </a>
+        
+        <a href="#" aria-label="Instagram" class="iconRedesSociais">
+          <figure>
+            <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+            <figcaption></figcaption>
+          </figure>
+        </a>
+        
+        <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
+          <figure>
+            <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+            <figcaption></figcaption>
+          </figure>
+        </a>
+      </nav>
+    </article>
+    
+    <!-- Links Úteis de Navegação -->
+    <article class="colunaFooter">
+      <h4 class="tituloNavegacaoFooter">
+        Links Úteis
+      </h4>
+      <nav aria-label="Links úteis" class="linksNavegacaoFooter">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </article>
+    
+    <!-- Números de Contato -->
+    <article class="colunaFooter">
+      
+      <h4 class="tituloNavegacaoFooter">Contato</h4>
+      
+      <address class="informacoesContato">
+        <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
+        <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
+      </address>
+      
+    </article>
+  </section>
   
-  
+  <!-- Rodapé inferior -->
+  <section class="footerBottom">
+    <p>© 2025 . Todos Direitos Reservados</p>
+    <p>
+      <a href="#">Sobre Nós</a> |
+      <a href="#">Política de Privacidade</a>
+    </p>
+  </section>
+</footer>
+
