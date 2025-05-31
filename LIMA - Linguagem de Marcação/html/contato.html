@@ -67,123 +67,151 @@
   <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
     <a href="#" class="navLogo">NutriCore</a>
     <ul class="navLinks">
-      <li><a href="#">Whey-Protein</a></li>
-      <li><a href="#">Creatina</a></li>
-      <li><a href="#">Pré-Treino</a></li>
-      <li><a href="#">Snacks</a></li>
+      <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
     </ul>
   </nav>
   
   <main>
-    <section class="containerContato">
-      <section class="formContainer" aria-label="Formulário de contato">
-        <h2 class="tituloContato">
+    <article class="containerForm">
+      <section class="formBox">
+        <h2 class="tituloForm">
           Fale Conosco!
         </h2>
-        <form action="#" method="POST" class="formularioContato">
-          <label for="nome" class="labelContato">Nome</label>
-          <input class="inputContato" type="text" id="nome" name="nome" required placeholder="Seu nome"/>
+        <p class="subtitleForm">
+            Surgiu alguma dúvida, feedback ou reclamação? Entre em contato conosco.
+        </p>
+        
+        <form action="#" method="POST" class="formContato">
+          <label for="nome" class="labelForm">Nome</label>
+          <input class="campoInputForm" type="text" id="nome" name="nome" required placeholder="Insira seu nome completo" />
           
-          <label for="email">Email</label>
-          <input class="inputContato"  type="email" id="email" name="email" required placeholder="seu@email.com" />
+          <label for="email" class="labelForm">Email</label>
+          <input class="campoInputForm" type="email" id="email" name="email" required placeholder="Insira seu e-mail 'seu@email.com'" />
           
-          <label for="mensagem" class="labelContato">Mensagem</label>
-          <textarea class="textAreaContato" id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui..."></textarea>
+          <label for="mensagem" class="labelForm">Mensagem</label>
+          <textarea class="campoTexAreaForm" id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui..."></textarea>
           
-          <button type="submit" class="botaoContato">Enviar</button>
+          <button type="submit" class="botaoForm">Enviar</button>
         </form>
       </section>
       
-      <aside class="contact-info" aria-label="Informações para contato">
-        <h3 class="tituloInformacoesContato">
-          Contato
-        </h3>
-        <p class="icon">+55 (11) 91234-5678</p>
-        <p class="icon">contato@exemplo.com</p>
-        <p class="icon">Rua da Tecnologia, 123 - São Paulo, SP</p>
-      </aside>
-    </section>
-  </main>
-  
-  
-  <!-------------------------------- Rodapé -------------------------------->
-  <footer class="containerFooter">
-    <section>
-      <!-- Marca + Ícones das Redes Sociais -->
-      <article class="colunaFooter">
-        <figure>
-          <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
-          <figcaption></figcaption>
-        </figure>
-        
-        <p class="logoEcommerce">
-          NutriCore
-        </p>
-        
-        <p class="sloganEcommerceFooter">
-          Lorem Ipsum is simply dummy text of the printing.
-        </p>
-        
-        <nav class="redesSociaisFooter" aria-label="Redes sociais">
-          <a href="#" aria-label="Facebook" class="iconRedesSociais">
-            
-            <figure>
-              <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-              <figcaption></figcaption>
-            </figure>
-            
-          </a>
+      <section class="informacoesContatoBox" aria-label="Informações para contato">
+        <h3 class="tituloContato">Contato</h3>
+        <p class="textoContato">+55 (19) 99999-9999</p>
+        <p class="textoContato">nutricore@empresa.com.br</p>
+        <div class="redesSociais">
           
-          <a href="#" aria-label="Instagram" class="iconRedesSociais">
-            <figure>
-              <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-              <figcaption></figcaption>
-            </figure>
-          </a>
-          
-          <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
-            <figure>
-              <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-              <figcaption></figcaption>
-            </figure>
-          </a>
-        </nav>
+          <!--Adicionando ícones de Redes Sociais-->
+          <article class="iconsRedesSociais">
+            
+            <i>
+              <figure>
+                <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+                <figcaption></figcaption>
+              </figure>
+            </i>
+            
+            <i>
+              <figure>
+                <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+                <figcaption></figcaption>
+              </figure>
+            </i>
+            
+            <i>
+              <figure>
+                <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+                <figcaption></figcaption>
+              </figure>
+            </i>
+          </article>
+        </section>
       </article>
       
-      <!-- Links Úteis de Navegação -->
-      <article class="colunaFooter">
-        <h4 class="tituloNavegacaoFooter">
-          Links Úteis
-        </h4>
-        <nav aria-label="Links úteis" class="linksNavegacaoFooter">
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="#">Sobre nós</a></li>
-          </ul>
-        </nav>
-      </article>
-      
-      <!-- Números de Contato -->
-      <article class="colunaFooter">
-        
-        <h4 class="tituloNavegacaoFooter">Contato</h4>
-        
-        <address class="informacoesContato">
-          <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
-          <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
-        </address>
-        
-      </article>
-    </section>
+    </main>
     
-    <!-- Rodapé inferior -->
-    <section class="footerBottom">
-      <p>© 2025 . Todos Direitos Reservados</p>
-      <p>
-        <a href="#">Sobre Nós</a> |
-        <a href="#">Política de Privacidade</a>
-      </p>
-    </section>
-  </footer>
-  
+    
+    <!-------------------------------- Rodapé -------------------------------->
+    <footer class="containerFooter">
+      <section>
+        <!-- Marca + Ícones das Redes Sociais -->
+        <article class="colunaFooter">
+          <figure>
+            <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <p class="logoEcommerce">
+            NutriCore
+          </p>
+          
+          <p class="sloganEcommerceFooter">
+            Lorem Ipsum is simply dummy text of the printing.
+          </p>
+          
+          <nav class="redesSociaisFooter" aria-label="Redes sociais">
+            <a href="#" aria-label="Facebook" class="iconRedesSociais">
+              
+              <figure>
+                <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <figcaption></figcaption>
+              </figure>
+              
+            </a>
+            
+            <a href="#" aria-label="Instagram" class="iconRedesSociais">
+              <figure>
+                <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <figcaption></figcaption>
+              </figure>
+            </a>
+            
+            <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
+              <figure>
+                <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </nav>
+        </article>
+        
+        <!-- Links Úteis de Navegação -->
+        <article class="colunaFooter">
+          <h4 class="tituloNavegacaoFooter">
+            Links Úteis
+          </h4>
+          <nav aria-label="Links úteis" class="linksNavegacaoFooter">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="#">Sobre nós</a></li>
+            </ul>
+          </nav>
+        </article>
+        
+        <!-- Números de Contato -->
+        <article class="colunaFooter">
+          
+          <h4 class="tituloNavegacaoFooter">Contato</h4>
+          
+          <address class="informacoesContato">
+            <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
+            <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
+          </address>
+          
+        </article>
+      </section>
+      
+      <!-- Rodapé inferior -->
+      <section class="footerBottom">
+        <p>© 2025 . Todos Direitos Reservados</p>
+        <p>
+          <a href="#">Sobre Nós</a> |
+          <a href="#">Política de Privacidade</a>
+        </p>
+      </section>
+    </footer>
+    
