@@ -71,7 +71,7 @@ nav {
 .navTop li a {
     text-decoration: none;
     color: #f2f0ef;
-    font-size: 38;
+    font-size: 36;
     font-weight: 500;
     transition: color 0.3s;
     display: inline-block;
@@ -100,7 +100,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.3rem;
+    gap: 5px;
 }
 
 .navUsuario a:hover,
@@ -135,7 +135,7 @@ nav {
     display: flex;
     gap: 6rem;
     padding: 0 20px;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 80px;
 }
 
@@ -308,7 +308,7 @@ nav {
 .produtoCard {
     position: relative;
     background-color: #f2f0ef;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
@@ -414,32 +414,32 @@ nav {
     8.33% {
         transform: translateX(0);
     }
-
+    
     16.66%,
     24.99% {
         transform: translateX(-42.42%);
     }
-
+    
     33.33%,
     41.66% {
         transform: translateX(-82.82%);
     }
-
+    
     50%,
     58.33% {
         transform: translateX(0);
     }
-
+    
     66.66%,
     74.99% {
         transform: translateX(-42.42%);
     }
-
+    
     83.33%,
     91.66% {
         transform: translateX(-82.82%);
     }
-
+    
     100% {
         transform: translateX(0);
     }
@@ -471,7 +471,7 @@ nav {
     33.33% {
         background-color: #bbadff;
     }
-
+    
     33.34%,
     100% {
         background-color: #222;
@@ -519,7 +519,7 @@ nav {
 .produtoCardCatalogo {
     position: relative;
     background-color: #f2f0ef;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
@@ -622,19 +622,24 @@ nav {
 /*Estilização Cards Valores*/
 .valoresEmpresa {
     padding: 2rem;
-    background-color: #f0f4f8;
     text-align: center;
     margin-top: 40px;
 }
 
-.valores-empresa h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #30072f;
-    text-align: center;
+.secaoValoresEmpresa {
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
-.cards-container {
+.tituloValoresEmpresa {
+    color: #30072f;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 12px;
+}
+
+.cardsValoresEmpresa {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -644,29 +649,33 @@ nav {
     flex-wrap: wrap;
 }
 
-.card {
+.cardValorEmpresa {
     background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 290px;
+    height: 220px;
     flex: 1 1 240px;
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card:hover {
+.cardValorEmpresa:hover {
     transform: translateY(-5px);
 }
 
-.card h3 {
-    font-size: 1.3rem;
+.tituloCardValor {
+    font-size: 19px;
     margin-bottom: 0.75rem;
     color: #30072f;
 }
 
-.card p {
-    font-size: 1rem;
+.textoValorCard {
+    font-size: 16px;
     color: #444;
 }
 
@@ -722,12 +731,13 @@ nav {
 /*Estilização Página Contato*/
 .containerForm {
     display: flex;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    /*border: 1px solid #752074;*/
     max-width: 900px;
     margin: 50px auto;
     overflow: hidden;
     background-color: #f2f0ef;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .formBox {
@@ -759,7 +769,7 @@ nav {
 }
 
 .campoInputForm,
-.campoTextAreaForm {
+.campoInputForm {
     padding: 12px 16px;
     border: 1.2px solid #370b36;
     background-color: #f2f0ef;
@@ -782,29 +792,31 @@ nav {
 .botaoForm {
     margin-top: 16px;
     padding: 15px;
-    background-color: #92488f;
+    background-color: #752074;
     color: white;
     border: none;
     border-radius: 5px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .botaoForm:hover {
-    background-color: #370b36;
-    transform: scale(1.02);
+    background-color: #640c62;
+    /*transform: scale(1.02);*/
 }
 
 .informacoesContatoBox {
-    background-color: #370b36;
+    background-color: #752074;
     color: #ecf0f1;
     width: 300px;
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .tituloContato {
@@ -859,7 +871,7 @@ nav {
 
 .produtoCarrinho {
     background-color: white;
-    padding: 12px;
+    padding: 20px;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -979,109 +991,110 @@ nav {
 }
 
 /*Estilização Rodapé*/
-.containerFooter {
-    background-color: #893d88;
-    color: #fff;
-    padding: 40px 60px;
+footer {
+    background-color: #8e3a8e;
+    color: white;
+    padding: 2rem;
+    font-family: sans-serif;
 }
 
-.containerFooter section {
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.tituloFooter{
+    font-size: 26px;
+    padding: 15px 0;
+}
+
+.sloganFooter {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 18px;
+}
+
+.linksRedesSociais{
+    margin-right: 10px
+}
+
+.iconRedeSocial {
+    width: 27px;
+    height: 27px;
+}
+
+.navegacaoLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.linkNavegacaoFooter {
+    margin: 0.5rem 0;
+}
+
+.linkNavegacaoFooter a {
+    color: white;
+    text-decoration: none;
+}
+
+.linkNavegacaoFooter a:hover {
+    color: #370b36;
+}
+
+.linksNavegacaoFooter {
+    text-align: center;
+}
+
+.contatoFooter {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linksContatoFooter {
+    font-style: normal;
+}
+
+.textoContato {
+    font-size: 16px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.linhaSeparacaoFooter {
+    border: none;
+    border-top: 1px solid white;
+    margin: 2rem 0 1rem 0;
+}
+
+.copyrightFooter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
-}
-
-.colunaFooter {
-    flex: 1;
-    min-width: 200px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.iconEcommerceFooter {
-    height: 50px;
-    width: 50px;
-}
-
-.sloganEcommerceFooter {
-    margin: 15px 0;
     font-size: 14px;
-    color: #eee;
+    gap: 2px;
+    text-align: center;
 }
 
-.iconRedesSociais {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
+.textoCopyrightFooter {
+    font-size: 15px;
+    gap: 2px;
 }
 
-.redesSociaisFooter ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.iconRedeSocialFooter {
-    height: 40px;
-    width: 40px;
-}
-
-.tituloNavegacaoFooter {
-    font-size: 24px;
-    color: #30072f;
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-.linksNavegacaoFooter a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.informacoesContato {
-    display: block;
-    margin: 6px 0;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.fonteContato {
-    text-decoration: none;
-    font-size: 14px;
-    display: block;
-    color: #ffffff;
-    padding-bottom: 12px;
-}
-
-.footerBottom {
-    margin-top: 40px;
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
+.navegacaoFinalFooter {
     font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    color: #ddd;
-}
-
-.footerBottom a {
-    color: #ddd;
+    text-align: right;
+    padding: 10px 0;
+    color: #ffffff;
     text-decoration: none;
-    margin-left: 10px;
-    transition: transform 0.5s;
+    transition: color .5s;
 }
 
-.footerBottom a:hover {
-    color: #30072f;
+.navegacaoFinalFooter:hover {
+    color: #370b36;
 }
