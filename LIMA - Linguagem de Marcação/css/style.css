@@ -1,1041 +1,1087 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: #F2F0EF;
-  border: 0;
-  padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2f0ef;
+    border: 0;
+    padding: 0;
 }
 
-header, nav {
-  display: block;
+header,
+nav {
+    display: block;
 }
 
 /*Estilização Navbar*/
 .headerSite {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.4rem 3rem; /*cima/baixo X esquerdo/direito*/
-  background-color: #92488F;
-  position: relative;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 3rem; /*cima/baixo X esquerdo/direito*/
+    background-color: #92488f;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logoSite {
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 80px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 80px;
 }
 
 .logoSite a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: #F2F0EF;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #f2f0ef;
 }
 
 .logoImagem {
-  height: 70px;
-  width: auto;
+    height: 70px;
+    width: auto;
 }
 
 #nomeEcommerce {
-  font-size: 40px; 
-  font-weight: bold;
-  color: #F2F0EF;
-  text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f2f0ef;
+    text-decoration: none;
 }
 
 .navTop ul,
 .navUsuario ul {
-  list-style: none; 
-  display: flex;
-  gap: 4rem; /*espaçamento*/
-  margin-right: 80px;
+    list-style: none;
+    display: flex;
+    gap: 4rem; /*espaçamento*/
+    margin-right: 80px;
 }
 
 .navUsuario a {
-  list-style: none; 
-  display: flex;
-  gap: 4rem; /*espaçamento*/
+    list-style: none;
+    display: flex;
+    gap: 4rem; /*espaçamento*/
 }
 
-.navTop li a{
-  text-decoration: none;
-  color: #F2F0EF;
-  font-size: 38;
-  font-weight: 500;
-  transition: color 0.3s;
-  display: inline-block;
-  transition: color .5s;
+.navTop li a {
+    text-decoration: none;
+    color: #f2f0ef;
+    font-size: 38;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+    transition: color 0.5s;
 }
 
 .navTop a:hover,
 .navTop a:focus {
-  outline: none;
-  transform: scale(1.10);
-  color: #30072F;
+    outline: none;
+    transform: scale(1.1);
+    color: #30072f;
 }
 
 .navUsuario li a {
-  color: #F2F0EF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s, color 0.3s;
-  text-decoration: none;
+    color: #f2f0ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, color 0.3s;
+    text-decoration: none;
 }
 
 .navIcones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
 }
 
 .navUsuario a:hover,
 .navUsuario a:focus {
-  transform: scale(1.06);
-  outline: none;
+    transform: scale(1.06);
+    outline: none;
 }
 
 .icones {
-  height: 28px;
-  width: 28px;
+    height: 28px;
+    width: 28px;
 }
 
 .legendaIcones {
-  font-size: 20px;
-  font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /*Estilização segunda Navbar*/
 .navBottom {
-  background-color: #F2F0EF;
-  padding: 12px 22px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  height: 80px;
-  margin-top: 10px;
+    background-color: #f2f0ef;
+    padding: 12px 22px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    margin-top: 10px;
 }
 
 .navBottom ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 6rem;
-  padding: 0 20px;
-  justify-content: flex-end;
-  margin-right: 80px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    padding: 0 20px;
+    justify-content: flex-end;
+    margin-right: 80px;
 }
 
 .navBottom li a {
-  text-decoration: none;
-  color: #7c377a;
-  font-size: 36;
-  font-weight: 500;
-  transition: color 0.3s;
-  display: inline-block;
-  transition: color .5s;
+    text-decoration: none;
+    color: #7c377a;
+    font-size: 36;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+    transition: color 0.5s;
 }
 
 .navLogo {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 6rem;
-  padding: 0 20px;
-  margin-left : 80px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    padding: 0 20px;
+    margin-left: 80px;
 }
 
 .navBottom a:hover,
 .navBottom a:focus {
-  outline: none;
-  transform: scale(1.10);
-  color: #F56511;
+    outline: none;
+    transform: scale(1.1);
+    color: #f56511;
 }
 
 /*Estilização Banner*/
 .containerBanner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .banner {
-  flex: 0 0 100%;
-  margin-top: 18px;
+    flex: 0 0 100%;
+    margin-top: 18px;
 }
 
 .imagemBanner {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .divisoresPartes {
-  border-color: #63496f;
-  opacity: 0.1;
+    border-color: #63496f;
+    opacity: 0.1;
 }
 
 /*Categoria dos Produtos*/
 .containerCategorias {
-  width: 100%;
-  height: 370px;
-  background-color: #E1E0E0;
-  padding: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 370px;
+    background-color: #e1e0e0;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #tituloCategorias {
-  color: #30072F;
-  font-size: 30px;
-  margin-bottom: 60px;
-  text-align: center;
+    color: #30072f;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
 }
 
 .categoriaProdutos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
 }
 
 .produto {
-  background: linear-gradient(to top, #801C7C, #D9D9D9);
-  padding: 20px;
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
+    background: linear-gradient(to top, #801c7c, #d9d9d9);
+    padding: 20px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .produto img {
-  width: 120px; 
-  height: auto;
-  transition: transform 0.5s ease;
-  margin-bottom: 20px;
+    width: 120px;
+    height: auto;
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
 }
 
 .produto:hover img {
-  transform: scale(1.18);
+    transform: scale(1.18);
 }
 
 #imagemSnack {
-  width: 210px;
-  height: auto;
-  transition: transform 0.5s ease;
+    width: 210px;
+    height: auto;
+    transition: transform 0.5s ease;
 }
 
 #imagemWhey {
-  width: 160px;
-  height: auto;
-  transition: transform 0.5s ease;
+    width: 160px;
+    height: auto;
+    transition: transform 0.5s ease;
 }
 
 .nomeCategoria {
-  font-size: 22px;
-  font-weight: 600;
-  color: #30072F;
-  text-align: center;
-  margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #30072f;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .linkCategoria {
-  text-decoration: none; 
-  color: inherit;       
+    text-decoration: none;
+    color: inherit;
 }
 
 /*Estilização Produtos mais Vendidos*/
 .produtosMaisVendidos {
-  background-color: #eee;
-  width: 100%;
-  height: auto;
-  padding: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-top: 40px;
-  margin-bottom: 30px;
+    background-color: #eee;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 #tituloProdutosVendidos {
-  color: #30072F;
-  font-size: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+    color: #30072f;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.nomeProdutosVendidos{
-  font-size: 16px;
-  font-weight: 500;
-  color: #000000;
-  padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 12px;
+.nomeProdutosVendidos {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 12px;
 }
 
 .containerCarrosselVendidos {
-  overflow: hidden;
-  margin: 0 6rem;
+    overflow: hidden;
+    margin: 0 6rem;
 }
 
 .carrosselMaisVendidos {
-  display: flex;
-  gap: 1.6rem;
-  list-style: none;
-  padding: 2rem 0;
-  margin: 0;
-  animation: moverProdutos 30s infinite;
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+    padding: 2rem 0;
+    margin: 0;
+    animation: moverProdutos 30s infinite;
 }
 
 .produtoCard {
-  position: relative;
-  background-color: #F2F0EF;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  width: 240px;
-  transition: transform 0.5s;
-  flex: 0 0 auto;
-  overflow: hidden;
+    position: relative;
+    background-color: #f2f0ef;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 240px;
+    transition: transform 0.5s;
+    flex: 0 0 auto;
+    overflow: hidden;
 }
 
 .produtoCard:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .botaoFavoritoCard {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.6rem;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 18px;
-  z-index: 5;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.6rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 5;
 }
 
 .botaoFavoritoCard img {
-  width: 22px;
-  height: 22px;
+    width: 22px;
+    height: 22px;
 }
 
 .imagemCardCarrossel {
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagemCard {
-  height: 200px;
-  width: auto ;
-  margin: 1rem auto;
-  margin-bottom: 15px;
+    height: 200px;
+    width: auto;
+    margin: 1rem auto;
+    margin-bottom: 15px;
 }
 
 .precoProduto {
-  font-size: 19px;
-  font-weight: 600;
-  color: #18530e;
-  padding: 6px;
-  margin-bottom: 12px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #18530e;
+    padding: 6px;
+    margin-bottom: 12px;
 }
 
 .botaoVerMais {
-  display: block;
-  background-color: #92488F;
-  color: #F2F0EF;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  padding: 13px;
-  margin: 12px auto;
-  cursor: pointer;
-  width: 80%;
-  text-align: center;
-  transition: background-color 0.5s ease;
+    display: block;
+    background-color: #92488f;
+    color: #f2f0ef;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    margin: 12px auto;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    transition: background-color 0.5s ease;
 }
 
 .botaoVerMais:hover {
-  background-color: #370b36;
-  transform: scale(1.05);
+    background-color: #370b36;
+    transform: scale(1.05);
 }
 
 .setaVendidos {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  color: #1f1313;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  width: 2.8rem;
-  height: 2.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: #1f1313;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .setaEsquerdaVendidos {
-  left: 1.5rem;
+    left: 1.5rem;
 }
 
 .setaDireitaVendidos {
-  right: 1.5rem;
+    right: 1.5rem;
 }
 
 .setaVendidos:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 @keyframes moverProdutos {
-  
-  0%,
-  8.33% {
-    transform: translateX(0);
-  }
-  
-  16.66%,
-  24.99% {
-    transform: translateX(-42.42%);
-  }
-  
-  33.33%,
-  41.66% {
-    transform: translateX(-82.82%);
-  }
-  
-  50%,
-  58.33% {
-    transform: translateX(0);
-  }
-  
-  66.66%,
-  74.99% {
-    transform: translateX(-42.42%);
-  }
-  
-  83.33%,
-  91.66% {
-    transform: translateX(-82.82%);
-  }
-  
-  100% {
-    transform: translateX(0);
-  }
+    0%,
+    8.33% {
+        transform: translateX(0);
+    }
+
+    16.66%,
+    24.99% {
+        transform: translateX(-42.42%);
+    }
+
+    33.33%,
+    41.66% {
+        transform: translateX(-82.82%);
+    }
+
+    50%,
+    58.33% {
+        transform: translateX(0);
+    }
+
+    66.66%,
+    74.99% {
+        transform: translateX(-42.42%);
+    }
+
+    83.33%,
+    91.66% {
+        transform: translateX(-82.82%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .retangulo {
-  width: 25px;
-  height: 4px;
-  background-color: #222;
-  border-radius: 20%;
-  display: inline-block;
-  animation: retanguloAtivo 15s infinite;
+    width: 25px;
+    height: 4px;
+    background-color: #222;
+    border-radius: 20%;
+    display: inline-block;
+    animation: retanguloAtivo 15s infinite;
 }
 
 .retangulo:nth-child(1) {
-  animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .retangulo:nth-child(2) {
-  animation-delay: 5s;
+    animation-delay: 5s;
 }
 
 .retangulo:nth-child(3) {
-  animation-delay: 10s;
+    animation-delay: 10s;
 }
 
 @keyframes retanguloAtivo {
-  
-  0%,
-  33.33% {
-    background-color: #bbadff;
-  }
-  
-  33.34%,
-  100% {
-    background-color: #222;
-  }
+    0%,
+    33.33% {
+        background-color: #bbadff;
+    }
+
+    33.34%,
+    100% {
+        background-color: #222;
+    }
 }
 
 /*Estilização Página Produtos*/
 .containerCatalogoProdutos {
-  background-color: #eee;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin-top: 25px;
-  margin-bottom: 10%;
+    background-color: #eee;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    margin-bottom: 10%;
 }
 
 .tituloCatalogoProdutos {
-  color: #30072F;
-  font-size: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+    color: #30072f;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .subtituloCatalogoProdutos {
-  color: #000000;
-  font-size: 26px;
-  margin-bottom: 30px;
-  text-align: center;
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .catalogoProduto {
-  margin: 0 100px;
-}  
+    margin: 0 100px;
+}
 
 .secaoProdutos {
-  display: flex;
-  gap: 2.9rem;
-  list-style: none;
-  padding: 20px;
-  margin: 0;
-  justify-content: center;
-  
+    display: flex;
+    gap: 2.9rem;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    justify-content: center;
 }
 
 .produtoCardCatalogo {
-  position: relative;
-  background-color: #F2F0EF;
-  border-radius: 8px;
-  box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  width: 280px;
-  transition: transform 0.5s;
-  flex: 0 0 auto;
-  overflow: hidden;
+    position: relative;
+    background-color: #f2f0ef;
+    border-radius: 8px;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.5s;
+    flex: 0 0 auto;
+    overflow: hidden;
 }
 
 .produtoCardCatalogo:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  border: 1px solid #7c377a;
+    cursor: pointer;
+    transform: scale(1.02);
+    border: 1px solid #7c377a;
 }
 
 .imagemCatalogoCard {
-  height: 200px;
-  width: auto ;
-  margin: 1rem auto;
+    height: 200px;
+    width: auto;
+    margin: 1rem auto;
 }
 
 .nomeProdutoCatalogo {
-  font-size: 16px;
-  font-weight: 500;
-  color: #000000;
-  padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 12px;
 }
 
-.botaoEspecificarProduto{
-  display: block;
-  background-color: #92488F;
-  color: #F2F0EF;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  padding: 13px;
-  margin: 12px auto;
-  cursor: pointer;
-  width: 80%;
-  font-size: 16px;
-  text-align: center;
-  transition: background-color 0.5s ease;
+.botaoEspecificarProduto {
+    display: block;
+    background-color: #92488f;
+    color: #f2f0ef;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    margin: 12px auto;
+    cursor: pointer;
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.5s ease;
 }
 
 .botaoEspecificarProduto:hover {
-  background-color: #370b36;
-  transform: scale(1.05);
+    background-color: #370b36;
+    transform: scale(1.05);
 }
 
 /*Estilização Página Sobre Nós*/
 .containerSobreNos {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  text-align: left;
-  gap: 2rem;
-  margin: 70px 90px;
-  padding: 0 2rem;
-  align-items: center;
-  
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 2rem;
+    margin: 70px 90px;
+    padding: 0 2rem;
+    align-items: center;
 }
 
 .imagemEmpresa {
-  flex: 1 1 50%;
+    flex: 1 1 50%;
 }
 
 .imagemSobreNos {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .informacoesSobreNos {
-  margin-bottom: 1px;
-  width: 50%;
-  text-align: left;
+    margin-bottom: 1px;
+    width: 50%;
+    text-align: left;
 }
 
 .tituloInformacoesSobreNos {
-  color: #30072F;
-  font-size: 26px;
-  font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 15px;
+    color: #30072f;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .tituloPrincipalInformacoesSobreNos {
-  color: #30072F;
-  margin-bottom: 15px;
-  font-size: 36px;
-  font-weight: 600;
+    color: #30072f;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .textoInformacoesSobreNos {
-  font-size: 19px;
-  text-align: justify;
+    font-size: 19px;
+    text-align: justify;
+}
+
+/*Estilização Cards Valores*/
+.valoresEmpresa {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.valores-empresa h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #30072f;
+    text-align: center;
+}
+
+.cards-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 280px;
+    flex: 1 1 240px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: #30072f;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #444;
 }
 
 /*Estilização Benefícios da Empresa*/
 .beneficiosEmpresa {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px 10px;
-  text-align: center;
-  margin-left: 90px;
-  margin-right: 90px;
-  gap: 30px;
-  margin-bottom: 70px;
-  margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    gap: 30px;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .beneficio {
-  max-width: 200px;
+    max-width: 200px;
 }
 
 .imagemBeneficio {
-  width: 100px;
-  height: auto;
-  margin-bottom: 5px;
-  display: inline-block;
-  transition: transform 0.3s ease;
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
-.imagemBeneficio:hover{
-  transform: translateY(-6px);
+.imagemBeneficio:hover {
+    transform: translateY(-6px);
 }
 
 .tituloBeneficio {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 5px;
 }
 
 .linhaDivisao {
-  display: block;
-  width: 80px;
-  height: 3px;
-  margin: 0 auto 12px;
-  background-color: #370b36;
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 0 auto 12px;
+    background-color: #370b36;
 }
 
-.textoBeneficio{
-  font-size: 14px;
-  color: #333;
+.textoBeneficio {
+    font-size: 14px;
+    color: #333;
 }
 
 /*Estilização Página Contato*/
 .containerForm {
-  display: flex;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: 50px auto;
-  overflow: hidden;
-  background-color: #F2F0EF;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    background-color: #f2f0ef;
 }
 
 .formBox {
-  flex: 1;
-  padding: 40px 40px;
+    flex: 1;
+    padding: 40px 40px;
 }
 
 .tituloForm {
-  color: #30072F;
-  font-weight: 700;
-  font-size: 30px;
+    color: #30072f;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .subtitleForm {
-  text-align: left;
-  font-size: 17px;
-  padding: 14px 0;
-  margin-bottom: 12px;
+    text-align: left;
+    font-size: 17px;
+    padding: 14px 0;
+    margin-bottom: 12px;
 }
 
 .formContato {
-  display: flex;
-  gap: 18px;
-  flex-direction: column;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
 }
 
 .labelForm {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .campoInputForm,
 .campoTextAreaForm {
-  padding: 12px 16px;
-  border: 1.2px solid #370b36;
-  background-color: #F2F0EF;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
+    padding: 12px 16px;
+    border: 1.2px solid #370b36;
+    background-color: #f2f0ef;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
 }
 
 .campoTextAreaForm {
-  resize: none;
-  min-height: 100px;
+    resize: none;
+    min-height: 100px;
 }
 
 .campoInputForm:focus,
 .campoTextAreaFocus:focus {
-  outline: none;
-  border-color: #30072F;
+    outline: none;
+    border-color: #30072f;
 }
 
 .botaoForm {
-  margin-top: 16px;
-  padding: 15px;
-  background-color: #92488F;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    margin-top: 16px;
+    padding: 15px;
+    background-color: #92488f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .botaoForm:hover {
-  background-color: #370b36;
-  transform: scale(1.02);
+    background-color: #370b36;
+    transform: scale(1.02);
 }
 
 .informacoesContatoBox {
-  background-color: #370b36;
-  color: #ecf0f1;
-  width: 300px;
-  padding: 50px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    background-color: #370b36;
+    color: #ecf0f1;
+    width: 300px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tituloContato {
-  font-size: 26px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #F2F0EF;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f2f0ef;
 }
 
 .textoContato {
-  font-size: 16px;
-  text-align: left;
-  padding: 10px 0;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 0;
 }
 
 .iconsRedesSociais {
-  margin-top: 40px;
-  display: flex;
-  gap: 20px;
-  justify-content: flex-start;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
 }
 
 .iconRedeSocial {
-  color: #ecf0f1;
-  font-size: 1.6rem;
-  transition: color 0.3s ease;
-  width: 30px;
-  height: 30px;
+    color: #ecf0f1;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
 }
 
 .iconRedeSocial:hover {
-  color: #9b59b6;
+    color: #9b59b6;
 }
 
 /*Estilização Página Carrinho*/
 .containerCarrinho {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2rem;
-  gap: 2rem;
-  margin: 30px 90px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 30px 90px;
+    flex-wrap: wrap;
 }
 
 .secaoProdutoCarrinho {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .produtoCarrinho {
-  background-color: white;
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .imagemProdutoCarrinho {
-  width: auto;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 8px;
+    width: auto;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.detalhesProdutoCarrinho{
-  flex: 1;
+.detalhesProdutoCarrinho {
+    flex: 1;
 }
 
 .tituloProdutoCarrinho {
-  font-size: 21px;
+    font-size: 21px;
 }
 
 .descricaoProdutoCarrinho {
-  font-size: 14px;
-  padding-top: 12px;
+    font-size: 14px;
+    padding-top: 12px;
 }
 
 .precoProdutoCarrinho {
-  font-weight: bold;
-  color: #27ae60;
-  padding-top: 12px;
+    font-weight: bold;
+    color: #27ae60;
+    padding-top: 12px;
 }
 
 .quantidadeProdutosCarrinho {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: none;
-  padding: 0;
-  padding-right: 40px;
-  padding-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 0;
+    padding-right: 40px;
+    padding-top: 16px;
 }
 
 .tituloQuantidadeProdutos {
-  font-size: 18px;
-  text-align: center;
+    font-size: 18px;
+    text-align: center;
 }
 
 .quantidadeProdutoCarrinho {
-  display: inline-block;
-  min-width: 30px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .buttonProdutoCarrinho {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 4px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .buttonProdutoCarrinho:hover {
-  background-color: #c2bcbc;
+    background-color: #c2bcbc;
 }
 
 .containerResumoCompra {
-  flex: 1;
-  max-width: 300px;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  align-self: flex-start;
+    flex: 1;
+    max-width: 300px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
 }
 
-.tituloResumoCompra{
-  margin-bottom: 1rem;
+.tituloResumoCompra {
+    margin-bottom: 1rem;
 }
 
 .textoResumoCompra {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
 }
 
 .botaoFinalizarCompra {
-  width: 100%;
-  padding: 0.8rem;
-  background-color: #e67e22;
-  border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #e67e22;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
 .botaoFinalizarCompra:hover {
-  background-color: #d35400;
+    background-color: #d35400;
 }
 
 /*Estilização Página Pagamento*/
 .containerPagamento {
-  max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column; 
-      gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
-
-
 
 /*Estilização Rodapé*/
 .containerFooter {
-  background-color: #893d88;
-  color: #fff;
-  padding: 40px 60px;
+    background-color: #893d88;
+    color: #fff;
+    padding: 40px 60px;
 }
 
 .containerFooter section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .colunaFooter {
-  flex: 1;
-  min-width: 200px;
+    flex: 1;
+    min-width: 200px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .iconEcommerceFooter {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
 }
 
 .sloganEcommerceFooter {
-  margin: 15px 0;
-  font-size: 14px;
-  color: #eee;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #eee;
 }
 
 .iconRedesSociais {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .redesSociaisFooter ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .iconRedeSocialFooter {
-  height: 40px;
-  width: 40px;
+    height: 40px;
+    width: 40px;
 }
 
 .tituloNavegacaoFooter {
-  font-size: 24px;
-  color: #30072F;
-  margin-top: 20px;
-  padding-bottom: 20px;
+    font-size: 24px;
+    color: #30072f;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
-.linksNavegacaoFooter a{
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
+.linksNavegacaoFooter a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .informacoesContato {
-  display: block;
-  margin: 6px 0;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
+    display: block;
+    margin: 6px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .fonteContato {
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-  color: #ffffff;
-  padding-bottom: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    color: #ffffff;
+    padding-bottom: 12px;
 }
 
 .footerBottom {
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-  font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-  color: #ddd;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #ddd;
 }
 
 .footerBottom a {
-  color: #ddd;
-  text-decoration: none;
-  margin-left: 10px;
-  transition: transform .5s;
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: transform 0.5s;
 }
 
 .footerBottom a:hover {
-  color: #30072F;
+    color: #30072f;
 }
