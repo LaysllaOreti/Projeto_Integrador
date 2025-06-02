@@ -1,45 +1,248 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imagens\" type="icon">
-    <link rel="stylesheet" href="style.css" />
-  <title>NutriCore - Carrinho</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho | NutriCore</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
-
-  <header>
-    <h1>NutriCore</h1>
-  </header>
-
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="carrinho.html">Carrinho</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <main>
-    <aside>
-      <h3>Categorias</h3>
+  
+  <!--Carrosel de frases no início da página-->
+  <!--
+  <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+    <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
+    <ul class="mensagensAvisos">
+      <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
+      <li class="mensagemAviso">Segurança e Entrega Rápida</li>
+      <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
+    </ul>
+    <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
+  </section>-->
+  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
+  
+  <!--Primeira navbar (Principal)-->
+  <header class="headerSite">
+    <h1 class="logoSite">
+      <a href="home.html" aria-label="Página inicial - NutriCore">
+        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <h2 id="nomeEcommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
       <ul>
-       <li>Whey Protein</li>
-        <li>Creatina</li>
-        <li>Pré-Treino</li>
-        <li>Snacks</li>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobreNos.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
-    </aside>
-
-    <article>
+    </nav>
+    
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>
+        <li>
+          <a href="perfil.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <li>
+          <a href="carrinho.html" aria-label="Carrinho">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Carrinho de Compras"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!--Segunda Navbar (secundária)-->
+  <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+    <a href="#" class="navLogo">NutriCore</a>
+    <ul class="navLinks">
+      <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="containerCarrinho">
+      <section class="secaoProdutoCarrinho">
+        
+        <!--Produto 1-->
+        <article class="produtoCarrinho">
+          <img src="../imagens/imagens_whey/whey3.png" alt="Produto 1" class="imagemProdutoCarrinho"/>
+          <div class="detalhesProdutoCarrinho">
+            <h2 class="tituloProdutoCarrinho">
+              100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã
+            </h2>
+            <p class="descricaoProdutoCarrinho">
+              MAX Titanium Dr. Peanut 100% Whey (900 g) – Sabor Avelã: 20 g de proteína e 4 405 mg de BCAA por dose, sabor gourmet de avelã, ideal para recuperação muscular e ganhos 
+              de força.
+            </p>
+            <p class="precoProdutoCarrinho">
+              $ 145,60
+            </p>
+          </div>
+          
+          <fieldset class="quantidadeProdutosCarrinho"> <!--a tag fieldset serve para agrupar itens relacionados dentro de um formulário-->
+            <p class="tituloQuantidadeProdutos">Quantidade</p>
+            <button class="buttonProdutoCarrinho" type="button" aria-label="Diminuir quantidade">-</button>
+            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output> <!--o output é usado quando existe um interação ou resultado de um cáculo-->
+            <button class="buttonProdutoCarrinho" type="button" aria-label="Aumentar quantidade">+</button>
+          </fieldset>   
+        </article>
+        
+        <!--Produto 2-->
+        <article class="produtoCarrinho">
+          <img src="../imagens/imagens_whey/whey20.png" alt="Produto 1" class="imagemProdutoCarrinho"/>
+          <div class="detalhesProdutoCarrinho">
+            <h2 class="tituloProdutoCarrinho">
+              Suplemento Fresh Whey Dux 900g – Sabor Chocolate e Avelã
+            </h2>
+            <p class="descricaoProdutoCarrinho">
+              Shake proteico com 20 g de proteína natural por dose, 29 doses no pote, sabor chocolate com avelã de verdade—perfeito pra recuperação muscular e receitas fitness 
+              saborosas.
+            </p>
+            <p class="precoProdutoCarrinho">
+              R$ 148,00
+            </p>
+          </div>
+          
+          <fieldset class="quantidadeProdutosCarrinho"> <!--a tag fieldset serve para agrupar itens relacionados dentro de um formulário-->
+            <p class="tituloQuantidadeProdutos">Quantidade</p>
+            <button class="buttonProdutoCarrinho" type="button" aria-label="Diminuir quantidade">-</button>
+            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output> <!--o output é usado quando existe um interação ou resultado de um cáculo-->
+            <button class="buttonProdutoCarrinho" type="button" aria-label="Aumentar quantidade">+</button>
+          </fieldset>   
+        </article>
+        
+        <!--Produto 3-->
+        <article class="produtoCarrinho">
+          <img src="../imagens/imagens_snacks/snack_b3.png" alt="Produto 1" class="imagemProdutoCarrinho"/>
+          <div class="detalhesProdutoCarrinho">
+            <h2 class="tituloProdutoCarrinho">
+              Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades
+            </h2>
+            <p class="descricaoProdutoCarrinho">
+              Caixa da linha BOLD, contendo barras proteicas em embalagens coloridas (azul, branco, rosa, vermelho, laranja), cada uma com seu sabor (por exemplo, Cookies & Cream, 
+              Chocolate com Avelã, etc.). É um mix de sabores de barras de proteína prontas para consumo.
+            </p>
+              <p class="precoProdutoCarrinho">
+                R$ 139,70
+              </p>
+            </div>
+            
+            <fieldset class="quantidadeProdutosCarrinho"> <!--a tag fieldset serve para agrupar itens relacionados dentro de um formulário-->
+              <p class="tituloQuantidadeProdutos">Quantidade</p>
+              <button class="buttonProdutoCarrinho" type="button" aria-label="Diminuir quantidade">-</button>
+              <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">2</output> <!--o output é usado quando existe um interação ou resultado de um cáculo-->
+              <button class="buttonProdutoCarrinho" type="button" aria-label="Aumentar quantidade">+</button>
+            </fieldset>   
+          </article>
+          
+        </section>
+        
+        <aside class="containerResumoCompra">
+          <h2 class="tituloResumoCompra">Resumo</h2>
+          <p class="textoResumoCompra">Subtotal: <span>R$ 560,59</span></p>
+          <p class="textoResumoCompra">Frete: <span>Grátis</span></p>
+          <p class="textoResumoCompra">Total: <strong>R$ 560,69</strong></p>
+          <a href="pagamento.html">
+            <button class="botaoFinalizarCompra">Finalizar Compra</button>
+          </a>
+        </aside>
+      </section>
+    </main>
+    
+    
+    <!-------------------------------- Rodapé -------------------------------->
+    <footer class="containerFooter">
+      <section>
+        <!-- Marca + Ícones das Redes Sociais -->
+        <article class="colunaFooter">
+          <figure>
+            <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
+            <figcaption></figcaption>
+          </figure>
+          
+          <p class="logoEcommerce">
+            NutriCore
+          </p>
+          
+          <p class="sloganEcommerceFooter">
+            Lorem Ipsum is simply dummy text of the printing.
+          </p>
+          
+          <nav class="redesSociaisFooter" aria-label="Redes sociais">
+            <a href="#" aria-label="Facebook" class="iconRedesSociais">
+              
+              <figure>
+                <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <figcaption></figcaption>
+              </figure>
+              
+            </a>
+            
+            <a href="#" aria-label="Instagram" class="iconRedesSociais">
+              <figure>
+                <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <figcaption></figcaption>
+              </figure>
+            </a>
+            
+            <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
+              <figure>
+                <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <figcaption></figcaption>
+              </figure>
+            </a>
+          </nav>
+        </article>
+        
+        <!-- Links Úteis de Navegação -->
+        <article class="colunaFooter">
+          <h4 class="tituloNavegacaoFooter">
+            Links Úteis
+          </h4>
+          <nav aria-label="Links úteis" class="linksNavegacaoFooter">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="#">Sobre nós</a></li>
+            </ul>
+          </nav>
+        </article>
+        
+        <!-- Números de Contato -->
+        <article class="colunaFooter">
+          
+          <h4 class="tituloNavegacaoFooter">Contato</h4>
+          
+          <address class="informacoesContato">
+            <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
+            <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
+          </address>
+          
+        </article>
+      </section>
       
-    </article>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
-  </footer>
-
-</body>
-</html>
+      <!-- Rodapé inferior -->
+      <section class="footerBottom">
+        <p>© 2025 . Todos Direitos Reservados</p>
+        <p>
+          <a href="#">Sobre Nós</a> |
+          <a href="#">Política de Privacidade</a>
+        </p>
+      </section>
+    </footer>
+    

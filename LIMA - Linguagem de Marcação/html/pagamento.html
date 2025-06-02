@@ -1,62 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imagens\" type="icon">
-    <link rel="stylesheet" href="style.css" />
-  <title>NutriCore - Pagamento</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento | NutriCore</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
-
-  <header>
-    <h1>NutriCore</h1>
-  </header>
-
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="carrinho.html">Carrinho</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <main>
-    <aside>
-      <h3>Categorias</h3>
+  
+  <!--Carrosel de frases no início da página-->
+  <!--
+  <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+    <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
+    <ul class="mensagensAvisos">
+      <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
+      <li class="mensagemAviso">Segurança e Entrega Rápida</li>
+      <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
+    </ul>
+    <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
+  </section>-->
+  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
+  
+  <!--Primeira navbar (Principal)-->
+  <header class="headerSite">
+    <h1 class="logoSite">
+      <a href="home.html" aria-label="Página inicial - NutriCore">
+        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <h2 id="nomeEcommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
       <ul>
-        <li>Whey Protein</li>
-        <li>Creatina</li>
-        <li>Pré-Treino</li>
-        <li>Snacks</li>
+        <li><a href="home.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobreNos.html">Sobre Nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
-    </aside>
-
-    <article>
-      <div class="product">
-        <img src="imagens/imagens_snacks/barrinha1.png" alt="Produto 1">
-        <h4>Produto 1</h4>
-        <p>R$ 99,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="product">
-        <img src="imagens/imagens_whey/whey1.png" alt="Produto 2">
-        <h4>Produto 2</h4>
-        <p>R$ 149,90</p>
-        <button>Comprar</button>
-      </div>
-      <div class="product">
-        <img src="imagens/imagens_vitaminas/vitamina1.png" alt="Produto 3">
-        <h4>Produto 3</h4>
-        <p>R$ 79,90</p>
-        <button>Comprar</button>
-      </div>
-    </article>
+    </nav>
+    
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>
+        <li>
+          <a href="perfil.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <li>
+          <a href="carrinho.html" aria-label="Carrinho">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Carrinho de Compras"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!--Segunda Navbar (secundária)-->
+  <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+    <a href="#" class="navLogo">NutriCore</a>
+    <ul class="navLinks">
+      <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="containerPagamento">
+      <h1>Finalizar Compra</h1>
+      
+      <!-- Seção: Dados Pessoais -->
+      <section>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" required />
+          
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" required />
+          
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" name="endereco" required />
+        </fieldset>
+      </section>
+      
+      <!-- Seção: Método de Pagamento -->
+      <section>
+        <fieldset>
+          <legend>Método de Pagamento</legend>
+          
+          <label for="pagamento">Selecione o método</label>
+          <select id="pagamento" name="pagamento" required>
+            <option value="">Escolha...</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto Bancário</option>
+            <option value="pix">PIX</option>
+          </select>
+        </fieldset>
+      </section>
+      
+      <!-- Seção: Confirmação -->
+      <section>
+        <fieldset>
+          <legend>Confirmação</legend>
+          <p>Revise seus dados e clique no botão abaixo para finalizar sua compra.</p>
+          <button type="submit">Confirmar Compra</button>
+        </fieldset>
+      </section>
+    </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+  
+  
+  <!-------------------------------- Rodapé -------------------------------->
+  <footer class="containerFooter">
+    <section>
+      <!-- Marca + Ícones das Redes Sociais -->
+      <article class="colunaFooter">
+        <figure>
+          <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
+          <figcaption></figcaption>
+        </figure>
+        
+        <p class="logoEcommerce">
+          NutriCore
+        </p>
+        
+        <p class="sloganEcommerceFooter">
+          Lorem Ipsum is simply dummy text of the printing.
+        </p>
+        
+        <nav class="redesSociaisFooter" aria-label="Redes sociais">
+          <a href="#" aria-label="Facebook" class="iconRedesSociais">
+            
+            <figure>
+              <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+              <figcaption></figcaption>
+            </figure>
+            
+          </a>
+          
+          <a href="#" aria-label="Instagram" class="iconRedesSociais">
+            <figure>
+              <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          
+          <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
+            <figure>
+              <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+              <figcaption></figcaption>
+            </figure>
+          </a>
+        </nav>
+      </article>
+      
+      <!-- Links Úteis de Navegação -->
+      <article class="colunaFooter">
+        <h4 class="tituloNavegacaoFooter">
+          Links Úteis
+        </h4>
+        <nav aria-label="Links úteis" class="linksNavegacaoFooter">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+          </ul>
+        </nav>
+      </article>
+      
+      <!-- Números de Contato -->
+      <article class="colunaFooter">
+        
+        <h4 class="tituloNavegacaoFooter">Contato</h4>
+        
+        <address class="informacoesContato">
+          <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
+          <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
+        </address>
+        
+      </article>
+    </section>
+    
+    <!-- Rodapé inferior -->
+    <section class="footerBottom">
+      <p>© 2025 . Todos Direitos Reservados</p>
+      <p>
+        <a href="#">Sobre Nós</a> |
+        <a href="#">Política de Privacidade</a>
+      </p>
+    </section>
   </footer>
-
-</body>
-</html>
+  
