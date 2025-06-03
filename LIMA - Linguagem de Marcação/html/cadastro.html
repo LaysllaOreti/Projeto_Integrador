@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | NutriCore</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!--Carrosel de frases no início da página-->
+    <!--
+    <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+        <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
+        <ul class="mensagensAvisos">
+            <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
+            <li class="mensagemAviso">Segurança e Entrega Rápida</li>
+            <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
+        </ul>
+        <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
+    </section>-->
+    <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
+    
+    <!--Primeira navbar (Principal)-->
+    <header class="headerSite">
+        <h1 class="logoSite">
+            <a href="home.html" aria-label="Página inicial - NutriCore">
+                <img
+                src="../imagens/icones/icon-ecommerce.png"
+                alt="Imagem de logo do e-commerce"
+                class="logoImagem"
+                />
+                <h2 id="nomeEcommerce">NutriCore</h2>
+            </a>
+        </h1>
+        
+        <nav class="navTop" aria-label="Menu Principal">
+            <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="navUsuario" aria-label="Menu Usuário">
+            <ul>
+                <li>
+                    <a href="perfil.html" aria-label="Pefil">
+                        <figure class="navIcones">
+                            <img
+                            src="../imagens/icones/icon-perfil.png"
+                            class="icones"
+                            alt="Ícone de Perfil do Usuário"
+                            />
+                            <figcaption class="legendaIcones">
+                                Perfil
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="carrinho.html" aria-label="Carrinho">
+                        <figure class="navIcones">
+                            <img
+                            src="../imagens/icones/icon-carrinho.png"
+                            class="icones"
+                            alt="Ícone de Carrinho de Compras"
+                            />
+                            <figcaption class="legendaIcones">
+                                Carrinho
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Segunda Navbar (secundária)-->
+    <nav class="navBottom">
+        <!--Segunda navbar com acesso as categorias dos produtos-->
+        <ul class="navLinks">
+            <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
+            <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
+            <li>
+                <a href="produtos.html#categoriaPreTreino">Pré-Treino</a>
+            </li>
+            <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article class="containerForm">
+            <section class="informacoesContatoBox" aria-label="Informações para contato">
+                
+            </section>
+            
+            <section class="formBox">
+                <h2 class="tituloForm">
+                    Bem-vindo de volta!
+                </h2>
+                <p class="subtitleForm">
+                    Acesse com a sua compra e efetue o pagamento.
+                </p>
+                
+                <form action="#" method="POST" class="formContato">
+
+                    <label for="email" class="labelForm">Email</label>
+                    <input class="campoInputForm" type="email" id="email" name="email" required placeholder="Insira seu e-mail 'seu@email.com'" />
+                    
+
+                    <label for="nome" class="labelForm">Senha</label>
+                    <input class="campoInputForm" type="password" id="password" name="password" required placeholder="Insira sua senha" />
+
+                    <button type="submit" class="botaoForm">Acessar conta</button>
+
+                    <p class="textoFormLogin">
+                        Esqueceu sua senha?
+                        <button href="" class="buttonAcessarCadastro">
+                            Se Cadastre
+                        </button>
+                    </p>
+                </form>
+            </section>
+            
+        </article>
+    </main>
+    
+    <!-------------------------------- Rodapé -------------------------------->
+    <footer>
+        <article class="containerFooter">
+            <section>
+                <h2 class="tituloFooter">NutriCore</h2>
+                <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
+                <article class="iconsRedesSociais">
+                    
+                    <i>
+                        <figure>
+                            <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+                            <figcaption></figcaption>
+                        </figure>
+                    </i>
+                    
+                    <i>
+                        <figure>
+                            <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+                            <figcaption></figcaption>
+                        </figure>
+                    </i>
+                    
+                    <i>
+                        <figure>
+                            <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+                            <figcaption></figcaption>
+                        </figure>
+                    </i>
+                </article>
+            </section>
+            
+            <section class="linksNavegacaoFooter">
+                <h2 class="tituloFooter">Links Úteis</h2>
+                <ul class="navegacaoLinks">
+                    <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
+                    <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
+                    <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+                </ul>
+            </section>
+            
+            <section class="contatoFooter">
+                <h2 class="tituloFooter">Contato</h2>
+                <address class="linksContatoFooter">
+                    <p class="textoContato">(00) 00000-0000</p>
+                    <p class="textoContato">nutricore@empresa.com.br</p>
+                </address>
+            </section>
+        </article>
+        
+        <hr class="linhaSeparacaoFooter">
+        
+        <article class="copyrightFooter">
+            <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+            <nav>
+                <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
+                <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+            </nav>
+        </article>
+    </footer>
+</body>
+</html>

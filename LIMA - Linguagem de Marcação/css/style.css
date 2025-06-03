@@ -147,16 +147,8 @@ nav {
     transition: color 0.3s;
     display: inline-block;
     transition: color 0.5s;
-}
-
-.navLogo {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    gap: 6rem;
-    padding: 0 20px;
-    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navBottom a:hover,
@@ -621,9 +613,9 @@ nav {
 
 /*Estilização Cards Valores*/
 .valoresEmpresa {
-    padding: 2rem;
     text-align: center;
-    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 80px;
 }
 
 .secaoValoresEmpresa {
@@ -670,8 +662,14 @@ nav {
 
 .tituloCardValor {
     font-size: 19px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 8px;
     color: #30072f;
+}
+
+.iconCardValor {
+    width: auto;
+    height: 54px;
+    padding-bottom: 8px;
 }
 
 .textoValorCard {
@@ -856,8 +854,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2rem;
-    gap: 2rem;
+    padding: 40px;
+    gap: 40px;
     margin: 30px 90px;
     flex-wrap: wrap;
 }
@@ -994,8 +992,7 @@ nav {
 footer {
     background-color: #8e3a8e;
     color: white;
-    padding: 2rem;
-    font-family: sans-serif;
+    padding: 20px
 }
 
 .containerFooter {
@@ -1003,14 +1000,14 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 30px;
     margin-left: 90px;
     margin-right: 90px;
 }
 
 .tituloFooter{
-    font-size: 26px;
     padding: 15px 0;
+    font-size: 20px;
 }
 
 .sloganFooter {
@@ -1020,7 +1017,7 @@ footer {
 }
 
 .linksRedesSociais{
-    margin-right: 10px
+    gap: 20px;
 }
 
 .iconRedeSocial {
@@ -1072,13 +1069,20 @@ footer {
     margin: 2rem 0 1rem 0;
 }
 
+#iconsRedesSociais {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
 .copyrightFooter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 14px;
     gap: 2px;
-    text-align: center;
+    text-align: right;
 }
 
 .textoCopyrightFooter {
@@ -1097,4 +1101,20 @@ footer {
 
 .navegacaoFinalFooter:hover {
     color: #370b36;
+}
+
+/*Estilização Página Login*/
+.containerLogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 30px 90px;
+    flex-wrap: wrap;
+}
+
+.textoFormLogin {
+    font-size: 16px;
+    text-align: center;
 }
