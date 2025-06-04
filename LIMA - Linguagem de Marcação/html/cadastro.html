@@ -93,39 +93,39 @@
     </nav>
     
     <main>
-        <article class="containerForm">
-            <section class="informacoesContatoBox" aria-label="Informações para contato">
+        <article class="containerCadastro">
+            <form class="formCadastro">
+                <section>
+                    <h1 id="tituloFormCadastro">Seja Bem-vindo à NutriCore</h1>
+                    <p class="subtitleFormCadastro">Preencha os dados abaixo para se cadastrar</p>
+                </section>
                 
-            </section>
-            
-            <section class="formBox">
-                <h2 class="tituloForm">
-                    Bem-vindo de volta!
-                </h2>
-                <p class="subtitleForm">
-                    Acesse com a sua compra e efetue o pagamento.
+                <label class="labelFormCadastro" for="nome">Nome Completo</label>
+                <input class="inputFormCadastro" type="text" id="nome" name="nome" placeholder="Insira seu nome completo" required>
+                                
+                <label class="labelFormCadastro"  for="nascimento">Data de Nascimento</label>
+                <input class="inputFormCadastro" type="date" id="nascimento" name="nascimento" required>
+                
+                <label class="labelFormCadastro" for="cpf">CPF</label>
+                <input class="inputFormCadastro" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                
+                <hr class="linhaDivisao"/>
+
+                <label class="labelFormCadastro"  for="email">Email</label>
+                <input class="inputFormCadastro" type="email" id="email" name="email" placeholder="Insira seu e-mail 'seu@email.com" required>
+                
+                <label class="labelFormCadastro"  for="senha">Criar Senha</label>
+                <input class="inputFormCadastro" type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                
+                <label class="labelFormCadastro"  for="confirmar-senha">Confirmar Senha</label>
+                <input class="inputFormCadastro" type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a senha" required>
+                
+                <button type="submit" class="botaoCadastrar">Cadastrar</button>
+                
+                <p class="botaoFormCadastro">
+                    <a href="login.html" class="botaoFazerLogin">Já possui conta? Fazer login</a>
                 </p>
-                
-                <form action="#" method="POST" class="formContato">
-
-                    <label for="email" class="labelForm">Email</label>
-                    <input class="campoInputForm" type="email" id="email" name="email" required placeholder="Insira seu e-mail 'seu@email.com'" />
-                    
-
-                    <label for="nome" class="labelForm">Senha</label>
-                    <input class="campoInputForm" type="password" id="password" name="password" required placeholder="Insira sua senha" />
-
-                    <button type="submit" class="botaoForm">Acessar conta</button>
-
-                    <p class="textoFormLogin">
-                        Esqueceu sua senha?
-                        <button href="" class="buttonAcessarCadastro">
-                            Se Cadastre
-                        </button>
-                    </p>
-                </form>
-            </section>
-            
+            </form>
         </article>
     </main>
     

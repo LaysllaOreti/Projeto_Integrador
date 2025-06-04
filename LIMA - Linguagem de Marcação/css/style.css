@@ -1104,6 +1104,104 @@ footer {
 }
 
 /*Estilização Página Login*/
+.containerFormLogin {
+    display: flex;
+    border-radius: 6px;
+    /*border: 1px solid #752074;*/
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    background-color: #f2f0ef;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.formBoxLogin {
+    flex: 1;
+    padding: 40px 40px;
+}
+
+.tituloFormContato {
+    color: #30072f;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.subtitleFormLogin {
+    text-align: left;
+    font-size: 18px;
+    padding: 14px 0;
+    margin-bottom: 12px;
+}
+
+.formLogin {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.labelFormLogin {
+    font-weight: 500;
+}
+
+.campoInputLogin,
+.campoInputLogin {
+    padding: 12px 16px;
+    border: 1.2px solid #370b36;
+    background-color: #f2f0ef;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.campoInputLogin:focus {
+    outline: none;
+    border-color: #30072f;
+}
+
+.botaoAcessarLogin {
+    margin-top: 16px;
+    padding: 15px;
+    background-color: #752074;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.botaoAcessarLogin:hover {
+    background-color: #640c62;
+    transform: scale(1.02);
+}
+
+.informacoesContatoBoxLogin {
+    background-color: #752074;
+    color: #ecf0f1;
+    width: 300px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.tituloContato {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f2f0ef;
+}
+
+.textoContato {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 0;
+}
+
 .containerLogin {
     display: flex;
     justify-content: space-between;
@@ -1117,4 +1215,139 @@ footer {
 .textoFormLogin {
     font-size: 16px;
     text-align: center;
+}
+
+.botaoFormLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botaoEsqueceuSenha{
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color .5s;
+    margin-bottom: 12px;
+}
+
+.botaoEsqueceuSenha:hover {
+    color: #27052c;
+}
+
+.botaoIrCadastro{
+    display: block;
+    color: #752074;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+.botaoIrCadastro:hover {
+    color: #30072f;
+}
+
+/*Estilização Página Cadastro*/
+.containerCadastro {
+    display: flex;
+    border-radius: 6px;
+    /*border: 1px solid #752074;*/
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    background-color: #f2f0ef;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.formCadastro {
+    padding: 50px;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#tituloFormCadastro {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #33003d;
+    text-align: center;
+}
+
+.subtitleFormCadastro {
+    margin: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.labelFormCadastro {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #222;
+    text-align: right;
+}
+
+.inputFormCadastro {
+    padding: 12px;
+    margin-top: 0.3rem;
+    border: 1px solid #6c007d;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.linhaDivisao {
+    color: #30072f;
+    margin-top: 40px;
+    width: 85%;
+    height: 2.20px;
+}
+
+.botaoCadastrar {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #752074;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    width: 90%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.botaoCadastrar:hover {
+    background-color: #640c62;
+    transform: scale(1.02);
+}
+
+.botaoFormCadastro {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.botaoFazerLogin {
+    display: block;
+    color: #752074;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .5s;
+}
+
+.botaoFazerLogin:hover {
+    color: #30072f;
 }

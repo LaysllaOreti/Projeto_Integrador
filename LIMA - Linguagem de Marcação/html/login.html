@@ -93,36 +93,35 @@
     </nav>
     
     <main>
-        <article class="containerForm">
-            <section class="informacoesContatoBox" aria-label="Informações para contato">
+        <article class="containerFormLogin">
+            <section class="informacoesContatoBoxLogin" aria-label="Informações para contato">
                 
             </section>
             
-            <section class="formBox">
-                <h2 class="tituloForm">
+            <section class="formBoxLogin">
+                <h2 class="tituloFormContato">
                     Bem-vindo de volta!
                 </h2>
-                <p class="subtitleForm">
+                <p class="subtitleFormLogin">
                     Acesse com a sua compra e efetue o pagamento.
                 </p>
                 
-                <form action="#" method="POST" class="formContato">
-
-                    <label for="email" class="labelForm">Email</label>
-                    <input class="campoInputForm" type="email" id="email" name="email" required placeholder="Insira seu e-mail 'seu@email.com'" />
+                <form action="#" method="POST" class="formLogin">
                     
-
+                    <label for="email" class="labelFormLogin">Email</label>
+                    <input class="campoInputForm" type="email" id="email" name="email" required placeholder="Insira seu e-mail 'seu@email.com" />
+                    
+                    
                     <label for="nome" class="labelForm">Senha</label>
-                    <input class="campoInputForm" type="password" id="password" name="password" required placeholder="Insira sua senha" />
-
-                    <button type="submit" class="botaoForm">Acessar conta</button>
-
-                    <p class="textoFormLogin">
-                        Esqueceu sua senha?
-                        <button href="cadastro.html" class="buttonAcessarCadastro">
-                            Se Cadastre
-                        </button>
+                    <input class="campoInputLogin" type="password" id="password" name="password" required placeholder="Insira sua senha" />
+                    
+                    <button type="submit" class="botaoAcessarLogin">Acessar conta</button>
+                    
+                    <p class="botaoFormLogin">
+                        <a href="/recuperar-senha" class="botaoEsqueceuSenha">Esqueceu a senha?</a>
+                        <a href="cadastro.html" class="botaoIrCadastro">Não possui uma conta? Cadastre-se</a>
                     </p>
+                    
                 </form>
             </section>
             
