@@ -9,6 +9,7 @@ body {
     background-color: #f2f0ef;
     border: 0;
     padding: 0;
+    height: auto;
 }
 
 header,
@@ -141,7 +142,7 @@ nav {
 
 .navBottom li a {
     text-decoration: none;
-    color: #7c377a;
+    color: #63377c;
     font-size: 36;
     font-weight: 500;
     transition: color 0.3s;
@@ -479,7 +480,7 @@ nav {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin-top: 25px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .tituloCatalogoProdutos {
@@ -524,8 +525,6 @@ nav {
 
 .produtoCardCatalogo:hover {
     cursor: pointer;
-    transform: scale(1.02);
-    border: 1px solid #7c377a;
 }
 
 .imagemCatalogoCard {
@@ -1188,8 +1187,6 @@ footer {
     color: white;
     border: none;
     border-radius: 5px;
-    font-weight: 700;
-    font-size: 17px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1198,6 +1195,13 @@ footer {
 .botaoAcessarLogin:hover {
     background-color: #640c62;
     transform: scale(1.02);
+}
+
+.botaoAcessarLogin a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .informacoesContatoBoxLogin {
@@ -1267,7 +1271,7 @@ footer {
     color: #752074;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     transition: color .5s;
 }
@@ -1278,98 +1282,139 @@ footer {
 
 /*Estilização Página Cadastro*/
 .containerCadastro {
-    display: flex;
-    border-radius: 6px;
-    /*border: 1px solid #752074;*/
+    background-color: #f2f0ef;
     max-width: 900px;
     margin: 40px auto;
-    overflow: hidden;
-    background-color: #f2f0ef;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
 }
 
 .formCadastro {
-    padding: 50px;
-    background-color: white;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    gap: 2rem;
 }
 
 #tituloFormCadastro {
-    margin: 0;
-    font-size: 1.8rem;
-    color: #33003d;
     text-align: center;
+    font-size: 2rem;
+    color: #33003d;
+    margin-bottom: 0.5rem;
 }
 
 .subtitleFormCadastro {
-    margin: 10px;
-    color: #333;
     text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.linhaCampos {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.campoGrupo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .labelFormCadastro {
-    margin-top: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #222;
-    text-align: right;
 }
 
 .inputFormCadastro {
     padding: 12px;
-    margin-top: 0.3rem;
-    border: 1px solid #6c007d;
+    border: 1.5px solid #6c007d;
     border-radius: 6px;
-    font-size: 16px;
-    width: 90%;
+    font-size: 1rem;
+    transition: all 0.2s ease;
 }
 
-.linhaDivisao {
-    color: #30072f;
-    margin-top: 40px;
-    width: 85%;
-    height: 2.20px;
+.inputFormCadastro:focus {
+    outline: none;
+    border-color: #752074;
+    box-shadow: 0 0 5px rgba(117, 32, 116, 0.3);
 }
 
 .botaoCadastrar {
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #752074;
-    color: white;
+    background: linear-gradient(to right, #752074);
+    padding: 14px;
     border: none;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 17px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 90%;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .botaoCadastrar:hover {
-    background-color: #640c62;
     transform: scale(1.02);
+    background: linear-gradient(to right, #640c62);
+}
+
+.botaoCadastrar a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
 }
 
 .botaoFormCadastro {
     text-align: center;
-    margin-top: 1.5rem;
 }
 
 .botaoFazerLogin {
-    display: block;
     color: #752074;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
     font-weight: 600;
-    transition: color .5s;
 }
 
 .botaoFazerLogin:hover {
     color: #30072f;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    border: none; /*serve para tirar a borda padrão do fieldset*/
+    padding: 0;
+}
+
+.labelBoxCheck {
+    font-size: 0.95rem;
+    color: #222;
+    font-size: 16px;
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.inputBoxCheck {
+    width: 18px;
+    height: 18px;
+    accent-color: #752074;
+    cursor: pointer;
+}
+
+.containerPaginaCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to top, #801c7c, #d9d9d9);
+    padding: 1.5rem;
 }
