@@ -3,9 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    min-height: 100vh;
     background-color: #f2f0ef;
     border: 0;
     padding: 0;
@@ -870,7 +878,7 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
-    gap: 40px;
+    gap: 60px;
     margin: 30px 90px;
     flex-wrap: wrap;
 }
@@ -879,7 +887,7 @@ nav {
     flex: 2;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 20px;
 }
 
 .produtoCarrinho {
@@ -887,7 +895,7 @@ nav {
     padding: 20px;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -1281,7 +1289,7 @@ footer {
     color: #752074;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     transition: color .5s;
 }
@@ -1422,7 +1430,6 @@ fieldset {
     color: #222;
     font-size: 16px;
     display: flex;
-    align-items: left;
     gap: 10px;
     cursor: pointer;
     margin: 15px 0;
@@ -1434,6 +1441,10 @@ fieldset {
     accent-color: #752074;
     cursor: pointer;
     box-shadow: 0 1px 1px rgba(117, 32, 116, 0.3);
+}
+
+#textLembrarSenha {
+    padding-top: 5px;
 }
 
 .containerPaginaCadastro {
@@ -1524,7 +1535,7 @@ input, select {
     flex: 1;
 }
 
-button {
+/*button {
     margin-top: 2rem;
     padding: 0.8rem;
     background-color: #4b006e;
@@ -1538,6 +1549,7 @@ button {
 button:hover {
     background-color: #37004e;
 }
+*/
 
 .resumo-pedido {
     background-color: #4b006e;
@@ -1592,6 +1604,7 @@ button:hover {
     flex: 1;
 }
 
+/*
 .pagamento-cartao button {
     margin-top: 2rem;
     padding: 1rem;
@@ -1607,6 +1620,7 @@ button:hover {
 .pagamento-cartao button:hover {
     background-color: #370050;
 }
+    */
 
 .img-cartao {
     margin-top: 2rem;
