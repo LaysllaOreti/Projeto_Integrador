@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Endereço | NutriCore</title>
+  <title>Endereço de Entrega | NutriCore</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -33,19 +33,29 @@
     
     <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
       <ul>
-        <li><a href="home.html">Início</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="sobreNos.html">Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="home.html" class="textNavTop">Início</a></li>
+        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+        <li><a href="contato.html" class="textNavTop">Contato</a></li>
       </ul>
     </nav>
     
     <nav class="navUsuario" aria-label="Menu Usuário">
       <ul>
+        
+        <li>
+          <a href="carrinho.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        
         <li>
           <a href="perfil.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
@@ -59,22 +69,86 @@
             </figure>
           </a>
         </li>
+        
       </ul>
     </nav>
+    
   </header>
   
   <!--Segunda Navbar (secundária)-->
   <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
     <ul class="navLinks">
-      <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
-      <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
-      <li><a href="produtos.html#categoriaPreTreino">Pré-Treino</a></li>
-      <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
+      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
     </ul>
   </nav>
   
   <main>
-  
+    <section class="endereco-container">
+      <div class="formulario-endereco">
+        <h2>Endereço de Entrega</h2>
+        <p>Preencha os dados para receber seus produtos com segurança.</p>
+        
+        <form action="/finalizar-compra" method="post">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+          
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="00000-000" />
+          
+          <label for="rua">Rua</label>
+          <input type="text" id="rua" name="rua" />
+          
+          <div class="dupla">
+            <div>
+              <label for="numero">Número</label>
+              <input type="text" id="numero" name="numero" />
+            </div>
+            <div>
+              <label for="complemento">Complemento</label>
+              <input type="text" id="complemento" name="complemento">
+            </div>
+          </div>
+          
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" />
+          
+          <div class="dupla">
+            <div>
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" />
+            </div>
+            <div>
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" />
+                <option value="">Selecione</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+              </select>
+            </div>
+          </div>
+          
+          <button type="submit">
+            <a href="pagamento.html">
+              Efetuar pagamento
+            </a>
+          </button>
+        </form>
+      </div>
+      
+      <aside class="resumo-pedido">
+        <img src="../imagens/imagens_creatina/creatina11.png" alt="Creatina 300g" class="produto-img" />
+        
+        <h3>Resumo</h3>
+        <p><strong>Produto:</strong> Creatina 300g</p>
+        <p><strong>Frete:</strong> Grátis</p>
+        <p><strong>Total:</strong> R$ 119,90</p>
+      </aside>
+    </section>
+    
   </main>
   
   
@@ -85,28 +159,28 @@
         <h2 class="tituloFooter">NutriCore</h2>
         <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
         <article class="iconsRedesSociais">
-            
-            <i>
-              <figure>
-                <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
-                <figcaption></figcaption>
-              </figure>
-            </i>
-            
-            <i>
-              <figure>
-                <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
-                <figcaption></figcaption>
-              </figure>
-            </i>
-            
-            <i>
-              <figure>
-                <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
-                <figcaption></figcaption>
-              </figure>
-            </i>
-          </article>
+          
+          <i>
+            <figure>
+              <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+              <figcaption></figcaption>
+            </figure>
+          </i>
+          
+          <i>
+            <figure>
+              <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+              <figcaption></figcaption>
+            </figure>
+          </i>
+          
+          <i>
+            <figure>
+              <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+              <figcaption></figcaption>
+            </figure>
+          </i>
+        </article>
       </section>
       
       <section class="linksNavegacaoFooter">

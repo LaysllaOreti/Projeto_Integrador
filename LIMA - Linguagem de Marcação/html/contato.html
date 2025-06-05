@@ -33,43 +33,55 @@
     
     <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
       <ul>
-        <li><a href="home.html">Início</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="sobreNos.html">Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="home.html" class="textNavTop">Início</a></li>
+        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+        <li><a href="contato.html" class="textNavTop">Contato</a></li>
       </ul>
     </nav>
     
     <nav class="navUsuario" aria-label="Menu Usuário">
       <ul>
+        
+        <li>
+          <a href="carrinho.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        
         <li>
           <a href="perfil.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-perfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
         </li>
         
         <li>
-          <a href="carrinho.html" aria-label="Carrinho">
+          <a href="carrinho.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Carrinho de Compras"/>
+              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Carrinho</figcaption>
             </figure>
           </a>
         </li>
+        
       </ul>
     </nav>
+    
   </header>
   
   <!--Segunda Navbar (secundária)-->
   <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
     <ul class="navLinks">
-      <li><a href="produtos.html#categoriaWhey">Whey-Protein</a></li>
-      <li><a href="produtos.html#categoriaCreatina">Creatina</a></li>
-      <li><a href="produtos.html#categoriaPreTreino">Pré-Treino</a></li>
-      <li><a href="produtos.html#categoriaSnacks">Snacks</a></li>
+      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
     </ul>
   </nav>
   
@@ -85,15 +97,19 @@
         
         <form action="#" method="POST" class="formContato">
           <label for="nome" class="labelForm">Nome</label>
-          <input class="campoInputForm" type="text" id="nome" name="nome" required placeholder="Insira seu nome completo" />
+          <input class="campoInputForm" type="text" id="nome" name="nome" placeholder="Insira seu nome completo" />
           
           <label for="email" class="labelForm">Email</label>
-          <input class="campoInputForm" type="email" id="email" name="email" required placeholder="Insira seu e-mail 'seu@email.com'" />
+          <input class="campoInputForm" type="email" id="email" name="email" placeholder="Insira seu e-mail 'seu@email.com'" />
           
           <label for="mensagem" class="labelForm">Mensagem</label>
-          <input class="campoInputForm" id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui..."></input>
+          <input class="campoInputForm" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></input>
           
-          <button type="submit" class="botaoForm">Enviar</button>
+          <button type="submit" class="botaoForm">
+            <a href="home.html">
+              Enviar
+            </a>
+          </button>
         </form>
       </section>
       
@@ -134,84 +150,63 @@
     
     
     <!-------------------------------- Rodapé -------------------------------->
-    <footer class="containerFooter">
-      <section>
-        <!-- Marca + Ícones das Redes Sociais -->
-        <article class="colunaFooter">
-          <figure>
-            <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem Ícone do E-commerce" class="iconEcommerceFooter" />
-            <figcaption></figcaption>
-          </figure>
-          
-          <p class="logoEcommerce">
-            NutriCore
-          </p>
-          
-          <p class="sloganEcommerceFooter">
-            Lorem Ipsum is simply dummy text of the printing.
-          </p>
-          
-          <nav class="redesSociaisFooter" aria-label="Redes sociais">
-            <a href="#" aria-label="Facebook" class="iconRedesSociais">
-              
-              <figure>
-                <img src="../imagens/icones/facebook.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
-                <figcaption></figcaption>
-              </figure>
-              
-            </a>
+    <footer>
+      <article class="containerFooter">
+        <section>
+          <h2 class="tituloFooter">NutriCore</h2>
+          <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
+          <article class="iconsRedesSociais">
             
-            <a href="#" aria-label="Instagram" class="iconRedesSociais">
+            <i>
               <figure>
-                <img src="../imagens/icones/instagram.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
                 <figcaption></figcaption>
               </figure>
-            </a>
+            </i>
             
-            <a href="#" aria-label="WhatsApp" class="iconRedesSociais">
+            <i>
               <figure>
-                <img src="../imagens/icones/whatsapp.png" alt="Ícone do Aplicativo Facebook" class="iconRedeSocialFooter"/>
+                <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
                 <figcaption></figcaption>
               </figure>
-            </a>
-          </nav>
-        </article>
+            </i>
+            
+            <i>
+              <figure>
+                <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+                <figcaption></figcaption>
+              </figure>
+            </i>
+          </article>
+        </section>
         
-        <!-- Links Úteis de Navegação -->
-        <article class="colunaFooter">
-          <h4 class="tituloNavegacaoFooter">
-            Links Úteis
-          </h4>
-          <nav aria-label="Links úteis" class="linksNavegacaoFooter">
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="#">Sobre nós</a></li>
-            </ul>
-          </nav>
-        </article>
+        <section class="linksNavegacaoFooter">
+          <h2 class="tituloFooter">Links Úteis</h2>
+          <ul class="navegacaoLinks">
+            <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
+            <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
+            <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+          </ul>
+        </section>
         
-        <!-- Números de Contato -->
-        <article class="colunaFooter">
-          
-          <h4 class="tituloNavegacaoFooter">Contato</h4>
-          
-          <address class="informacoesContato">
-            <a href="tel:0000000000" class="fonteContato">(00) 00000-0000</a>
-            <a href="mailto:nutricore@empresa.com" class="fonteContato">nutricore@empresa.com</a>
+        <section class="contatoFooter">
+          <h2 class="tituloFooter">Contato</h2>
+          <address class="linksContatoFooter">
+            <p class="textoContato">(00) 00000-0000</p>
+            <p class="textoContato">nutricore@empresa.com.br</p>
           </address>
-          
-        </article>
-      </section>
+        </section>
+      </article>
       
-      <!-- Rodapé inferior -->
-      <section class="footerBottom">
-        <p>© 2025 . Todos Direitos Reservados</p>
-        <p>
-          <a href="#">Sobre Nós</a> |
-          <a href="#">Política de Privacidade</a>
-        </p>
-      </section>
+      <hr class="linhaSeparacaoFooter">
+      
+      <article class="copyrightFooter">
+        <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+        <nav>
+          <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
+          <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+        </nav>
+      </article>
     </footer>
   </body>
   </html>
