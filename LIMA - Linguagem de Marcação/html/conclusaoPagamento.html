@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conclusão da Compra | NutriCore</title>
+  <title>Conclusão Pagamento | NutriCore</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -42,29 +42,28 @@
     
     <nav class="navUsuario" aria-label="Menu Usuário">
       <ul>
-        
         <li>
-          <a href="carrinho.html" aria-label="Pefil">
+          <a href="perfil.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <img src="../imagens/icones//iconUsuarioLogado.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <li>
+          <a href="pesquisar.html" aria-label="Pesquisar">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
               <figcaption class="legendaIcones">Pesquisar</figcaption>
             </figure>
           </a>
         </li>
         
         <li>
-          <a href="perfil.html" aria-label="Pefil">
-            <figure class="navIcones">
-              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
-              <figcaption class="legendaIcones">Perfil</figcaption>
-            </figure>
-          </a>
-        </li>
-        
-        <li>
           <a href="carrinho.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Carrinho</figcaption>
             </figure>
           </a>
@@ -72,7 +71,6 @@
         
       </ul>
     </nav>
-    
   </header>
   
   <!--Segunda Navbar (secundária)-->
@@ -87,80 +85,83 @@
   
   <main>
     <article class="containerConclusaoPagamento">
-      <section class="icon" aria-hidden="true">✅</div>
-        <h1>Compra Confirmada!</h1>
-        <p class="frase">Agredecemos por comprar na NutriCore!</p>
-        <article class="rastreio" aria-label="Código de rastreio">
-          <p>
-            Acompanhe seu pedido com o Código de Rastreio
-          </p>
-          AB123456789BR
-        </article>
-        <a href="home.html" class="botaoVoltarHome">
-          Voltar para a Home
-        </a>
-      </article>
-    </main>
-    
-    <!-------------------------------- Rodapé -------------------------------->
-    <footer>
-      <article class="containerFooter">
-        <section>
-          <h2 class="tituloFooter">NutriCore</h2>
-          <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
-          <article class="iconsRedesSociais">
-            
-            <i>
-              <figure>
-                <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
-                <figcaption></figcaption>
-              </figure>
-            </i>
-            
-            <i>
-              <figure>
-                <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
-                <figcaption></figcaption>
-              </figure>
-            </i>
-            
-            <i>
-              <figure>
-                <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
-                <figcaption></figcaption>
-              </figure>
-            </i>
-          </article>
-        </section>
-        
-        <section class="linksNavegacaoFooter">
-          <h2 class="tituloFooter">Links Úteis</h2>
-          <ul class="navegacaoLinks">
-            <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
-            <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
-            <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
-          </ul>
-        </section>
-        
-        <section class="contatoFooter">
-          <h2 class="tituloFooter">Contato</h2>
-          <address class="linksContatoFooter">
-            <p class="textoContato">(00) 00000-0000</p>
-            <p class="textoContato">nutricore@empresa.com.br</p>
-          </address>
-        </section>
-      </article>
+      <figure class="boxImagemConclusao">
+        <img src="../imagens/icones/iconVerificacaoCompra.png" alt="Ícone de Verificação da Compra" />
+      </figure>
       
-      <hr class="linhaSeparacaoFooter">
-      
-      <article class="copyrightFooter">
-        <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
-        <nav>
-          <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
-          <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
-        </nav>
-      </article>
-    </footer>
-  </body>
-  </html>
+      <h2 class="tituloConfirmacaoCompra">Compra Confirmada!</h2>
+      <p class="textoConfirmacaoCompra">Acompanhe seu pedido por meio do Código de Rastreio:</p>
+      <p class="codigoRastreio">
+        AB123456789BR
+      </p>
+
+      <a href="perfil.html" class="botaoIrPerfil" role="button">
+        Acessar Perfil
+      </a>
+      <a href="home.html" class="botaoVoltarHome">
+        Voltar para a Home
+      </a>
+    </article>
+  </main>
   
+  <!-------------------------------- Rodapé -------------------------------->
+  <footer>
+    <article class="containerFooter">
+      <section>
+        <h2 class="tituloFooter">NutriCore</h2>
+        <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
+        <article class="iconsRedesSociais">
+          
+          <i>
+            <figure>
+              <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+              <figcaption></figcaption>
+            </figure>
+          </i>
+          
+          <i>
+            <figure>
+              <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+              <figcaption></figcaption>
+            </figure>
+          </i>
+          
+          <i>
+            <figure>
+              <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+              <figcaption></figcaption>
+            </figure>
+          </i>
+        </article>
+      </section>
+      
+      <section class="linksNavegacaoFooter">
+        <h2 class="tituloFooter">Links Úteis</h2>
+        <ul class="navegacaoLinks">
+          <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
+          <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
+          <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+        </ul>
+      </section>
+      
+      <section class="contatoFooter">
+        <h2 class="tituloFooter">Contato</h2>
+        <address class="linksContatoFooter">
+          <p class="textoContato">(00) 00000-0000</p>
+          <p class="textoContato">nutricore@empresa.com.br</p>
+        </address>
+      </section>
+    </article>
+    
+    <hr class="linhaSeparacaoFooter">
+    
+    <article class="copyrightFooter">
+      <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+      <nav>
+        <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
+        <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+      </nav>
+    </article>
+  </footer>
+</body>
+</html>
