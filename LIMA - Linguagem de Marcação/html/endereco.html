@@ -46,7 +46,7 @@
         <li>
           <a href="carrinho.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
               <figcaption class="legendaIcones">Pesquisar</figcaption>
             </figure>
           </a>
@@ -55,7 +55,7 @@
         <li>
           <a href="perfil.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones//iconUsuarioLogado.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
@@ -64,7 +64,7 @@
         <li>
           <a href="carrinho.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Carrinho</figcaption>
             </figure>
           </a>
@@ -95,30 +95,30 @@
         <form action="/finalizar-compra" method="post">
           
           <label for="cep" class="labelContainerEndereco">CEP</label>
-          <input type="text" id="cep" name="cep" placeholder="00000-000" class="inputContainerEndereco" autofocus/>
+          <input type="text" id="cep" name="cep" placeholder="Ex: 00000-000" class="inputContainerEndereco" autofocus/>
           
           <label for="rua" class="labelContainerEndereco">Rua</label>
-          <input type="text" id="rua" name="rua" placeholder="Rua Cícero Canuto" class="inputContainerEndereco"/>
+          <input type="text" id="rua" name="rua" placeholder="Ex: Rua Cícero Canuto" class="inputContainerEndereco"/>
           
           <article class="dupla">
             <article>
               <label for="numero" class="labelContainerEndereco">Número</label>
-              <input type="text" id="numero" name="numero" placeholder="900" class="inputContainerEndereco"/>
+              <input type="text" id="numero" name="numero" placeholder="Ex: 900" class="inputContainerEndereco"/>
             </article>
             <article>
               <label for="complemento" class="labelContainerEndereco">Complemento</label>
-              <input type="text" id="complemento" name="complemento" placeholder="Apto. 34 Bloco C" class="inputContainerEndereco"/>
+              <input type="text" id="complemento" name="complemento" placeholder="Ex: Apto. 34 Bloco C" class="inputContainerEndereco"/>
             </article>
           </article>
           
           <label for="bairro" class="labelContainerEndereco">Bairro</label>
-          <input type="text" id="bairro" name="bairro" placeholder="Jardim Esmeralda" class="inputContainerEndereco"/>
+          <input type="text" id="bairro" name="bairro" placeholder="Ex: Jardim Esmeralda" class="inputContainerEndereco"/>
           
           <article class="duplaLabel">
             <article>
               
               <label for="cidade" class="labelContainerEndereco">Cidade</label>
-              <input type="text" id="cidade" name="cidade" placeholder="Hortolândia" class="inputContainerEndereco"/>
+              <input type="text" id="cidade" name="cidade" placeholder=" Ex: Hortolândia" class="inputContainerEndereco"/>
               
             </article>
             
@@ -127,9 +127,39 @@
               <label for="estado" class="labelContainerEndereco">Estado</label>
               <select id="estado" name="estado" class="selectContainerEndereco">
                 <option value="">Selecione</option>
-                <option value="SP">SP</option>
-                <option value="RJ">RJ</option>
-                <option value="MG">MG</option>
+
+                <option value="AC" class="opcaoSelecionarEstado">AC - Acre</option>
+                <option value="AL" class="opcaoSelecionarEstado">AL - Alagoas</option>
+                <option value="AP" class="opcaoSelecionarEstado">AP - Amapá</option>
+                <option value="AM" class="opcaoSelecionarEstado">AM - Amazonas</option>
+                <option value="BA" class="opcaoSelecionarEstado">BA - Bahia</option>
+
+                <option value="CE" class="opcaoSelecionarEstado">CE - Ceará</option>
+                <option value="DF" class="opcaoSelecionarEstado">DF - Distrito Federal</option>
+                <option value="ES" class="opcaoSelecionarEstado">ES - Espírito Santo</option>
+                <option value="GO" class="opcaoSelecionarEstado">GO - Goiás</option>
+                <option value="MA" class="opcaoSelecionarEstado">MA - Maranhão</option>
+
+                <option value="MS" class="opcaoSelecionarEstado">MS - Mato Grosso do Sul</option>
+                <option value="MT" class="opcaoSelecionarEstado">MT - Mato Grosso</option>
+                <option value="MG" class="opcaoSelecionarEstado">MG - Minas Gerais</option>
+                <option value="PA" class="opcaoSelecionarEstado">PA - Pará</option>
+                <option value="PB" class="opcaoSelecionarEstado">PB - Paraíba</option>
+
+                <option value="PR" class="opcaoSelecionarEstado">PR - Paraná</option>
+                <option value="PE" class="opcaoSelecionarEstado">PE - Pernambuco</option>
+                <option value="PI" class="opcaoSelecionarEstado">PI - Piauí</option>
+                <option value="RJ" class="opcaoSelecionarEstado">RJ - Rio de Janeiro</option>
+                <option value="RN" class="opcaoSelecionarEstado">RN - Rio Grande do Norte</option>
+
+                <option value="RS" class="opcaoSelecionarEstado">RS - Rio Grande do Sul</option>
+                <option value="RO" class="opcaoSelecionarEstado">RO - Rondânia</option>
+                <option value="RR" class="opcaoSelecionarEstado">RR - Roraima</option>
+                <option value="SC" class="opcaoSelecionarEstado">SC - Santa Catarina</option>
+                <option value="SP" class="opcaoSelecionarEstado">SP - São Paulo</option>
+
+                <option value="SE" class="opcaoSelecionarEstado">SE - Sergipe</option>
+                <option value="TO" class="opcaoSelecionarEstado">TO - Tocantins</option>
               </select>
               
             </article>
