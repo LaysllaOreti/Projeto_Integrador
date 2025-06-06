@@ -46,7 +46,7 @@
         <li>
           <a href="carrinho.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
               <figcaption class="legendaIcones">Pesquisar</figcaption>
             </figure>
           </a>
@@ -55,7 +55,7 @@
         <li>
           <a href="perfil.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones//iconUsuarioLogado.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
@@ -64,7 +64,7 @@
         <li>
           <a href="carrinho.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Carrinho</figcaption>
             </figure>
           </a>
@@ -85,81 +85,97 @@
     </ul>
   </nav>
   
-  <main class="containerPagePagamento">
-    <section class="ladoEsquerdo">
-      <article class="dadosCliente">
-        <h2 class="tituloDadosPagamento">Seus Dados</h2>
-        <p class="textoDadosPagamento"><strong>Nome:</strong>Laís de Paiva</p>
-        <p  class="textoDadosPagamento"><strong>Email:</strong> laisP@gmail.com</p>
-      </article>
-      
-      <article class="enderecoEntrega">
-        <h2 class="tituloDadosPagamento">Endereço de Entrega</h2>
-        <p class="textoDadosPagamento">Rua Clóvis, 180</p>
-        <p class="textoDadosPagamento">Apto. 109 Bloco E</p>
-        <p class="textoDadosPagamento">12345-678</p>
-        <p class="textoDadosPagamento">Hortolândia (Jardim Esmeralda) - SP</p>
-      </article>
-      
-      <article class="resumoPedidoPagamento">
-        <h2 class="tituloDadosPagamento">Resumo do Pedido</h2>
+  <main>
+    <article class="containerPagePagamento">
+      <section class="ladoEsquerdo">
+
+        <article class="dadosCliente">
+          <h2 class="tituloComecoPagamento">Seus Dados</h2>
+          <p class="textoDadosPagamento"><strong>Nome:</strong>Laís de Paiva</p>
+          <p  class="textoDadosPagamento"><strong>Email:</strong> laisPaiva@gmail.com</p>
+        </article>
+
+        <hr class="linhaDivisaoPagamento"/>
         
-        <p class="textoDadosPagamento">IsoProtein Blend Complex Pretorian – 2kg, Sabor Chocolate - R$ 169,90</p>
-        <p class="textoDadosPagamento">Creatina Neutro 100% Pura - Sanavita 300g -  R$ 92,00</p>
+        <article class="enderecoEntrega">
+          <h2 class="tituloDadosPagamento">Endereço de Entrega</h2>
+          <p class="textoDadosPagamento">Rua Clóvis, 180</p>
+          <p class="textoDadosPagamento">Apto. 109 Bloco E</p>
+          <p class="textoDadosPagamento">12345-678</p>
+          <p class="textoDadosPagamento">Hortolândia (Jardim Esmeralda) - SP</p>
+        </article>
         
-        <p><strong class="totalPagamentoPage">Total: R$ 261,90</strong></p>
-      </article>
+        <hr class="linhaDivisaoPagamento"/>
+        
+        <article class="resumoPedidoPagamento">
+          <h2 class="tituloDadosPagamento">Resumo do Pedido</h2>
+          
+          <p class="textoDadosPagamento">IsoProtein Blend Complex Pretorian 2kg, Sabor Chocolate (1 Unidade)</p>
+          <strong class="precoProdutoFinal">R$ 169,90</strong>
+
+          <p class="textoDadosPagamento">Creatina Neutro 100% Pura Sanavita 300g (1 Unidade)</p>
+          <strong class="precoProdutoFinal">R$ 92,00</strong>
+          
+          <p class="subTotalPagamentoPage"><strong>Subtotal: </strong>R$ 261,90</p>
+          <p class="fretePagamentoPage"><strong>Frete: </strong>R$ 00,00</p>
+          <p class="totalPagamentoPage"><strong>Total da Compra: </strong>R$ 261,90</p>
+        </article>
+
+        <hr class="linhaDivisaoPagamento"/>
+        
+        <article class="formaPagamento">
+          <h2 class="tituloDadosPagamento">Formas de Pagamento</h2>
+          <ul class="listaPagamento">
+            <li class="opcaoPagamento">
+              <input type="radio" name="pagamento" id="cartao" class="inputMetodoPagamento"/>
+              <label for="cartao" class="labelMetodoPagamento">Cartão (Débito ou Crédito)</label>
+            </li>
+
+            <li class="opcaoPagamento">
+              <input type="radio" name="pagamento" id="pix" class="inputMetodoPagamento"/>
+              <label for="pix" class="labelMetodoPagamento">Pix</label>
+            </li>
+
+            <li class="opcaoPagamento">
+              <input type="radio" name="pagamento" id="boleto" class="inputMetodoPagamento"/>
+              <label for="boleto" class="labelMetodoPagamento">Boleto Bancário</label>
+            </li>
+          </ul>
+        </article>
+        
+      </section>
       
-      <article class="forma-pagamento">
-        <h2 class="tituloDadosPagamento">Formas de Pagamento</h2>
-        <ul class="pagamento-lista">
-          <li>
-            <input type="radio" name="pagamento" id="cartao" />
-            <label for="cartao">Cartão de Crédito</label>
-          </li>
-          <li>
-            <input type="radio" name="pagamento" id="pix" />
-            <label for="pix">Pix</label>
-          </li>
-          <li>
-            <input type="radio" name="pagamento" id="boleto" />
-            <label for="boleto">Boleto Bancário</label>
-          </li>
-        </ul>
-      </article>
-      
-    </section>
-    
-    <section class="lado-direito">
-      <h2>Pagamento com Cartão</h2>
-      <form class="form-cartao">
-        <label for="numero-cartao">Número do Cartão</label>
-        <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" required>
-        
-        <label for="nome-cartao">Nome no Cartão</label>
-        <input type="text" id="nome-cartao" placeholder="Nome impresso no cartão" required>
-        
-        <div class="grupo">
-          <div>
-            <label for="validade">Validade</label>
-            <input type="text" id="validade" placeholder="MM/AA" required>
+      <section class="ladoDireito">
+        <h2 class="tituloDadosPagamento">Pagamento com Cartão</h2>
+        <form class="formCartao">
+          <label for="numero-cartao" class="labelFormCartao">Número do Cartão</label>
+          <input type="text" id="numero-cartao" placeholder="Ex: 0000 0000 0000 0000" class="inputFormCartao" autofocus/>
+          
+          <label for="nome-cartao" class="labelFormCartao">Nome no Cartão</label>
+          <input type="text" id="nome-cartao" placeholder="Ex: Eduardo T Oreti" class="inputFormCartao"/>
+          
+          <div class="duplaLabelCartao">
+            <div>
+              <label for="validade" class="labelFormCartao">Validade</label>
+              <input type="text" id="validade" placeholder="Ex: MM/AA" class="inputFormCartao"/>
+            </div>
+            <div>
+              <label for="cvv" class="labelFormCartao">CVV</label>
+              <input type="text" id="cvv" placeholder="Ex: 123" class="inputFormCartao"/>
+            </div>
           </div>
-          <div>
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" placeholder="123" required>
-          </div>
-        </div>
+          
+          <figure class="boxImagemCartao">
+            <img src="../imagens/cartaoExemplo.png" alt="Imagem de um cartão " class="imagemCartao">
+          </figure>
+          
+          <a href="conclusaoPagamento.html" class="botaoFinalizarCompra">
+            Finalizar Compra
+          </a>
+        </form>
         
-        <figure>
-          <img src="https://i.imgur.com/IHEKLgm.png" alt="Cartão de crédito" class="imagem-cartao">
-        </figure>
-        
-        <a href="conclusaoPagamento.html">
-          Finalizar Compra
-        </a>
-      </form>
-      
-    </section>
+      </section>
+    </article>
   </main>
 </body>
 </html>
