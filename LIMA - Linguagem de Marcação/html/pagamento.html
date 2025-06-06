@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | NutriCore</title>
+  <title>Pagamento | NutriCore</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -85,116 +85,146 @@
     </ul>
   </nav>
   
-  <main>
-    <main class="checkout-container">
+  <main class="containerPagePagamento">
+    <section class="ladoEsquerdo">
+      <article class="dadosCliente">
+        <h2 class="tituloDadosPagamento">Seus Dados</h2>
+        <p class="textoDadosPagamento"><strong>Nome:</strong>Laís de Paiva</p>
+        <p  class="textoDadosPagamento"><strong>Email:</strong> laisP@gmail.com</p>
+      </article>
       
-      <!-- Seção da revisão dos dados -->
-      <section class="dados-usuario">
-        <h2>Seus Dados</h2>
-        <p><strong>Nome:</strong> Lay Silva</p>
-        <p><strong>Email:</strong> lay@email.com</p>
-        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</p>
-        <p><strong>CEP:</strong> 12345-678</p>
-        <p><strong>Cidade:</strong> São Paulo - SP</p>
-      </section>
+      <article class="enderecoEntrega">
+        <h2 class="tituloDadosPagamento">Endereço de Entrega</h2>
+        <p class="textoDadosPagamento">Rua Clóvis, 180</p>
+        <p class="textoDadosPagamento">Apto. 109 Bloco E</p>
+        <p class="textoDadosPagamento">12345-678</p>
+        <p class="textoDadosPagamento">Hortolândia (Jardim Esmeralda) - SP</p>
+      </article>
       
-      <!-- Seção do pagamento -->
-      <aside class="pagamento-cartao">
-        <h2>Pagamento com Cartão</h2>
+      <article class="resumoPedidoPagamento">
+        <h2 class="tituloDadosPagamento">Resumo do Pedido</h2>
         
-        <form>
-          <label for="numero-cartao">Número do cartão</label>
-          <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" />
-          
-          <label for="nome-cartao">Nome no cartão</label>
-          <input type="text" id="nome-cartao" placeholder="Nome impresso no cartão" />
-          
-          <div class="form-row">
-            <div>
-              <label for="validade">Validade</label>
-              <input type="text" id="validade" placeholder="MM/AA" />
-            </div>
-            <div>
-              <label for="cvv">CVV</label>
-              <input type="text" id="cvv" placeholder="123" />
-            </div>
-          </div>
-          
-          <figure>
-            <img src="../imagens/cartaoExemplo.png" alt="Exemplo de cartão de crédito" class="img-cartao">
-          </figure>
-          
-          <button type="submit">
-            <a href="conclusaoPagamento.html">
-              Finalizar Compra
-            </a>
-          </button>
-        </form>
+        <p class="textoDadosPagamento">IsoProtein Blend Complex Pretorian – 2kg, Sabor Chocolate - R$ 169,90</p>
+        <p class="textoDadosPagamento">Creatina Neutro 100% Pura - Sanavita 300g -  R$ 92,00</p>
         
-      </aside>
+        <p><strong class="totalPagamentoPage">Total: R$ 261,90</strong></p>
+      </article>
       
-    </main>
-  </main>
-  
-  
-  <!-------------------------------- Rodapé -------------------------------->
-  <footer>
-    <article class="containerFooter">
-      <section>
-        <h2 class="tituloFooter">NutriCore</h2>
-        <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
-        <article class="iconsRedesSociais">
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
-              <figcaption></figcaption>
-            </figure>
-          </i>
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
-              <figcaption></figcaption>
-            </figure>
-          </i>
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
-              <figcaption></figcaption>
-            </figure>
-          </i>
-        </article>
-      </section>
-      
-      <section class="linksNavegacaoFooter">
-        <h2 class="tituloFooter">Links Úteis</h2>
-        <ul class="navegacaoLinks">
-          <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
-          <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
-          <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+      <article class="forma-pagamento">
+        <h2 class="tituloDadosPagamento">Formas de Pagamento</h2>
+        <ul class="pagamento-lista">
+          <li>
+            <input type="radio" name="pagamento" id="cartao" />
+            <label for="cartao">Cartão de Crédito</label>
+          </li>
+          <li>
+            <input type="radio" name="pagamento" id="pix" />
+            <label for="pix">Pix</label>
+          </li>
+          <li>
+            <input type="radio" name="pagamento" id="boleto" />
+            <label for="boleto">Boleto Bancário</label>
+          </li>
         </ul>
-      </section>
+      </article>
       
-      <section class="contatoFooter">
-        <h2 class="tituloFooter">Contato</h2>
-        <address class="linksContatoFooter">
-          <p class="textoContato">(00) 00000-0000</p>
-          <p class="textoContato">nutricore@empresa.com.br</p>
-        </address>
-      </section>
-    </article>
+    </section>
     
-    <hr class="linhaSeparacaoFooter">
+    <section class="lado-direito">
+      <h2>Pagamento com Cartão</h2>
+      <form class="form-cartao">
+        <label for="numero-cartao">Número do Cartão</label>
+        <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" required>
+        
+        <label for="nome-cartao">Nome no Cartão</label>
+        <input type="text" id="nome-cartao" placeholder="Nome impresso no cartão" required>
+        
+        <div class="grupo">
+          <div>
+            <label for="validade">Validade</label>
+            <input type="text" id="validade" placeholder="MM/AA" required>
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required>
+          </div>
+        </div>
+        
+        <figure>
+          <img src="https://i.imgur.com/IHEKLgm.png" alt="Cartão de crédito" class="imagem-cartao">
+        </figure>
+        
+        <a href="conclusaoPagamento.html">
+          Finalizar Compra
+        </a>
+      </form>
+      
+    </section>
+  </main>
+</body>
+</html>
+
+</main>
+
+
+<!-------------------------------- Rodapé -------------------------------->
+<footer>
+  <article class="containerFooter">
+    <section>
+      <h2 class="tituloFooter">NutriCore</h2>
+      <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
+      <article class="iconsRedesSociais">
+        
+        <i>
+          <figure>
+            <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+            <figcaption></figcaption>
+          </figure>
+        </i>
+        
+        <i>
+          <figure>
+            <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+            <figcaption></figcaption>
+          </figure>
+        </i>
+        
+        <i>
+          <figure>
+            <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+            <figcaption></figcaption>
+          </figure>
+        </i>
+      </article>
+    </section>
     
-    <article class="copyrightFooter">
-      <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
-      <nav>
-        <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
-        <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
-      </nav>
-    </article>
-  </footer>
+    <section class="linksNavegacaoFooter">
+      <h2 class="tituloFooter">Links Úteis</h2>
+      <ul class="navegacaoLinks">
+        <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
+        <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
+        <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+      </ul>
+    </section>
+    
+    <section class="contatoFooter">
+      <h2 class="tituloFooter">Contato</h2>
+      <address class="linksContatoFooter">
+        <p class="textoContato">(00) 00000-0000</p>
+        <p class="textoContato">nutricore@empresa.com.br</p>
+      </address>
+    </section>
+  </article>
+  
+  <hr class="linhaSeparacaoFooter">
+  
+  <article class="copyrightFooter">
+    <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+    <nav>
+      <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
+      <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+    </nav>
+  </article>
+</footer>
 </body>
 </html>

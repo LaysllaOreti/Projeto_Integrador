@@ -5,9 +5,9 @@
 }
 
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -541,8 +541,6 @@ nav {
 
 .produtoCardCatalogo:hover {
     cursor: pointer;
-    transform: scale(1.02);
-    border: 1px solid #7c377a;
 }
 
 .imagemCatalogoCard {
@@ -815,18 +813,16 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .botaoForm:hover {
-    background-color: #640c62;
+    background-color: #50084f;
     /*transform: scale(1.02);*/
-}
-
-.botaoForm a {
-    color: white;
-    font-weight: 700;
-    font-size: 17px;
-    text-decoration: none;
 }
 
 .informacoesContatoBox {
@@ -895,7 +891,7 @@ nav {
     padding: 20px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -921,8 +917,8 @@ nav {
 }
 
 .precoProdutoCarrinho {
-    font-weight: bold;
-    color: #27ae60;
+    font-weight: 600;
+    color: #1c6724;
     padding-top: 12px;
 }
 
@@ -966,14 +962,14 @@ nav {
     flex: 1;
     max-width: 300px;
     background-color: white;
-    padding: 1.5rem;
+    padding: 28px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     align-self: flex-start;
 }
 
 .tituloResumoCompra {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .textoResumoCompra {
@@ -982,20 +978,37 @@ nav {
     margin: 0.5rem 0;
 }
 
+.textoTotalCompra {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
 .botaoFinalizarCompra {
-    width: 100%;
-    padding: 0.8rem;
-    background-color: #e67e22;
+    padding: 15px;
+    background-color: #f4811d;
     border: none;
     color: white;
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 1rem;
+    transition: background .5s;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .botaoFinalizarCompra:hover {
-    background-color: #d35400;
+    background-color: #ce5300;
+}
+
+.precoResumoCompra {
+    font-weight: 600;
 }
 
 /*Estilização Página Pagamento*/
@@ -1165,8 +1178,8 @@ footer {
 .subtitleFormLogin {
     text-align: left;
     color: #666;
-    font-size: 1rem;
-    margin: 12px 0;
+    font-size: 18px;
+    padding-top: 8px;
     text-align: center;
 }
 
@@ -1209,17 +1222,16 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 3px 3px rgba(117, 32, 116, 0.3);
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
 }
 
 .botaoAcessarLogin:hover {
     background-color: #640c62;
     transform: scale(1.02);
-}
-
-.botaoAcessarLogin a {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
 }
 
 .informacoesContatoBoxLogin {
@@ -1274,7 +1286,7 @@ footer {
     color: #000000;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     transition: color .5s;
     margin-bottom: 12px;
@@ -1286,22 +1298,22 @@ footer {
 
 .botaoIrCadastro{
     display: block;
-    color: #752074;
+    color: #2e052d;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
-    transition: color .5s;
+    transition: color .3s;
 }
 
 .botaoIrCadastro:hover {
-    color: #30072f;
+    color: #752074;
 }
 
 /*Estilização Página Cadastro*/
 .textVoltarProdutos {
     font-size: 14px;
-    color: #30072f;
+    color: #2e052d;
     text-align: left;
     text-decoration: none;
 }
@@ -1336,8 +1348,8 @@ footer {
 .subtitleFormCadastro {
     text-align: center;
     color: #666;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 18px;
+    padding-top: 8px;
 }
 
 .linhaCampos {
@@ -1375,14 +1387,19 @@ footer {
 
 .botaoCadastrar {
     margin-top: 16px;
-    padding: 12px;
+    padding: 15px;
     background-color: #752074;
     border: none;
     border-radius: 5px;
-    font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 3px 3px rgba(117, 32, 116, 0.3);
+    
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
 }
 
 .botaoCadastrar:hover {
@@ -1390,24 +1407,21 @@ footer {
     transform: scale(1.02);
 }
 
-.botaoCadastrar a {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-}
-
 .botaoFormCadastro {
     text-align: center;
 }
 
 .botaoFazerLogin {
-    color: #752074;
+    color: #2e052d;
     text-decoration: none;
     font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    transition: color .2s;
 }
 
 .botaoFazerLogin:hover {
-    color: #30072f;
+    color: #752074;
 }
 
 fieldset {
@@ -1477,7 +1491,7 @@ fieldset {
 }
 
 /*Estilização Página Inserir Endereço*/
-.endereco-container {
+.containerEndereco {
     display: flex;
     background-color: #f9f7f7;
     border-radius: 10px;
@@ -1485,76 +1499,101 @@ fieldset {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     max-width: 900px;
     margin: 3rem auto;
+    padding: 15px;
 }
 
-.formulario-endereco, .resumo-pedido {
-    padding: 2rem;
+.formEndereco {
     flex: 1;
+    padding: 40px 40px;
 }
 
-.resumo-pedido img {
-    width: 120px;
+.imagemProdutoResumo {
+    width: 140px;
     height: auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.formulario-endereco h2 {
-    font-size: 1.8rem;
-    color: #4b006e;
-    margin-bottom: 0.5rem;
+#tituloContainerEndereco {
+    text-align: left;
+    font-size: 2rem;
+    color: #33003d;
+    margin-bottom: 5px;
 }
 
-.formulario-endereco p {
-    margin-bottom: 2rem;
+.subtitleContainerEndereco {
+    text-align: left;
+    color: #666;
+    font-size: 18px;
+    padding-top: 8px;
+    margin-bottom: 15px;
 }
 
-form label {
-    font-weight: 500;
-    display: block;
-    margin-top: 1rem;
+.labelContainerEndereco {
+    font-weight: 600;
+    color: #222;
 }
 
-input, select {
+.inputContainerEndereco {
     width: 100%;
-    padding: 0.6rem;
-    border: 1px solid #aaa;
+    padding: 12px;
+    border: 1.5px solid #6c007d;
     border-radius: 6px;
-    margin-top: 0.3rem;
-    box-shadow: 1px 1px 3px rgba(75, 0, 110, 0.2);
+    margin-bottom: 18px;
+    box-shadow: 0 1px 1px rgba(117, 32, 116, 0.3);
+    font-size: 16px;
 }
 
-.dupla {
+.inputContainerEndereco:focus {
+    outline: none;
+    border-color: #752074;
+    box-shadow: 0 0 5px rgba(117, 32, 116, 0.3);
+}
+
+.selectContainerEndereco {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #6c007d;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 1px rgba(117, 32, 116, 0.3);
+    font-size: 16px;
+}
+
+.duplaLabel {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.dupla div {
-    flex: 1;
-}
-
-/*button {
-    margin-top: 2rem;
-    padding: 0.8rem;
-    background-color: #4b006e;
+.botaoIrPagamento {
+    width: 100%;
+    padding: 18px;
+    background-color: #752074;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 6px;
+    
+    font-size: 16px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #37004e;
-}
-*/
-
-.resumo-pedido {
-    background-color: #4b006e;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 3px rgba(117, 32, 116, 0.3);
     color: white;
-    border-left: 5px solid #3b005a;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+.botaoIrPagamento:hover {
+    background-color: #640c62;
+    transform: scale(1.02);
+}
+
+.resumoPedido{
+    padding: 16px;
+    flex: 1;
 }
 
 .resumo-pedido h3 {
@@ -1562,72 +1601,203 @@ button:hover {
     margin-bottom: 1rem;
 }
 
-/*Estilização Página Pagamento*/
-.checkout-container {
+#tituloResumoPedido {
+    text-align: left;
+    font-size: 24px;
+    color: #33003d;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.textoResumoPedido {
+    text-align: left;
+    color: #000000;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.decorationContainerEndereco{
+    background-color: #752074;
+    width: 300px;
+    border-radius: 6px;
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilização Página Pagamento*/
+.containerPagePagamento {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-.dados-usuario, .pagamento-cartao {
-    flex: 1;
-    background: #f9f9f9;
+.ladoEsquerdo, .ladoDireito {
+    height: auto;
+    flex: 1 1 45%;
+    background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.pagamento-cartao form {
+.tituloDadosPagamento {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.textoDadosPagamento {
+    font-size: 15px;
+    padding-top: 6px;
+}
+
+.enderecoEntrega {
+    margin-bottom: 2rem;
+}
+
+.dadosCliente {
+    margin-bottom: 2rem;
+}
+
+.totalPagamentoPage {
+    color: #18530e;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: .5rem;
+}
+
+.form-cartao {
     display: flex;
     flex-direction: column;
 }
 
-.pagamento-cartao label {
+label {
     margin-top: 1rem;
+    margin-bottom: .25rem;
 }
 
-.pagamento-cartao input {
-    padding: 0.75rem;
+input {
+    padding: .5rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
-.form-row {
+.grupo {
     display: flex;
     gap: 1rem;
 }
 
-.form-row div {
-    flex: 1;
-}
-
-/*
-.pagamento-cartao button {
+button {
     margin-top: 2rem;
-    padding: 1rem;
-    background-color: #4b006e;
+    padding: .75rem;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 10px;
-    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    font-weight: bold;
 }
 
-.pagamento-cartao button:hover {
-    background-color: #370050;
+button:hover {
+    background-color: #45a049;
 }
-    */
 
-.img-cartao {
+.imagem-cartao {
     margin-top: 2rem;
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.pagamento-lista {
+    list-style: none;
+    padding: 0;
+}
 
+.pagamento-lista li {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.pagamento-lista input[type="radio"] {
+    display: none;
+}
+
+.pagamento-lista label {
+    display: block;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+    padding-right: 2.5rem;
+}
+
+.pagamento-lista input[type="radio"]:checked + label {
+    background-color: #e6fff2;
+    border-color: #4CAF50;
+    font-weight: bold;
+}
+
+.pagamento-lista input[type="radio"]:checked + label::after {
+    content: "✔";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/*Estilização Página Conclusão de Pagamento*/
+.icon {
+      font-size: 60px;
+      color: #4caf50;
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin-bottom: 12px;
+      font-size: 28px;
+    }
+    p.frase {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+    .rastreio {
+      background: #f0f0f0;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      user-select: all;
+      font-family: monospace;
+    }
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #388e3c;
+    }
