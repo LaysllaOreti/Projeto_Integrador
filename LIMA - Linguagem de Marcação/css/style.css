@@ -2010,101 +2010,6 @@ fieldset {
     text-decoration: underline;
 }
 
-/*Estilização Página Resultados de Pesquisa*/
-.containerResultadoPesquisa {
-    height: auto;
-    padding: 30px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.textoPesquisa {
-    width: auto;
-    height: auto;
-    background-color: #f2eff2;
-    font-size: 18px;
-    margin: 30px 9%;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    cursor: pointer;
-    padding-left: 8%;
-    padding: 18px;
-    color: #000000;
-    transform: background .5s;
-}
-
-.textoPesquisa:hover {
-    background-color: #f4e9f4;
-}
-
-.secaoProdutosResultado {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-}
-
-.product {
-    position: relative;
-    background-color: #f2f0ef;
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
-    width: 240px;
-    transition: transform 0.5s;
-    flex: 0 0 auto;
-    overflow: hidden;
-}
-
-.product img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    background-color: #f9f9f9;
-}
-
-.product-info {
-    padding: 1rem;
-    flex: 1;
-}
-
-.product h2 {
-    font-size: 1.1rem;
-    margin: 0 0 0.5rem;
-    color: #1a0dab;
-}
-
-.product p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    color: #555;
-}
-
-.price {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #2e7d32;
-}
-
-.product a.button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #1a73e8;
-    color: white;
-    border-radius: 6px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-
-.product a.button:hover {
-    background-color: #1558c0;
-}
-
 /*Estilização Página Perfil*/
 .containerPerfil {
     display: flex;
@@ -2190,4 +2095,173 @@ section h3 {
     margin-bottom: 0.5rem;
     border-radius: 8px;
     background-color: #f9f9f9;
+}
+
+/*Página de Detalhes do Produto*/
+.containerDetalheProduto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    margin: 45px 8%;
+    padding: 18px 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ececec;
+}
+
+.galeriaMiniaturaProdutos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagemMiniaturaProduto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border .3s;
+}
+
+.imagemMiniaturaProduto:hover {
+    border-color: #42014f;
+}
+
+.imagemPrincipalProduto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemPrincipalProduto img {
+    width: 490px;
+    height: auto;
+    border-radius: 12px;
+    transition: .5s;
+}
+
+.imagemPrincipalProduto img:hover {
+    transform: scale(1.05);
+}
+
+.containerInformacoesProduto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 850px;
+}
+
+.linhaDivisaoProdutos {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #370b36;
+    margin: 30px 0;
+    align-items: center;
+}
+
+#tituloDescricaoProduto {
+    color: #30072f;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 12px 0;
+    text-align: left;
+}
+
+.subtituloDescricaoProduto {
+    color: #282626;
+    font-weight:600;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.subtituloDescricaoProdutoAtencao {
+    color: #8e1313;
+    font-weight:600;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.textoDescricaoProduto {
+    font-size: 20px;
+    color: #302f2f;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+.textoDescricaoProdutoAtencao {
+    font-size: 20px;
+    color: #302f2f;
+    text-align: justify;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.textoPreco {
+    font-size: 38px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #146c38;
+} 
+
+.textParcelasPreco {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #000000;
+}
+
+.botoesDescricaoProduto {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.botaoIrCarrinho {
+    background-color: #92488f;
+    color: white;
+    padding: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    transition: background .5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botaoIrCarrinho:hover {
+    background-color: #4f1c4d;
+}
+
+.botaoComprarAgora {    
+    display: flex;
+    padding: 12px;
+    background-color: #f4811d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .5s;
+    
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.botaoComprarAgora:hover {
+    background-color: #e05c03;
 }

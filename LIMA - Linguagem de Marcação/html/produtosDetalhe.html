@@ -40,45 +40,36 @@
       </ul>
     </nav>
     
-     <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
-            <ul>
-                <li><a href="home.html" class="textNavTop">Início</a></li>
-                <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
-                <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
-                <li><a href="contato.html" class="textNavTop">Contato</a></li>
-            </ul>
-        </nav>
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>   
+        <li>
+          <a href="perfil.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
         
-        <nav class="navUsuario" aria-label="Menu Usuário">
-            <ul>   
-                <li>
-                    <a href="perfil.html" aria-label="Pefil">
-                        <figure class="navIcones">
-                            <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
-                            <figcaption class="legendaIcones">Perfil</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="pesquisar.html" aria-label="Pesquisar">
-                        <figure class="navIcones">
-                            <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
-                            <figcaption class="legendaIcones">Pesquisar</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="carrinho.html" aria-label="Pefil">
-                        <figure class="navIcones">
-                            <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
-                            <figcaption class="legendaIcones">Carrinho</figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <li>
+          <a href="#" aria-label="Pesquisar">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <li>
+          <a href="carrinho.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
   
   <!--Segunda Navbar (secundária)-->
@@ -92,67 +83,107 @@
   </nav>
   
   <main>
-    
-  </main>
-  
-  <!-------------------------------- Rodapé -------------------------------->
-  <footer>
-    <article class="containerFooter">
-      <section>
-        <h2 class="tituloFooter">NutriCore</h2>
-        <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
-        <article class="iconsRedesSociais">
+    <article class="containerDetalheProduto">
+      <aside class="galeriaMiniaturaProdutos">
+        <img src="../imagens/imagens_whey/whey3.png" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+        <img src="../imagens/imagens_detalhadas/imagemDetalheWhey.jpg" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+        <img src="../imagens/imagens_detalhadas/imagemTabelaNutricional.jpg" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+        <img src="../imagens/imagens_detalhadas/imagemDetalhesProduto.jpg" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+      </aside>
+      
+      <figure class="imagemPrincipalProduto">
+        <img src="../imagens/imagens_whey/whey3.png" alt="Imagem principal do produto">
+      </figure>
+      
+      <section class="containerInformacoesProduto">
+        <h1 id="tituloDescricaoProduto">Whey 100% Max Titanium & Dr. Peanut Whey Concentrado 900g Sabor Avelã</h1>
+        
+        <p class="textoPreco">R$ 131,80</p>
+        <p class="textParcelasPreco">ou 3X R$ 43,66</p>
+        
+        <nav class="botoesDescricaoProduto">
+          <a href="carrinho.html" class="botaoIrCarrinho">Adicionar ao carrinho</a>
+          <a href="login.html" class="botaoComprarAgora">Comprar agora</a>
+        </nav>
+        
+        <p class="textoDescricaoProduto">WHEY PROTEIN 100% MAX TITANIUM DR. PEANUT 900G 100% WHEY da Max Titanium em colaboração com a Dr. Peanut é a proteína ideal para quem busca performance e sabor em um único 
+          suplemento.Sua formulação à base de proteína concentrada do soro do leite (Whey Protein Concentrate), auxilia na formação dos músculos e ossos. Com sabores exclusivos e campeões 
+          de vendas da Dr. Peanut, é elaborado com matéria-prima de alta tecnologia e valor biológico, trazendo rápida digestibilidade e elevada concentração de aminoácidos essenciais.</p>
           
-          <i>
-            <figure>
-              <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
-              <figcaption></figcaption>
-            </figure>
-          </i>
+          <h2 class="subtituloDescricaoProduto">Recomendação de Uso</h2>
+          <p class="textoDescricaoProduto">Utilize de uma a duas porções ao dia, ou conforme orientação profissional.Indicado para pessoas de 9 a 18 anos e maiores de 19 anos.</p>
           
-          <i>
-            <figure>
-              <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
-              <figcaption></figcaption>
-            </figure>
-          </i>
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
-              <figcaption></figcaption>
-            </figure>
-          </i>
+          <h2 class="subtituloDescricaoProduto">Ingredientes do Whey Dr. Peanut + MAX:</h2>
+          <p class="textoDescricaoProduto">WHEY MAX DR. PEANUT: Avelã - Proteína concentrada do soro do leite (WPC), amendoim torrado e granulado, cacau alcalino em pó, sal, aromatizantes, corante artificial 
+            caramelo IV, espessantes goma xantana e goma guar e edulcorante sucralose. NÃO CONTÉM GLÚTEN.</p>
+            
+            <h2 class="subtituloDescricaoProdutoAtencao">Alérgicos</h2>
+            <p class="textoDescricaoProdutoAtencao">Contém Amendoim e derivados do leite</p>
+            <p class="textoDescricaoProdutoAtencao">Pode conter Soja e Ovo</p>
+            
+          </section>
         </article>
-      </section>
+      </main>
       
-      <section class="linksNavegacaoFooter">
-        <h2 class="tituloFooter">Links Úteis</h2>
-        <ul class="navegacaoLinks">
-          <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
-          <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
-          <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
-        </ul>
-      </section>
-      
-      <section class="contatoFooter">
-        <h2 class="tituloFooter">Contato</h2>
-        <address class="linksContatoFooter">
-          <p class="textoContato">(00) 00000-0000</p>
-          <p class="textoContato">nutricore@empresa.com.br</p>
-        </address>
-      </section>
-    </article>
+      <!-------------------------------- Rodapé -------------------------------->
+      <footer>
+        <article class="containerFooter">
+          <section>
+            <h2 class="tituloFooter">NutriCore</h2>
+            <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
+            <article class="iconsRedesSociais">
+              
+              <i>
+                <figure>
+                  <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+                  <figcaption></figcaption>
+                </figure>
+              </i>
+              
+              <i>
+                <figure>
+                  <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+                  <figcaption></figcaption>
+                </figure>
+              </i>
+              
+              <i>
+                <figure>
+                  <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+                  <figcaption></figcaption>
+                </figure>
+              </i>
+            </article>
+          </section>
+          
+          <section class="linksNavegacaoFooter">
+            <h2 class="tituloFooter">Links Úteis</h2>
+            <ul class="navegacaoLinks">
+              <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
+              <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
+              <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+            </ul>
+          </section>
+          
+          <section class="contatoFooter">
+            <h2 class="tituloFooter">Contato</h2>
+            <address class="linksContatoFooter">
+              <p class="textoContato">(00) 00000-0000</p>
+              <p class="textoContato">nutricore@empresa.com.br</p>
+            </address>
+          </section>
+        </article>
+        
+        <hr class="linhaSeparacaoFooter">
+        
+        <article class="copyrightFooter">
+          <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+          <nav>
+            <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
+            <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+          </nav>
+        </article>
+      </footer>
+    </body>
+    </html>
     
-    <hr class="linhaSeparacaoFooter">
-    
-    <article class="copyrightFooter">
-      <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
-      <nav>
-        <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
-        <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
-      </nav>
-    </article>
-  </footer>
-</body>
-</html>
