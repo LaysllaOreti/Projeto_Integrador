@@ -131,6 +131,12 @@ nav {
     width: 32px;
 }
 
+.iconUsuarioLogado {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
 .legendaIcones {
     font-size: 18px;
     font-weight: 500;
@@ -209,11 +215,10 @@ nav {
 /*Categoria dos Produtos*/
 .containerCategorias {
     width: 100%;
-    height: 370px;
-    background-color: #e1e0e0;
-    padding: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    height: auto;
+    background-color: #eee;
+    padding: 60px;
+    margin: 80px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -247,27 +252,74 @@ nav {
     width: 120px;
     height: auto;
     transition: transform 0.5s ease;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .produto:hover img {
     transform: scale(1.18);
 }
 
-#imagemSnack {
-    width: 210px;
+.produtoWhey {
+    background: linear-gradient(to top, #801c7c, #d9d9d9);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.produtoWhey img {
+    width: 150px;
     height: auto;
     transition: transform 0.5s ease;
 }
 
-#imagemWhey {
-    width: 160px;
+.produtoWhey:hover img {
+    transform: scale(1.18);
+}
+
+#nomeCategoriaWhey {
+    font-size: 18px;
+    font-weight: 600;
+    color: #30072f;
+    text-align: center;
+    margin-top: 32px;
+}
+
+
+.produtoSnack {
+    background: linear-gradient(to top, #801c7c, #d9d9d9);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.produtoSnack img {
+    width: 200px;
     height: auto;
     transition: transform 0.5s ease;
+}
+
+.produtoSnack:hover img {
+    transform: scale(1.18);
+}
+
+#nomeCategoriaSnack {
+    font-size: 18px;
+    font-weight: 600;
+    color: #30072f;
+    text-align: center;
+    margin-top: 14px;
 }
 
 .nomeCategoria {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #30072f;
     text-align: center;
@@ -345,7 +397,7 @@ nav {
     border: none;
     padding: 0;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     z-index: 5;
 }
 
@@ -1462,10 +1514,6 @@ fieldset {
     box-shadow: 0 1px 1px rgba(117, 32, 116, 0.3);
 }
 
-#textLembrarSenha {
-    padding-top: 5px;
-}
-
 .containerPaginaCadastro {
     display: flex;
     justify-content: center;
@@ -2216,126 +2264,195 @@ fieldset {
     background-color: #e05c03;
 }
 
-/*Estilização Página Acompanhar Pedido*/
-#bodyAcompanharPedido {
-    margin: 0;
-    background: linear-gradient(to bottom, #f3957d, #f1c2ac);
-    font-family: Arial, Helvetica, sans-serif
-}
-
-#tituloProgressoEntrega {
-    color: #a25c2a;
-    margin-top: 3rem;
-    font-size: 1.2rem;
-}
-
-.barraEntregaContainer {
-    position: relative;
-    margin: 1rem 0;
-}
-
-#barraProgressoEntrega {
-    width: 100%;
-    height: 30px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #ddd;
-}
-
-#barraProgressoEntrega::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: 20px;
-}
-
-#barraProgressoEntrega::-webkit-progress-value {
-    background-color: #a25c2a;
-    border-radius: 20px;
-}
-
-#barraProgressoEntrega::-moz-progress-bar {
-    background-color: #a25c2a;
-}
-
-/* Ícones sobre a barra */
-.iconeCaminhao,
-.iconeCasa {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    color: #5c3b18;
-}
-
-.iconeCaminhao {
-    transition: left 0.3s ease-in-out;
-}
-
-.iconeCasa {
-    right: 0;
-}
-
-/*Estilização para o ASIDE*/
-
-#paginaPerfil {
-    display: flex;
-    max-width: 1700px;
-    margin: 2rem auto;
-    background-color: #fff8f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-
-#menuLateral {
-    background-color: #5c3b18;
+/*Estilização para o ASIDE (Página Perfil)*/
+.menuLateralAside {
+    background-color: #752074;
     color: #fff;
-    width: 250px;
-    padding: 2rem;
+    width: 300px;
+    height: 100%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.navegacao ul {
+.navListAside {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.navegacao li {
+.navListAside li {
     margin-bottom: 1.2rem;
 }
 
-.navegacao a {
-    color: #fff8f1;
+.navListAside a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 18px;
+    transition: color .5s;
 }
 
-.navegacao a:hover {
-    color: #ffd8a8;
+.navListAside a:hover {
+    text-decoration: underline;
 }
 
-.areaSair {
-    margin-top: auto;
+/*Opção Sair da Conta*/
+.logoutList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#conteudoPerfil {
+.logoutList li {
+    margin-bottom: 1.2rem;
+}
+
+.logoutList a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logoutList a:hover {
+    text-decoration: underline;
+}
+
+/*Estilização Página Acompanhar Pedido*/
+.containerPagePerfil {
+    display: flex;
+    max-width: 1700px;
+    margin: 40px 140px;
+    background-color: #fff8f1;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.conteudoPerfil {
     flex: 1;
     padding: 3.5rem;
     background-color: #fdf9f6;
 }
 
-#conteudoPerfil p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 25px;
-    
+.nomeUsuarioPerfil {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #50084f;
 }
 
-.nomeUsuario {
-    color: #5c3b18;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+.tituloContainerPerfil {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.textoAcompanhamentoPedido {
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#tituloProgressoEntrega {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.textoProgressoEntrega {
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.textoProgressoPorcentagem {
+    font-size: 19px;
+    font-weight: 600;
+    text-align: left;
+}
+
+#markCodigoRastreio {
+    background-color: #d49dd3;
+    padding: 2px;
+}
+
+.imagemProgressoEntrega {
+    justify-content: flex-start;
+}
+
+.imagemProgressoEntrega img {
+    width: 680px;
+    height: auto;
+}
+
+/*Estilização Histórico de Compras*/
+.secaoHistoricoCompras {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 10px;
+    justify-content: center;
+}
+
+.imagemHistoricoCompras img{
+    width: auto;
+    height: 240px;
+}
+
+.secaoProdutosHistorico {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    justify-content: center;
+}
+
+.produtoHistoricoCompras{
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+    padding: 18px 0;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.5s;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.produtoHistoricoCompras:hover {
+    cursor: pointer;
+}
+
+.imagemHistoricoCompras {
+    height: 200px;
+    width: auto;
+    margin: 1rem auto;
+}
+
+.nomeProdutoHistoricoCompras {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+/*Estilização Página Perfil*/
+.imagemPerfilUsuario {
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+}
+
+.imagemPerfilUsuario img {
+    border-radius: 50%;
+    border: 1px solid #000000;
+    width: 180px;
+    height: 180px;
 }

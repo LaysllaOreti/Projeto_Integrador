@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Perfil | NutriCore</title>
+  <title>Meu Perfil| NutriCore</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 
-<body>
-  
+<body>  
   <!--Carrosel de frases no início da página-->
   <!--
   <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
@@ -45,7 +44,7 @@
         <li>
           <a href="perfil.html" aria-label="Pefil">
             <figure class="navIcones">
-              <img src="../imagens/icones//iconUsuarioLogado.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
@@ -54,7 +53,7 @@
         <li>
           <a href="#" aria-label="Pesquisar">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
               <figcaption class="legendaIcones">Pesquisar</figcaption>
             </figure>
           </a>
@@ -81,83 +80,51 @@
       <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
       <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
     </ul>
-  </nav>
+  </nav>  
   
-  <main>
-    <article class="containerPagePerfil">
+  <main class="containerPagePerfil">
+    
+    <aside>
       
-      <aside class="ladoEsquerdoPerfil">
-        <div class="containerInformacoesUsuario">
-          
-          <figure class="imagemUsuario">
-            <img src="../imagens/icones/iconUsuarioLogado.png" alt="Foto do Usuário">
-          </figure>
-          
-          <h2 id="tituloUsuarioPerfil">Lais de Paiva</h2>
-          <p class="C">Email: laisPaiva@gmail.com</p>
-          <p class="textoUsuarioPerfil">Telefone: (19) 99999-9999</p>
-          <p class="textoUsuarioPerfil">Usuário desde: Janeiro/2024</p>
-          
-          <nav class="botoesPaginaPerfil">
-            <a href="editarPerfil.html" class="botaoEditarPerfil">Editar Perfil</a>
-            <a href="home.html" class="botaoSairConta">Sair da Conta</a>
-          </nav>
-
-        </div>
-      </aside>
+      <nav class="menuLateralAside">
+        <ul class="navListAside">
+          <li><a href="perfil.html"><i class="bi bi-pencil-square"></i>Meu Perfil</a></li> 
+          <li><a href="acompanharPedido.html"><i class="bi bi-person-fill"></i>Acompanhar Pedidos</a></li>
+          <li><a href="historicoCompras.html"><i class="bi bi-person-fill"></i>Histórico de Compras</a></li>
+          <li><a href="produtosFavoritos.html"><i class="bi bi-person-fill"></i>Produtos Favoritos</a></li>
+        </ul>
+        
+        <ul class="logoutList">
+          <li><a href="home.html"><i class="bi bi-box-arrow-left"></i>Sair da Conta</a></li>
+        </ul>
+        
+      </nav>
       
-      <article class="ladoDireitoPerfil">
-        <article class="teste">
-          <h2 class="subtituloPagePerfil">Últimos Pedidos</h2>
-          <p class="textoPagePerfil">Acompanhar Pedido</p>
-          <p class="textoPerfilCodigo">Código de Rastreio: BR123456789</p>
-          <p class="textoPagePerfil">Valor Total: R$ 433,30</p>
-
-          <p class="tituloProgressoEntrega">Progresso de Entrega</p>
-        </article>
+    </aside>
+    
+    <section class="conteudoPerfil">
+      
+      <header>
+        <h1 class="nomeUsuarioPerfil">Lais de Paiva</h1>
+      </header>
+      
+      <section>
         
-        <article class="teste">
-          <h3 class="subtituloPagePerfil">Histórico de Compras</h3>
-          <figure>
-            <img src="../imagens/imagens_whey/whey19.png" alt="" />
-            <figcaption class="tituloProdutoHistorio">Produto 1</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../imagens/imagens_whey/whey19.png" alt="" />
-            <figcaption class="tituloProdutoHistorio">Produto 1</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../imagens/imagens_whey/whey19.png" alt="" />
-            <figcaption class="tituloProdutoHistorio">Produto 1</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../imagens/imagens_whey/whey19.png" alt="" />
-            <figcaption class="tituloProdutoHistorio">Produto 1</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../imagens/imagens_whey/whey19.png" alt="" />
-            <figcaption class="tituloProdutoHistorio">Produto 1</figcaption>
-          </figure>
-
-        </article>
+        <h2 class="tituloContainerPerfil">Meu Perfil</h2>
         
-        <article class="teste">
-          <h2 class="subtituloPagePerfil">Produtos Favoritos</h2>
-          <nav class="favoritos">
-            <img src="../imagens/imagens_creatina/creatina10.png" alt="Produto 1" />
-            <img src="../imagens/imagens_whey/whey11.png" alt="Produto 2" />
-            <img src="../imagens/imagens_snacks/snack_b6.png" alt="Produto 3" />
-            <img src="../imagens/imagens_pre-treino/p17.png" alt="Produto 4" />
-            <img src="../imagens/imagens_whey/whey3.png" alt="Produto 5" />
-          </nav>
+        <article class="ladoEsquerdoPerfil">
+          <article class="imagemPerfilUsuario">
+            <figure>
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" alt="Imagem de Perfil do Usuário Logado" />
+            </figure>
+          </article>
+          <h3>Lais Oreti de Paiva</h3>
+          <p>Email: laisPaiva@gmail.com</p>
+          <p>Telefone: (00) 99999-9999</p>
         </article>
-        
-      </article>
-    </article>
+      </section>
+      
+    </section>
   </main>
   
   <!-------------------------------- Rodapé -------------------------------->
