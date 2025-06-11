@@ -2013,59 +2013,180 @@ fieldset {
 /*Estilização Página Perfil*/
 .containerPagePerfil {
     display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+    
+    max-width: 1630px; 
+    margin: 40px auto;    
+    padding: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.menu-lateral {
-    width: 220px;
-    background-color: #2d2d2d;
-    padding: 1rem;
-}
-
-.menu-lateral nav ul {
-    list-style: none;
-}
-
-.menu-lateral nav li {
-    margin-bottom: 1rem;
-}
-
-.menu-lateral nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-    display: block;
-    border-radius: 6px;
-    transition: background 0.3s;
-}
-
-.menu-lateral nav a:hover {
-    background-color: #444;
-}
-
-.conteudo {
-    flex: 1;
-    padding: 2rem;
+.ladoEsquerdoPerfil {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin-top: 30px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
+.containerInformacoesUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInformacoesUsuario img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
     
-    .menu-lateral {
-        width: 100%;
-    }
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 100%;
+    border: 1px solid #bcb5b5;
+    background-color: #2e052d;
+    padding: 16px;
+}
+
+#tituloUsuarioPerfil {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textoUsuarioPerfil {
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.botoesPaginaPerfil{
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.botaoEditarPerfil {
+    background-color: #92488f;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
     
-    .menu-lateral nav ul {
-        display: flex;
-        justify-content: space-around;
-    }
     
-    .menu-lateral nav li {
-        margin: 0;
-    }
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: background .5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.botaoEditarPerfil:hover {
+    background-color: #4f1c4d;
+}
+
+.botaoSairConta {    
+    display: flex;
+    padding: 10px;
+    background-color: #d70d0d;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .5s;
+    
+    color: white;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.botaoSairConta:hover {
+    background-color: #9c0505;
+}
+
+.ladoDireitoPerfil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+    flex: 1;
+}
+
+.subtituloPagePerfil {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textoPagePerfil {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.tituloProdutoHistorio{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.textoPerfilCodigo {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.teste {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produto-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.favoritos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.favoritos img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /*Página de Detalhes do Produto*/
