@@ -941,7 +941,8 @@ nav {
 }
 
 .tituloQuantidadeProdutos {
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -950,14 +951,14 @@ nav {
     min-width: 30px;
     text-align: center;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .buttonProdutoCarrinho {
     background-color: #eee;
     border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 18px;
+    padding: 8px 14px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -1692,6 +1693,7 @@ fieldset {
     font-size: 20px;
     text-align: left;
     font-weight: 500;
+    padding: 3px;
 }
 
 .resumoCompraPreco {
@@ -1878,7 +1880,7 @@ fieldset {
     padding: 16px;
     border-radius: 6px;
     background-color: #752074;
-    font-size: 18px;
+    font-size: 16px;
     transition: .5s;
     color: #ffffff;
     font-weight: 600;
@@ -2010,185 +2012,6 @@ fieldset {
     text-decoration: underline;
 }
 
-/*Estilização Página Perfil*/
-.containerPagePerfil {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
-    
-    max-width: 1630px; 
-    margin: 40px auto;    
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-}
-
-.ladoEsquerdoPerfil {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    margin-top: 30px;
-}
-
-.containerInformacoesUsuario {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-}
-
-.containerInformacoesUsuario img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 100%;
-    border: 1px solid #bcb5b5;
-    background-color: #2e052d;
-    padding: 16px;
-}
-
-#tituloUsuarioPerfil {
-    color: #000000;
-    font-size: 26px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.textoUsuarioPerfil {
-    font-size: 18px;
-    padding-bottom: 5px;
-    text-align: left;
-    font-weight: 500;
-}
-
-.botoesPaginaPerfil{
-    display: flex;
-    gap: 10px;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
-}
-
-.botaoEditarPerfil {
-    background-color: #92488f;
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    
-    
-    font-weight: 600;
-    font-size: 16px;
-    display: inline-block;
-    transition: background .5s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.botaoEditarPerfil:hover {
-    background-color: #4f1c4d;
-}
-
-.botaoSairConta {    
-    display: flex;
-    padding: 10px;
-    background-color: #d70d0d;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background .5s;
-    
-    color: white;
-    font-size: 16px;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    
-}
-
-.botaoSairConta:hover {
-    background-color: #9c0505;
-}
-
-.ladoDireitoPerfil {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    gap: 20px;
-    flex: 1;
-}
-
-.subtituloPagePerfil {
-    color: #000000;
-    font-size: 26px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.textoPagePerfil {
-    color: #000000;
-    font-size: 20px;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.tituloProdutoHistorio{
-    color: #000000;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.textoPerfilCodigo {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.teste {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.produto-img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.favoritos {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.favoritos img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
 /*Página de Detalhes do Produto*/
 .containerDetalheProduto {
     display: flex;
@@ -2198,9 +2021,6 @@ fieldset {
     
     margin: 45px 8%;
     padding: 18px 20px;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f3f3f3;
 }
 
 .galeriaMiniaturaProdutos {
@@ -2221,6 +2041,44 @@ fieldset {
 
 .imagemMiniaturaProduto:hover {
     border-color: #42014f;
+}
+
+.quantidadeProdutosDetalhe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 0;
+    padding-right: 40px;
+    padding-top: 16px;
+    margin: 10px 0;
+}
+
+.tituloQuantidadeProdutoDetalhe {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.quantidadeProdutoDetalhe {
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.buttonProdutoDetalhe {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 8px 14px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.buttonProdutoDetalhe:hover {
+    background-color: #c2bcbc;
 }
 
 .imagemPrincipalProduto {
@@ -2356,4 +2214,128 @@ fieldset {
 
 .botaoComprarAgora:hover {
     background-color: #e05c03;
+}
+
+/*Estilização Página Acompanhar Pedido*/
+#bodyAcompanharPedido {
+    margin: 0;
+    background: linear-gradient(to bottom, #f3957d, #f1c2ac);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#tituloProgressoEntrega {
+    color: #a25c2a;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.barraEntregaContainer {
+    position: relative;
+    margin: 1rem 0;
+}
+
+#barraProgressoEntrega {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+#barraProgressoEntrega::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+#barraProgressoEntrega::-webkit-progress-value {
+    background-color: #a25c2a;
+    border-radius: 20px;
+}
+
+#barraProgressoEntrega::-moz-progress-bar {
+    background-color: #a25c2a;
+}
+
+/* Ícones sobre a barra */
+.iconeCaminhao,
+.iconeCasa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #5c3b18;
+}
+
+.iconeCaminhao {
+    transition: left 0.3s ease-in-out;
+}
+
+.iconeCasa {
+    right: 0;
+}
+
+/*Estilização para o ASIDE*/
+
+#paginaPerfil {
+    display: flex;
+    max-width: 1700px;
+    margin: 2rem auto;
+    background-color: #fff8f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+#menuLateral {
+    background-color: #5c3b18;
+    color: #fff;
+    width: 250px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao li {
+    margin-bottom: 1.2rem;
+}
+
+.navegacao a {
+    color: #fff8f1;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navegacao a:hover {
+    color: #ffd8a8;
+}
+
+.areaSair {
+    margin-top: auto;
+}
+
+#conteudoPerfil {
+    flex: 1;
+    padding: 3.5rem;
+    background-color: #fdf9f6;
+}
+
+#conteudoPerfil p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    
+}
+
+.nomeUsuario {
+    color: #5c3b18;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }

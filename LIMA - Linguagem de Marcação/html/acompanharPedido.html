@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acompanhar Pedido | NutriCore</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    
+    <!--Carrosel de frases no início da página-->
+    <!--
+    <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
+        <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
+        <ul class="mensagensAvisos">
+            <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
+            <li class="mensagemAviso">Segurança e Entrega Rápida</li>
+            <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
+        </ul>
+        <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
+    </section>-->
+    <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
+    
+    <!--Primeira navbar (Principal)-->
+    <header class="headerSite">
+        <h1 class="logoSite">
+            <a href="home.html" aria-label="Página inicial - NutriCore">
+                <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+                <h2 id="nomeEcommerce">NutriCore</h2>
+            </a>
+        </h1>
+        
+        <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+            <ul>
+                <li><a href="home.html" class="textNavTop">Início</a></li>
+                <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+                <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+                <li><a href="contato.html" class="textNavTop">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="navUsuario" aria-label="Menu Usuário">
+            <ul>   
+                <li>
+                    <a href="perfil.html" aria-label="Pefil">
+                        <figure class="navIcones">
+                            <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+                            <figcaption class="legendaIcones">Perfil</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" aria-label="Pesquisar">
+                        <figure class="navIcones">
+                            <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+                            <figcaption class="legendaIcones">Pesquisar</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="carrinho.html" aria-label="Pefil">
+                        <figure class="navIcones">
+                            <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+                            <figcaption class="legendaIcones">Carrinho</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Segunda Navbar (secundária)-->
+    <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+        <ul class="navLinks">
+            <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+            <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+            <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+            <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
+        </ul>
+    </nav>  
+    
+    <main class="mainPerfil">
+        <aside id="sidebarMenu">
+            <nav class="navigation">
+                <ul class="navList">
+                    <li class="navItem"><a href="editarPerfil.html"><i class="bi bi-pencil-square"></i> Editar Perfil</a></li>
+                    <li class="navItem"><a href="favoritos.html"><i class="bi bi-star"></i> Favoritos</a></li>
+                    <li class="navItem"><a href="perfil.html"><i class="bi bi-person-fill"></i> Minha conta</a></li>
+                </ul>
+                <ul class="logoutList">
+                    <li class="logoutItem"><a href="sair.html"><i class="bi bi-box-arrow-left"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="conteudoPerfil">
+            <header>
+                <h1 class="nomeUsuario">João Mendes</h1>
+            </header>
+            <section aria-labelledby="tituloAcompanhamento">
+                <h2 id="tituloAcompanhamento">Acompanhar Pedido</h2>
+                <p ><i class="bi bi-receipt"></i> Número do Pedido: <mark>#123456</mark></p>
+                <p ><i class="bi bi-cash-coin"></i> Valor Total: R$ 349,90</p>
+                <section aria-labelledby="tituloProgressoEntrega">
+                    <h3 id="tituloProgressoEntrega"><i class="bi bi-geo-alt-fill"></i> Progresso da Entrega</h3>
+                    <p >Status atual: Saiu para entrega</p>
+                    <div class="barraEntregaContainer">
+                        <progress id="barraProgressoEntrega" value="75" max="100"></progress>
+                        <i class="bi bi-truck iconeCaminhao" style="left: 75%;"></i>
+                        <i class="bi bi-house-fill iconeCasa"></i>
+                    </div>
+                    <p>75% do caminho percorrido</p>
+                </section>
+            </section>
+        </section>
+    </main>
+    
+    <!-------------------------------- Rodapé -------------------------------->
+    <footer>
+        <article class="containerFooter">
+            <section>
+                <h2 class="tituloFooter">NutriCore</h2>
+                <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
+                <article class="iconsRedesSociais">
+                    
+                    <i>
+                        <figure>
+                            <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
+                            <figcaption></figcaption>
+                        </figure>
+                    </i>
+                    
+                    <i>
+                        <figure>
+                            <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
+                            <figcaption></figcaption>
+                        </figure>
+                    </i>
+                    
+                    <i>
+                        <figure>
+                            <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
+                            <figcaption></figcaption>
+                        </figure>
+                    </i>
+                </article>
+            </section>
+            
+            <section class="linksNavegacaoFooter">
+                <h2 class="tituloFooter">Links Úteis</h2>
+                <ul class="navegacaoLinks">
+                    <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
+                    <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
+                    <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
+                </ul>
+            </section>
+            
+            <section class="contatoFooter">
+                <h2 class="tituloFooter">Contato</h2>
+                <address class="linksContatoFooter">
+                    <p class="textoContato">(00) 00000-0000</p>
+                    <p class="textoContato">nutricore@empresa.com.br</p>
+                </address>
+            </section>
+        </article>
+        
+        <hr class="linhaSeparacaoFooter">
+        
+        <article class="copyrightFooter">
+            <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+            <nav>
+                <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
+                <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+            </nav>
+        </article>
+    </footer>
+</body>
+</html>
