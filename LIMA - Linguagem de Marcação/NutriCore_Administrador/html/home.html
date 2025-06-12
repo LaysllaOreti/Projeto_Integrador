@@ -9,98 +9,70 @@
 </head>
 
 <body>
-  
-  <!--Carrosel de frases no início da página-->
-  <!--
-  <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-    <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
-    <ul class="mensagensAvisos">
-      <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
-      <li class="mensagemAviso">Segurança e Entrega Rápida</li>
-      <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
-    </ul>
-    <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
-  </section>-->
-  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
-  
-  <header>
-    <nav class="menuLateralAside">
-      <ul class="navListAside">
-        <h2>NutriCore</h2>
-        <li><a href="perfil.html"><i class="bi bi-speedometer2"></i>Dashboard</a></li> 
-        <li><a href="acompanharPedido.html"><i class="bi bi-bag-check"></i>Produtos</a></li>
-        <li><a href="historicoCompras.html"><i class="bi bi-people"></i>Usuários</a></li>
-        <li><a href="produtosFavoritos.html"><i class="bi bi-bar-chart-line"></i>Pedidos</a></li>
-      </ul>
-      
-      <ul class="logoutList">
-        <li><a href="home.html"><i class="bi bi-box-arrow-right"></i>Sair da Conta</a></li>
-      </ul>
-      
-    </nav>  
-  </header>
-  <main>
-  </main>
-  
-  
-  <!-------------------------------- Rodapé -------------------------------->
-  <footer>
-    <article class="containerFooter">
-      <section>
-        <h2 class="tituloFooter">NutriCore</h2>
-        <p class="sloganFooter">Lorem Ipsum is simply dummy text of the printing.</p>
-        <article class="iconsRedesSociais">
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/facebook.png" alt="Ícone da Rede Social Facebook" class="iconRedeSocial"/>
-              <figcaption></figcaption>
-            </figure>
-          </i>
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/instagram.png" alt="Ícone da Rede Social Instagram" class="iconRedeSocial">
-              <figcaption></figcaption>
-            </figure>
-          </i>
-          
-          <i>
-            <figure>
-              <img src="../imagens/icones/whatsapp.png" alt="Ícone da Rede Social Whatsapp" class="iconRedeSocial">
-              <figcaption></figcaption>
-            </figure>
-          </i>
-        </article>
-      </section>
-      
-      <section class="linksNavegacaoFooter">
-        <h2 class="tituloFooter">Links Úteis</h2>
-        <ul class="navegacaoLinks">
-          <li class="linkNavegacaoFooter"><a href="home.html">Home</a></li>
-          <li class="linkNavegacaoFooter"><a href="produtos.html">Produtos</a></li>
-          <li class="linkNavegacaoFooter"><a href="sobreNos.html">Sobre nós</a></li>
-        </ul>
-      </section>
-      
-      <section class="contatoFooter">
-        <h2 class="tituloFooter">Contato</h2>
-        <address class="linksContatoFooter">
-          <p class="textoContato">(00) 00000-0000</p>
-          <p class="textoContato">nutricore@empresa.com.br</p>
-        </address>
-      </section>
-    </article>
-    
-    <hr class="linhaSeparacaoFooter">
-    
-    <article class="copyrightFooter">
-      <p class="textoCopyrightFooter">@ 2025 . Todos Direitos Reservados</p>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="https://i.pravatar.cc/100" alt="User Avatar" />
+        <h2>Lucas Tertuliano</h2>
+        <p>Administrador</p>
+      </div>
       <nav>
-        <a href="sobreNos.html" class="navegacaoFinalFooter">Sobre Nós </a> |
-        <a href="#" class="navegacaoFinalFooter">Política de Privacidade</a>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Analytics</li>
+          <li>Widgets</li>
+          <li>Calendar</li>
+          <li>UI Elements</li>
+          <li>Forms</li>
+          <li>Invoices</li>
+          <li>Tables</li>
+          <li>Events</li>
+          <li>Subscribers</li>
+        </ul>
       </nav>
-    </article>
-  </footer>
+    </aside>
+
+    <main class="main">
+      <header class="navbar">
+        <div class="logo">Unity</div>
+        <div class="user-info">
+          <span>Today</span>
+          <span class="username">Taylor Franklin</span>
+        </div>
+      </header>
+
+      <section class="dashboard-metrics">
+        <div class="card">Sales<br /><strong>3500</strong></div>
+        <div class="card">Orders<br /><strong>2900</strong></div>
+        <div class="card">Invoices<br /><strong>6500</strong></div>
+        <div class="card">Alerts<br /><strong>7200</strong></div>
+      </section>
+
+      <section class="congrats">
+        <h2>Congratulations Franklin 🎉</h2>
+        <p>You have sold <strong>65%</strong> more products than last year.</p>
+        <div class="comparison">
+          <div>$4800<br /><small>This Year</small></div>
+          <div>$2300<br /><small>Last Year</small></div>
+        </div>
+        <div class="overall-sales">
+          <h3>Overall Sales</h3>
+          <div class="bar-chart">
+            <div class="bar" style="height: 40%"></div>
+            <div class="bar" style="height: 60%"></div>
+            <div class="bar" style="height: 80%"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="revenue">
+        <h2>Revenue</h2>
+        <div class="revenue-chart">
+          <!-- Aqui poderia ser um gráfico SVG ou imagem gerada -->
+          <div class="placeholder">[Gráfico de linha aqui]</div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
