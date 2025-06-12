@@ -134,6 +134,8 @@ nav {
 .iconUsuarioLogado {
     height: 32px;
     width: 32px;
+    object-fit: cover;
+    border: 1px solid #ffffff;
     border-radius: 50%;
 }
 
@@ -919,12 +921,13 @@ nav {
     color: #ecf0f1;
     font-size: 1.6rem;
     transition: color 0.3s ease;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
+    transition: .5s;
 }
 
 .iconRedeSocial:hover {
-    color: #9b59b6;
+    transform: scale(1.02);
 }
 
 /*Estilização Página Carrinho*/
@@ -2265,6 +2268,7 @@ fieldset {
 }
 
 /*Estilização para o ASIDE (Página Perfil)*/
+
 .menuLateralAside {
     background-color: #752074;
     color: #fff;
@@ -2291,6 +2295,7 @@ fieldset {
     text-decoration: none;
     font-size: 18px;
     transition: color .5s;
+    gap: 20px;
 }
 
 .navListAside a:hover {
@@ -2313,6 +2318,7 @@ fieldset {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
+    gap: 20px;
 }
 
 .logoutList a:hover {
@@ -2444,15 +2450,174 @@ fieldset {
 }
 
 /*Estilização Página Perfil*/
-.imagemPerfilUsuario {
-    justify-content: flex-start;
-    width: auto;
-    height: auto;
+.containerInformacoesPerfil {
+    display: flex;
+    gap: 20px;
+    padding: 18px;
 }
 
-.imagemPerfilUsuario img {
-    border-radius: 50%;
-    border: 1px solid #000000;
+.perfilUsuario {
+    width: 30%;
+    text-align: center;
+    border-right: 2px solid #ddd;
+    padding-right: 2rem;
+}
+
+.fotoPerfilUsuario img {
     width: 180px;
     height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 2px solid #000000;
 }
+
+#nomePerfilUsuario {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.textoPerfilUsuario {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+#textoPerfil {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.botoesPerfilUsuario {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.botaoEditarPerfil {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #4f1c4d;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background .5s;
+}
+
+.botaoEditarPerfil:hover {
+    background-color: #2e052d;
+}
+
+.botaoSairPerfil {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #db0707;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background .5s;
+}
+
+.botaoSairPerfil:hover {
+    background-color: #8b0303;
+}
+
+.formulario {
+    width: 75%;
+}
+
+.formPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#tituloFormularioPerfil {
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.labelFormPerfil {
+    font-weight: 600;
+}
+
+.inputFormPerfil {
+    padding: 12px 16px;
+    border: 1.2px solid #370b36;
+    background-color: #fdf9f6;
+    border-radius: 6px;
+
+    font-size: 16px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 2px rgba(117, 32, 116, 0.3);
+}
+
+/*Estilização Página Editar Perfil*/
+.containerInformacoesEditarPerfil {
+    display: flex;
+    gap: 20px;
+    padding: 18px;
+    margin-top: 25px;
+}
+
+.fotoPerfil img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 2px solid #000000;
+}
+
+.formularioEditarPerfil {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.botaoUploadFoto {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.botaoUploadFoto:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.botaoSalvarPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #1c5b11;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
+
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background .5s;
+}
+
+.botaoSalvarPerfil:hover {
+    background-color: #0e3d06;
+}
+
+
