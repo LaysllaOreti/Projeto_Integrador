@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,67 +11,81 @@
 <body>
   <div class="container">
     <aside class="sidebar">
-      <div class="profile">
-        <img src="https://i.pravatar.cc/100" alt="User Avatar" />
+      <header class="profile">
+        <img src="" alt="Avatar do administrador" />
         <h2>Lucas Tertuliano</h2>
         <p>Administrador</p>
-      </div>
+      </header>
+      
       <nav>
         <ul>
-          <li class="active">Dashboard</li>
-          <li>Analytics</li>
-          <li>Widgets</li>
-          <li>Calendar</li>
-          <li>UI Elements</li>
-          <li>Forms</li>
-          <li>Invoices</li>
-          <li>Tables</li>
-          <li>Events</li>
-          <li>Subscribers</li>
+          <li class="active">NutriCore</li>
+          <li><i class="bi bi-speedometer2"></i>Dashboard</li>
+          <li><i class="bi bi-basket3"></i>Produtos</li>
+          <li><i class="bi bi-people"></i>Usuários</li>
+          <li><i class="bi bi-card-checklist"></i>Pedidos</li>
+          <li><i class="bi bi-box-arrow-right"></i>Sair</li>
         </ul>
       </nav>
     </aside>
-
+    
     <main class="main">
       <header class="navbar">
-        <div class="logo">Unity</div>
+        <h1 class="logo">NutriCore</h1>
         <div class="user-info">
-          <span>Today</span>
+          <time datetime="2025-06-12">Hoje</time>
           <span class="username">Taylor Franklin</span>
         </div>
       </header>
-
-      <section class="dashboard-metrics">
-        <div class="card">Sales<br /><strong>3500</strong></div>
-        <div class="card">Orders<br /><strong>2900</strong></div>
-        <div class="card">Invoices<br /><strong>6500</strong></div>
-        <div class="card">Alerts<br /><strong>7200</strong></div>
+      
+      <section class="dashboard-metrics" aria-label="Métricas principais">
+        <article class="card">
+          <h2>Produtos</h2>
+          <strong>3500</strong>
+        </article>
+        <article class="card">
+          <h2>Usuários</h2>
+          <strong>2900</strong>
+        </article>
+        <article class="card">
+          <h2>Pedidos</h2>
+          <strong>6500</strong>
+        </article>
       </section>
-
-      <section class="congrats">
-        <h2>Congratulations Franklin 🎉</h2>
-        <p>You have sold <strong>65%</strong> more products than last year.</p>
+      
+      <section class="congrats" aria-label="Parabéns Lucas">
+        <h2>Parabéns, Lucas 🎉</h2>
+        <p>Você vendeu 65% mais produtos que no mês passado.</p>
+        
         <div class="comparison">
-          <div>$4800<br /><small>This Year</small></div>
-          <div>$2300<br /><small>Last Year</small></div>
+          <article>
+            <p>$4800</p>
+            <small>Este Mês</small>
+          </article>
+
+          <article>
+            <p>$2300</p>
+            <small>Mês Passado</small>
+          </article>
         </div>
-        <div class="overall-sales">
-          <h3>Overall Sales</h3>
-          <div class="bar-chart">
+        
+        <section class="overall-sales" aria-label="Vendas Gerais">
+          <h3>Vendas Totais</h3>
+          <div class="bar-chart" role="img" aria-label="Gráfico de barras de vendas">
             <div class="bar" style="height: 40%"></div>
             <div class="bar" style="height: 60%"></div>
             <div class="bar" style="height: 80%"></div>
           </div>
-        </div>
+        </section>
+      </section>
+      
+      <section class="revenue" aria-label="Receita">
+        <h2>Receita</h2>
+        <figure class="revenue-chart">
+          <div class="placeholder">[Gráfico de linha aqui]</div>
+        </figure>
       </section>
 
-      <section class="revenue">
-        <h2>Revenue</h2>
-        <div class="revenue-chart">
-          <!-- Aqui poderia ser um gráfico SVG ou imagem gerada -->
-          <div class="placeholder">[Gráfico de linha aqui]</div>
-        </div>
-      </section>
     </main>
   </div>
 </body>
