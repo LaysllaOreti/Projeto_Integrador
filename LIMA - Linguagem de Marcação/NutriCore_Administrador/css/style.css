@@ -24,6 +24,155 @@ nav {
     display: block;
 }
 
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .profile img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.sidebar h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.sidebar nav ul li {
+  padding: 0.8rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+}
+
+.sidebar nav ul li.active,
+.sidebar nav ul li:hover {
+  background-color: #3b82f6;
+  border-radius: 0.5rem;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.navbar .user-info {
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #3b82f6;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card strong {
+  font-size: 1.5rem;
+}
+
+.congrats {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.congrats h2 {
+  margin-bottom: 0.5rem;
+}
+
+.comparison {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.comparison div {
+  font-size: 1.2rem;
+}
+
+.overall-sales {
+  margin-top: 2rem;
+}
+
+.bar-chart {
+  display: flex;
+  gap: 0.5rem;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 20px;
+  background-color: #3b82f6;
+  border-radius: 0.25rem;
+}
+
+.revenue {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.revenue-chart .placeholder {
+  height: 150px;
+  background: linear-gradient(to right, #93c5fd, #3b82f6);
+  margin-top: 1rem;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
 /*Estilização ASIDE*/
 .menuLateralAside {
     background-color: #752074;
@@ -79,4 +228,159 @@ nav {
 
 .logoutList a:hover {
     text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .profile img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.sidebar h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.sidebar nav ul li {
+  padding: 0.8rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+}
+
+.sidebar nav ul li.active,
+.sidebar nav ul li:hover {
+  background-color: #3b82f6;
+  border-radius: 0.5rem;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.navbar .user-info {
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #3b82f6;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card strong {
+  font-size: 1.5rem;
+}
+
+.congrats {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.congrats h2 {
+  margin-bottom: 0.5rem;
+}
+
+.comparison {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.comparison div {
+  font-size: 1.2rem;
+}
+
+.overall-sales {
+  margin-top: 2rem;
+}
+
+.bar-chart {
+  display: flex;
+  gap: 0.5rem;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 20px;
+  background-color: #3b82f6;
+  border-radius: 0.25rem;
+}
+
+.revenue {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.revenue-chart .placeholder {
+  height: 150px;
+  background: linear-gradient(to right, #93c5fd, #3b82f6);
+  margin-top: 1rem;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
