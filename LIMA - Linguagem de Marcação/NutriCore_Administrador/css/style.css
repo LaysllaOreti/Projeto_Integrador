@@ -31,7 +31,7 @@ nav {
 
 .sidebar {
   width: 250px;
-  background-color: #1e3a8a;
+  background-color: #3e093e;
   color: white;
   padding: 2rem 1rem;
 }
@@ -65,7 +65,7 @@ nav {
 
 .sidebar nav ul li.active,
 .sidebar nav ul li:hover {
-  background-color: #3b82f6;
+  background-color: #3e093e;;
   border-radius: 0.5rem;
 }
 
@@ -84,7 +84,7 @@ nav {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1e3a8a;
+  color: #3e093e;;
 }
 
 .navbar .user-info {
@@ -102,7 +102,7 @@ nav {
 }
 
 .card {
-  background-color: #3b82f6;
+  background-color: #3e093e;;
   color: white;
   padding: 1rem;
   border-radius: 0.75rem;
@@ -149,7 +149,7 @@ nav {
 
 .bar {
   width: 20px;
-  background-color: #3b82f6;
+  background-color: #3e093e;;
   border-radius: 0.25rem;
 }
 
@@ -172,71 +172,6 @@ nav {
   font-weight: bold;
 }
 
-
-/*Estilização ASIDE*/
-.menuLateralAside {
-    background-color: #752074;
-    color: #fff;
-    width: 300px;
-    height: 100%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navListAside {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navListAside li {
-    margin-bottom: 1.2rem;
-}
-
-.navListAside a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color .5s;
-    gap: 20px;
-}
-
-.navListAside a:hover {
-    text-decoration: underline;
-}
-
-/*Opção Sair da Conta*/
-.logoutList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.logoutList li {
-    margin-bottom: 1.2rem;
-}
-
-.logoutList a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    gap: 20px;
-}
-
-.logoutList a:hover {
-    text-decoration: underline;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 .container {
   display: flex;
   min-height: 100vh;
@@ -244,7 +179,7 @@ nav {
 
 .sidebar {
   width: 250px;
-  background-color: #1e3a8a;
+  background-color: #3e093e;;
   color: white;
   padding: 2rem 1rem;
 }
@@ -278,7 +213,7 @@ nav {
 
 .sidebar nav ul li.active,
 .sidebar nav ul li:hover {
-  background-color: #3b82f6;
+  background-color: #681868;;
   border-radius: 0.5rem;
 }
 
@@ -315,7 +250,7 @@ nav {
 }
 
 .card {
-  background-color: #3b82f6;
+  background-color: #500a50;;
   color: white;
   padding: 1rem;
   border-radius: 0.75rem;
@@ -362,7 +297,7 @@ nav {
 
 .bar {
   width: 20px;
-  background-color: #3b82f6;
+  background-color: #3e093e;;
   border-radius: 0.25rem;
 }
 
