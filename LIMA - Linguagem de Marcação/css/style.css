@@ -236,6 +236,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 100px;
+    margin-bottom: 20px;
 }
 
 .produto {
@@ -910,24 +911,22 @@ nav {
     color: #ffffff;
 }
 
-.iconsRedesSociais {
-    margin-top: 40px;
+.iconsRedesSociaisContato {
+    margin-top: 30px;
     display: flex;
-    gap: 20px;
-    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
 }
 
-.iconRedeSocial {
-    color: #ecf0f1;
-    font-size: 1.6rem;
-    transition: color 0.3s ease;
-    width: 80px;
-    height: 80px;
-    transition: .5s;
+.iconsRedesSociaisContato img {
+    width: 40px;
+    height: 40px;
+    transition: transform .3s ease;
 }
 
-.iconRedeSocial:hover {
-    transform: scale(1.02);
+.iconsRedesSociaisContato img:hover {
+    transform: scale(1.06);
 }
 
 /*Estilização Página Carrinho*/
@@ -1084,118 +1083,134 @@ nav {
 }
 
 /*Estilização Rodapé*/
-footer {
-    background-color: #8e3a8e;
-    color: white;
-    padding: 20px
+.rodape {
+    background-color: #92488f;
+    color: #f2f0ef;
+    padding-top: 40px;
 }
 
-.containerFooter {
+.footerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.logoFooter img {
+    height: 100px;
+}
+
+.navFooter {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navFooter a {
+    color: #f2f0ef;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .5s ease;
+}
+
+.navFooter a:hover {
+    color: #2e052d;
+}
+
+.contentFooter {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 30px;
-    margin-left: 90px;
-    margin-right: 90px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    border-top: 1px solid #f2f0ef;
+    border-bottom: 1px solid #f2f0ef;
 }
 
-.tituloFooter{
-    padding: 15px 0;
+.colunaFooter {
+    flex: 1 1 220px;
+    margin: 20px;
+}
+
+.titleColunaRodape {
     font-size: 20px;
+    margin-bottom: 10px;
+    color: #2e052d;
 }
 
-.sloganFooter {
-    font-size: 18px;
-    text-align: left;
-    padding-bottom: 18px;
+#tituloRedesSociais {
+    font-size: 20px;
+    margin-bottom: 26px;
+    color: #2e052d;
 }
 
-.linksRedesSociais{
-    gap: 20px;
-}
-
-.iconRedeSocial {
-    width: 27px;
-    height: 27px;
-}
-
-.navegacaoLinks {
-    list-style: none;
-    padding: 0;
-}
-
-.linkNavegacaoFooter {
-    margin: 0.5rem 0;
-}
-
-.linkNavegacaoFooter a {
-    color: white;
-    text-decoration: none;
-}
-
-.linkNavegacaoFooter a:hover {
-    color: #370b36;
-}
-
-.linksNavegacaoFooter {
-    text-align: center;
-}
-
-.contatoFooter {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.linksContatoFooter {
-    font-style: normal;
-}
-
-.textoContato {
-    font-size: 16px;
-    padding-bottom: 2px;
-    text-align: center;
-}
-
-.linhaSeparacaoFooter {
-    border: none;
-    border-top: 1px solid white;
-    margin: 2rem 0 1rem 0;
-}
-
-#iconsRedesSociais {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    justify-content: flex-start;
-}
-
-.copyrightFooter {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 14px;
-    gap: 2px;
-    text-align: right;
-}
-
-.textoCopyrightFooter {
+.colunaFooter p {
     font-size: 15px;
-    gap: 2px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-.navegacaoFinalFooter {
-    font-size: 16px;
-    text-align: right;
-    padding: 10px 0;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color .5s;
+.iconsPagamento,
+.iconsRedesSociais {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
 }
 
-.navegacaoFinalFooter:hover {
-    color: #370b36;
+.iconsPagamento img {
+    width: 60px;
+    margin-top: 15px;
+    height: auto;
+    transition: transform .5s;
+}
+
+.iconsRedesSociais img {
+    width: 40px;
+    height: 40px;
+    transition: transform .3s ease;
+}
+
+.iconsRedesSociais img:hover {
+    transform: scale(1.06);
+}
+
+#iconVisa {
+    margin-top: 18px;
+}
+
+#iconElo {
+    margin-top: 26px;
+}
+
+#iconPix {
+    width: 40px;
+    height: auto;
+}
+
+#iconMastercard {
+    width: 50px;
+    height: auto;
+    margin-top: 12px;
+}
+
+.iconsRedesSociais img:hover {
+    transform: scale(1.1);
+}
+
+.footerBottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #2e052d;
+    padding: 20px 20px 40px;
+}
+
+.footerBottom p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 
 /*Estilização Página Login*/
@@ -2480,13 +2495,13 @@ fieldset {
 }
 
 .textoPerfilUsuario {
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 6px;
 }
 
 #textoPerfil {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     font-weight: 600;
     margin-top: 16px;
@@ -2504,7 +2519,7 @@ fieldset {
     border-radius: 4px;
     background-color: #4f1c4d;
     box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
-
+    
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
@@ -2521,7 +2536,7 @@ fieldset {
     border-radius: 4px;
     background-color: #db0707;
     box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
-
+    
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
@@ -2558,7 +2573,7 @@ fieldset {
     border: 1.2px solid #370b36;
     background-color: #fdf9f6;
     border-radius: 6px;
-
+    
     font-size: 16px;
     margin-bottom: 6px;
     box-shadow: 0 2px 2px rgba(117, 32, 116, 0.3);
@@ -2588,8 +2603,8 @@ fieldset {
 }
 
 .botaoUploadFoto {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -2602,12 +2617,12 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     padding: 10px;
     border-radius: 4px;
     background-color: #1c5b11;
     box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
-
+    
     text-decoration: none;
     text-align: center;
     color: #ffffff;

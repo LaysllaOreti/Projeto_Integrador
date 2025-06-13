@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | NutriCore</title>
+  <title>Gestão de Clientes | NutriCore</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -22,11 +22,11 @@
           <li>
             <a href="home.html"><i class="bi bi-house"></i>Home</a>
           </li>
-          
+
           <li>
             <a href="home.html"><i class="bi bi-basket3"></i>Gestão de Produtos</a>
           </li>
-          
+
           <li><i class="bi bi-people"></i>Gerenciamento de Pedidos</li>
           <li><i class="bi bi-card-checklist"></i>Gestão de Clientes</li>
           <li><i class="bi bi-box-arrow-right"></i>Sair</li>
@@ -83,55 +83,38 @@
       </section>
       
       <section class="revenue" aria-label="Receita">
-        <section class="dashboard">
-          <figure class="bar-graph">
-            <figcaption>Receita Mensal</figcaption>
+        <section class="stacked-chart" aria-label="Estatísticas">
+          <h2>Estatísticas</h2>
+          <figure>
+            <figcaption>Dados por categoria</figcaption>
             <ul class="bar-chart">
-              <li style="--h: 90%">
-                <p class="valor">200</p>
-                <time datetime="2024-01">Jan</time>
+              <li class="bar">
+                <span class="segment azul-escuro" style="--h: 20%">10</span>
+                <span class="segment azul-medio" style="--h: 30%">15</span>
+                <span class="segment azul-claro" style="--h: 25%">20</span>
               </li>
-              <li style="--h: 85%">
-                <p class="valor">180</p>
-                <time datetime="2024-02">Fev</time>
+              <li class="bar">
+                <span class="segment azul-escuro" style="--h: 25%">20</span>
+                <span class="segment azul-medio" style="--h: 35%">25</span>
+                <span class="segment azul-claro" style="--h: 30%">30</span>
               </li>
-              <li style="--h: 88%">
-                <p class="valor">190</p>
-                <time datetime="2024-03">Mar</time>
+              <li class="bar">
+                <span class="segment azul-escuro" style="--h: 30%">30</span>
+                <span class="segment azul-medio" style="--h: 35%">35</span>
+                <span class="segment azul-claro" style="--h: 35%">40</span>
               </li>
-              <li style="--h: 92%">
-                <p class="valor">210</p>
-                <time datetime="2024-04">Abr</time>
-              </li>
-              <li style="--h: 95%">
-                <p class="valor">220</p>
-                <time datetime="2024-05">Mai</time>
-              </li>
-              <li style="--h: 100%">
-                <p class="valor">230</p>
-                <time datetime="2024-06">Jun</time>
+              <li class="bar">
+                <span class="segment azul-escuro" style="--h: 40%">40</span>
+                <span class="segment azul-medio" style="--h: 30%">43</span>
+                <span class="segment azul-claro" style="--h: 30%">50</span>
               </li>
             </ul>
           </figure>
         </section>
         
-        <figure class="pie-graph">
-          <figcaption>Fontes de Usuário</figcaption>
-          <div class="pie-chart" role="img" aria-label="Gráfico de pizza com porcentagem de origens de tráfego"></div>
-          <ul class="pie-legend">
-            <li class="organic">Organic — 24%</li>
-            <li class="direct">Direct — 30%</li>
-            <li class="referral">Referral — 18%</li>
-            <li class="campaign">Campaign — 28%</li>
-          </ul>
-        </figure>
-        
-        
       </section>
       
-    </section>
-    
-  </main>
-</div>
+    </main>
+  </div>
 </body>
 </html>
