@@ -595,8 +595,9 @@ nav {
     text-align: center;
     width: 280px;
     transition: transform 0.5s;
-    flex: 0 0 auto;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .produtoCardCatalogo:hover {
@@ -610,33 +611,80 @@ nav {
 }
 
 .nomeProdutoCatalogo {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     color: #000000;
     padding: 8px;
     margin-top: 10px;
     margin-bottom: 12px;
+    flex-grow: 1;
 }
 
 .botaoEspecificarProduto {
     display: block;
-    background-color: #92488f;
+    background-color: #571a55;
+    color: #f2f0ef;
+    font-weight: 600;
+    border: none;
+   border-radius: 6px;
+    padding: 11px;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botaoEspecificarProduto:hover {
+    background-color: #370b36;
+}
+
+.botaoAdicionarCarrinho{
+    display: block;
+    background-color: #d96710;
+    color: #f2f0ef;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 11px;
+    margin: 12px auto;
+    cursor: pointer;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botaoAdicionarCarrinho:hover {
+    background-color: #370b36;
+}
+
+
+.botaoAdicionarCarrinho {
+    display: block;
+    background-color: #d16303;
     color: #f2f0ef;
     font-weight: 600;
     border: none;
     border-radius: 10px;
     padding: 13px;
-    margin: 12px auto;
+    margin: 0 auto;
     cursor: pointer;
-    width: 80%;
-    font-size: 16px;
+    width: 90%;
+    font-size: 17px;
     text-align: center;
-    transition: background-color 0.5s ease;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.botaoEspecificarProduto:hover {
-    background-color: #370b36;
-    transform: scale(1.05);
+.botaoAdicionarCarrinho:hover {
+    background-color: #c55205;
 }
 
 /*Estilização Página Sobre Nós*/
@@ -2441,8 +2489,9 @@ fieldset {
     text-align: center;
     width: 250px;
     transition: transform 0.5s;
-    flex: 0 0 auto;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .produtoHistoricoCompras:hover {
@@ -2462,6 +2511,7 @@ fieldset {
     padding: 8px;
     margin-top: 10px;
     margin-bottom: 12px;
+    flex-grow: 1;
 }
 
 /*Estilização Página Perfil*/
