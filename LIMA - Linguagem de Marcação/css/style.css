@@ -359,6 +359,7 @@ nav {
     padding: 8px;
     margin-top: 10px;
     margin-bottom: 12px;
+    flex-grow: 1;
 }
 
 .containerCarrosselVendidos {
@@ -386,6 +387,9 @@ nav {
     transition: transform 0.5s;
     flex: 0 0 auto;
     overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
 }
 
 .produtoCard:hover {
@@ -429,54 +433,46 @@ nav {
     margin-bottom: 12px;
 }
 
-.botaoVerMais {
+.especificarProduto {
     display: block;
     background-color: #92488f;
     color: #f2f0ef;
     font-size: 16px;
     font-weight: 600;
     border: none;
-    border-radius: 10px;
-    padding: 13px;
-    margin: 12px auto;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px auto;
     cursor: pointer;
-    width: 80%;
+    width: 90%;
     text-align: center;
+    text-decoration: none;
     transition: background-color 0.5s ease;
 }
 
-.botaoVerMais:hover {
+.especificarProduto:hover {
     background-color: #370b36;
-    transform: scale(1.05);
 }
 
-.setaVendidos {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.5rem;
-    color: #1f1313;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    width: 2.8rem;
-    height: 2.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.adicionarCarrinho {
+    display: block;
+    background-color: #d96710;
+    color: #f2f0ef;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 0 auto;
     cursor: pointer;
-    z-index: 10;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
 }
 
-.setaEsquerdaVendidos {
-    left: 1.5rem;
-}
-
-.setaDireitaVendidos {
-    right: 1.5rem;
-}
-
-.setaVendidos:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+.adicionarCarrinho:hover {
+    background-color: #b65103;
 }
 
 @keyframes moverProdutos {
@@ -626,7 +622,7 @@ nav {
     color: #f2f0ef;
     font-weight: 600;
     border: none;
-   border-radius: 6px;
+    border-radius: 6px;
     padding: 11px;
     margin: 10px auto;
     cursor: pointer;
