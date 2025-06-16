@@ -1,104 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | NutriCore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | NutriCore</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <header class="profile">
-        <img src="" alt="Avatar do administrador" />
-        <h2>Lucas da Silva</h2>
-        <p>Administrador</p>
-      </header>
-      
-      <nav>
-        <ul>
-          <li>
-            <a href="home.html"><i class="bi bi-house"></i>Home</a>
-          </li>
-          
-          <li>
-            <a href="home.html"><i class="bi bi-basket3"></i>Gestão de Produtos</a>
-          </li>
-          
-          <li><i class="bi bi-people"></i>Gerenciamento de Pedidos</li>
-          <li><i class="bi bi-card-checklist"></i>Gestão de Clientes</li>
-          <li><i class="bi bi-box-arrow-right"></i>Sair</li>
-        </ul>
-      </nav>
-    </aside>
-    
-    <main class="main">
-      <header class="navbar">
-        <h1 class="logo">NutriCore</h1>
-        <div class="user-info">
-          <time datetime="2025-06-12">Hoje</time>
-          <span class="username">Lucas da Silva</span>
-        </div>
-      </header>
-      
-      <section class="dashboard-metrics" aria-label="Métricas principais">
-        <article class="card">
-          <h2>Produtos</h2>
-          <p>3500</p>
-        </article>
-        
-        <article class="card">
-          <h2>Usuários</h2>
-          <p>2900</p>
-        </article>
-        
-        <article class="card">
-          <h2>Pedidos</h2>
-          <p>6800</p>
-        </article>
-        
-        <article class="card">
-          <h2>Vendas</h2>
-          <p>6400</p>
-        </article>
-      </section>
-      
-      <section class="congrats" aria-label="Parabéns Lucas">
-        <h2>Parabéns, Lucas</h2>
-        <p>Você vendeu 65% mais produtos que no mês passado.</p>
-        
-        <div class="comparison">
-          <article>
-            <p>R$4800</p>
-            <p>Este Mês</p>
-          </article>
-          
-          <article>
-            <p>R$2300</p>
-            <p>Mês Passado</p>
-          </article>
-        </div>
-      </section>
-      
-      <article class="congrats" aria-label="Parabéns Lucas">
-        <section class="ladoEsquerdoGrafico">
-          <h2>Média de Vendas do últimos meses</h2>
-          <figure class="">
-            <img src="../imagem/graficos/graficoBarra.png" alt="Imagem Média de Vendas dos últimos meses" />
-          </figure>
-        </section>
+  <header>
+    <h1>NutriCore</h1>
+    <p>Hoje <span class="usuario">Lucas da Silva</span></p>
+  </header>
 
-        <section class="">
-          <h2>Produtos vendidos por categoria</h2>
-          <figure class="">
-            <img src="../imagem/graficos/graficoPizza.png" alt="Imagem quantidade de produtos vendidos no mês" />
-          </figure>
-        </section>
-      </article>
+  <nav>
+    <figure>
+      <img src="" alt="Logotipo do E-commerce">
+      <figcaption>
+        <strong>Lucas da Silva</strong><br>Administrador
+      </figcaption>
+    </figure>
+    <ul>
+      <li><a href="home.html">🏠 Home</a></li>
+      <li><a href="gestaoProdutos.html">📦 Gestão de Produtos</a></li>
+      <li><a href="gerenciamentoPedidos.html">📋 Gerenciamento de Pedidos</a></li>
+      <li><a href="gestaoClientes.html">👥 Gestão de Clientes</a></li>
+      <li><a href="login.html">🚪 Sair</a></li>
+    </ul>
+  </nav>
 
-    </main>
-  </div>
+  <main>
+    <section class="cards">
+      <article><h2>Produtos</h2><p>3500</p></article>
+      <article><h2>Usuários</h2><p>2900</p></article>
+      <article><h2>Pedidos</h2><p>6800</p></article>
+      <article><h2>Vendas</h2><p>6400</p></article>
+    </section>
+
+    <section class="parabens">
+      <h2>Parabéns, Lucas</h2>
+      <p>Você vendeu 65% mais produtos que no mês passado.</p>
+      <p><strong>R$4800</strong> Este mês</p>
+      <p><strong>R$2300</strong> Mês passado</p>
+    </section>
+
+    <section class="graficos">
+      <h2>Média de Vendas dos últimos meses</h2>
+      <div class="graficos-container">
+        <figure>
+          <img src="../imagem/graficos/graficoBarra.png" alt="Gráfico de barras">
+          <figcaption>Vendas Mensais</figcaption>
+        </figure>
+        <figure>
+          <img src="../imagem/graficos/graficoPizza.png" alt="Gráfico de pizza">
+          <figcaption>Participação por Produto</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
