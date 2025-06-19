@@ -34,7 +34,7 @@ main {
 
 .logotipoNutriCore {
   margin-top: 40px;
-  width: 190px;
+  width: 200px;
   height: auto;
 }
 
@@ -323,9 +323,10 @@ nav ul.menuSair {
 }
 
 .cardInformativo {
-  background-color: #fbfbfb;
+  background-color: #30052d;
   border-radius: 8px;
-  gap: 10px;
+  gap: 10px; 
+  height: 150px;
   padding: 20px;
   box-shadow: 0 8px 12px rgba(0,0,0,0.1);
   padding: 20px;
@@ -340,8 +341,8 @@ nav ul.menuSair {
 }
 
 .tituloCard {
-  font-size: 18px;
-  color: #30052d;
+  font-size: 20px;
+  color: #e9e4e4;
   margin: 0 0 4px 0;
   font-weight: 600;
 }
@@ -350,12 +351,13 @@ nav ul.menuSair {
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 6px 0;
-  color: #f18716;
+  color: #ffffff;
 }
 
 .descricaoCard {
   font-size: 17px;
-  color: #3c2c3b;
+  color: #e9e4e4;
+
   margin: 0;
 }
 
@@ -505,8 +507,7 @@ nav ul.menuSair {
   border-radius: 6px;
 }
 
-/* Botões de ação */
-.colunaAcoes {
+.colunaAcoesAdmin {
   display: flex;
   gap: 16px;
 }
@@ -514,7 +515,7 @@ nav ul.menuSair {
 .botaoAcao {
   color: #360b33;
   font-size: 20px;
-  background-color: #bebebe;
+  background-color: #f2f0ef;
   border-radius: 50%;
   padding: 10px;
   text-decoration: none;
@@ -523,19 +524,19 @@ nav ul.menuSair {
 
 .botaoAcao.visualizarProduto:hover { 
   color: #1e128f; 
-  background-color: #2998d873;
+  background-color: #259de273;
   
 }
 
 .botaoAcao.editarProduto:hover{
   color: #441c00;  
-  background-color: #c98c46;
+  background-color: #bb8446;
   
 }
 
 .botaoAcao.excluirProduto:hover {
   color: #a30818; 
-  background-color: #e1323285;
+  background-color: #bd272785;
 }
 
 /*Página Gerenciamento de pedidos*/
@@ -836,30 +837,36 @@ nav ul.menuSair {
 
 .tituloDetalheProduto {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   margin-top: 15px;
   color: #430c4a;
 }
 
 .valorDetalheProduto {
   margin-left: 0;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 8px;
   margin-bottom: 20px;
-  color: #545252;
+  color: #252525;
+}
+
+.divisaoVisualizarProduto {
+  width: 100%;
+  border: 1px solid #ccc3cc;
+  margin-bottom: 5px;
 }
 
 .containerBotao {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .containerBotao a {
   text-decoration: none;
-  font-size: 19px;
-  color: #000000;
+  font-size: 20px;
+  color: #333233;
 }
 
 .containerBotao a:hover {
