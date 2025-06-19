@@ -323,7 +323,7 @@ nav ul.menuSair {
 }
 
 .cardInformativo {
-  background-color: #471243;
+  background-color: #fbfbfb;
   border-radius: 8px;
   gap: 10px;
   padding: 20px;
@@ -341,7 +341,7 @@ nav ul.menuSair {
 
 .tituloCard {
   font-size: 18px;
-  color: #ffffff;
+  color: #30052d;
   margin: 0 0 4px 0;
   font-weight: 600;
 }
@@ -355,7 +355,7 @@ nav ul.menuSair {
 
 .descricaoCard {
   font-size: 17px;
-  color: #ffffff;
+  color: #3c2c3b;
   margin: 0;
 }
 
@@ -444,7 +444,7 @@ nav ul.menuSair {
 
 .botaoAdicionarProduto {
   margin: 20px 0;
-  background-color: #389b3c;
+  background-color: #126f15;
   color: #ffffff;
   border: none;
   padding: 12px 20px;
@@ -630,7 +630,7 @@ nav ul.menuSair {
   margin: 0 60px;
   border-collapse: collapse;
   background-color: #fcfafa;
-  box-shadow: 0 8px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 12px rgba(0,0,0,0.08);
   border-radius: 6px;
   overflow: hidden;
 }
