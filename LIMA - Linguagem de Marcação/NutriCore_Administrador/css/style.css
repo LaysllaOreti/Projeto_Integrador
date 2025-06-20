@@ -34,8 +34,8 @@ main {
 
 .logotipoNutriCore {
   margin-top: 40px;
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 140px;
 }
 
 /*Página Login Administrador*/
@@ -357,7 +357,7 @@ nav ul.menuSair {
 .descricaoCard {
   font-size: 17px;
   color: #e9e4e4;
-
+  
   margin: 0;
 }
 
@@ -396,7 +396,6 @@ nav ul.menuSair {
 }
 
 /*Página Gestão de Produto*/
-
 .cabecalhoGestaoProdutos {
   margin-bottom: 10px;
 }
@@ -461,7 +460,7 @@ nav ul.menuSair {
 }
 
 .botaoAdicionarProduto:hover {
-  background-color: #1a531c;
+  background-color: #0d3f0e;
 }
 
 .tabelaGestaoProdutos {
@@ -481,16 +480,28 @@ nav ul.menuSair {
   height: 140px;
 }
 
-.containerImagem img {
+.imagemTabelaProdutos {
   width: auto;
-  height: 110px;
+  height: 180px;
 }
 
-.tabelaGestaoProdutos th, .tabelaGestaoProdutos td {
+.tabelaGestaoProdutos th {
   text-align: center;
   padding: 22px 16px;
-  border-bottom: 1px solid #e6d7d7;
   vertical-align: middle;
+  font-size: 16px;
+  gap: 30px;
+}
+
+.tabelaGestaoProdutos tr {
+  border-bottom: 1px solid #ccc3cc;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.tabelaGestaoProdutos td {
+  text-align: center;
+  padding: 10px 16px;
   font-size: 18px;
 }
 
@@ -498,6 +509,7 @@ nav ul.menuSair {
   background-color: #360b33;
   font-weight: 600;
   color: #ffffff;
+  font-size: 18px;
 }
 
 .imagemProduto {
@@ -509,22 +521,24 @@ nav ul.menuSair {
 
 .colunaAcoesAdmin {
   display: flex;
+  margin-top: 36%;
+  margin-right: 30px;
   gap: 16px;
 }
 
 .botaoAcao {
   color: #360b33;
-  font-size: 20px;
+  font-size: 26px;
   background-color: #f2f0ef;
-  border-radius: 50%;
+  border-radius: 60%;
   padding: 10px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .botaoAcao.visualizarProduto:hover { 
-  color: #1e128f; 
-  background-color: #259de273;
+  color: #3b0348; 
+  background-color: #a460d48a;
   
 }
 
@@ -566,7 +580,15 @@ nav ul.menuSair {
   overflow: hidden;
 }
 
-.tabelaPedidosAdmin th,
+.tabelaPedidosAdmin th{
+  text-align: center;
+  padding: 22px 16px;
+  border-bottom: 1px solid #e6d7d7;
+  vertical-align: middle;
+  font-size: 18px;
+  gap: 30px;
+}
+
 .tabelaPedidosAdmin td {
   text-align: center;
   padding: 22px 16px;
@@ -669,10 +691,19 @@ nav ul.menuSair {
   font-size: 30px;
 }
 
+.iconeDesativar:hover {
+  color: #6f0a0a;
+}
+
 .iconeAtivar {
   color: #077225;
   font-size: 30px;
 }
+
+.iconeAtivar:hover {
+  color: #074017;
+}
+
 
 /*Página Adicionar Produto*/
 .containerAdicionarProduto {
@@ -714,7 +745,7 @@ nav ul.menuSair {
 
 .campoFormulario label {
   font-weight: 600;
-  margin: 13px 3px;
+  margin: 5px 3px;
   color: #262525;
   font-size: 17px;
 }
@@ -723,7 +754,7 @@ nav ul.menuSair {
 .campoFormulario textarea,
 .campoFormulario select {
   padding: 12px;
-  border: 1.5px solid #a39b9b;
+  border: 1.2px solid #8d8391;
   border-radius: 6px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -731,6 +762,7 @@ nav ul.menuSair {
 
 .camposAdicionarProduto {
   border-radius: 6px;
+  border: 1px solid #8d8391;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -777,7 +809,7 @@ nav ul.menuSair {
 }
 
 #botaoAdicionar:hover {
-  background-color: #115214;
+  background-color: #0c3a0f;
 }
 
 #botaoCancelar {
@@ -837,14 +869,14 @@ nav ul.menuSair {
 
 .tituloDetalheProduto {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 15px;
   color: #430c4a;
 }
 
 .valorDetalheProduto {
   margin-left: 0;
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 8px;
   margin-bottom: 20px;
   color: #252525;
@@ -919,7 +951,7 @@ nav ul.menuSair {
 }
 
 .formularioEdicao {
-    flex-direction: column;
+  flex-direction: column;
   display: flex;
 }
 
@@ -982,4 +1014,114 @@ nav ul.menuSair {
 .botaoCancelarEdicao:hover {
   background-color: #70040f;
   color: white;
+}
+
+/*Página Desativar Usuário*/
+.backgroundUsuarioAtivado {
+  display: flex;
+  margin: 0 auto;
+  background: linear-gradient(to top, #5c2e5c, #f7e3c8);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.cardUsuarioAtivado {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  padding: 60px;
+  max-width: 620px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.iconeUsuarioAtivado {
+  font-size: 70px;
+  color: #216e19e3;
+}
+
+.cardUsuarioAtivado h2 {
+  font-size: 30px;
+  margin: 16px;
+  color: #333;
+}
+
+.cardUsuarioAtivado p {
+  font-size: 18px;
+  color: #4a4747;
+  margin-bottom: 2rem;
+}
+
+.botaoRetornarGestao {
+  display: inline-block;
+  padding:  12px 18px;
+  background-color: #4a0849;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botaoRetornarGestao:hover {
+  background-color: #370332;
+}
+
+/*Página Usuário Ativado*/
+.backgroundUsuarioDesativado {
+  display: flex;
+  margin: 0 auto;
+  background: linear-gradient(to top, #5c2e5c, #f7e3c8);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.cardUsuarioDesativado {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  padding: 60px;
+  max-width: 620px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.iconeUsuarioDesativado {
+  font-size: 70px;
+  color: #d20505e3;
+}
+
+.cardUsuarioDesativado h2 {
+  font-size: 30px;
+  margin: 16px;
+  color: #333;
+}
+
+.cardUsuarioDesativado p {
+  font-size: 18px;
+  color: #4a4747;
+  margin-bottom: 2rem;
+}
+
+.botaoRetornarGestao {
+  display: inline-block;
+  padding:  12px 18px;
+  background-color: #4a0849;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botaoRetornarGestao:hover {
+  background-color: #370332;
 }

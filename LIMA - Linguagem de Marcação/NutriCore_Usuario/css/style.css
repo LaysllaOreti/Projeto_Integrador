@@ -45,18 +45,17 @@ nav {
 .logoSite a {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     text-decoration: none;
     color: #f2f0ef;
 }
 
 .logoImagem {
-    height: 70px;
+    height: 100px;
     width: auto;
 }
 
 #nomeEcommerce {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color: #f2f0ef;
     text-decoration: none;

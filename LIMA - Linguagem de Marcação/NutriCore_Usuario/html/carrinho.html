@@ -8,30 +8,17 @@
 </head>
 
 <body>
-  
-  <!--Carrosel de frases no início da página-->
-  <!--
-  <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-    <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
-    <ul class="mensagensAvisos">
-      <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
-      <li class="mensagemAviso">Segurança e Entrega Rápida</li>
-      <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
-    </ul>
-    <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
-  </section>-->
-  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
-  
-  <!--Primeira navbar (Principal)-->
+  <!-- Cabeçalho principal com navegação do site -->
   <header class="headerSite">
     <h1 class="logoSite">
       <a href="home.html" aria-label="Página inicial - NutriCore">
-        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Logo do e-commerce NutriCore" class="logoImagem"/>
         <h2 id="nomeEcommerce">NutriCore</h2>
       </a>
     </h1>
     
-    <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+    <!-- Navegação principal -->
+    <nav class="navTop" aria-label="Menu Principal">
       <ul>
         <li><a href="home.html" class="textNavTop">Início</a></li>
         <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
@@ -40,12 +27,13 @@
       </ul>
     </nav>
     
+    <!-- Navegação do usuário -->
     <nav class="navUsuario" aria-label="Menu Usuário">
-      <ul>   
+      <ul>
         <li>
-          <a href="perfil.html" aria-label="Pefil">
+          <a href="perfil.html" aria-label="Perfil">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPerfil.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
@@ -54,16 +42,16 @@
         <li>
           <a href="#" aria-label="Pesquisar">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisar"/>
               <figcaption class="legendaIcones">Pesquisar</figcaption>
             </figure>
           </a>
         </li>
         
         <li>
-          <a href="carrinho.html" aria-label="Pefil">
+          <a href="carrinho.html" aria-label="Carrinho">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="icones" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone do Carrinho de Compras"/>
               <figcaption class="legendaIcones">Carrinho</figcaption>
             </figure>
           </a>
@@ -72,8 +60,8 @@
     </nav>
   </header>
   
-  <!--Segunda Navbar (secundária)-->
-  <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+  <!-- Navbar secundária com categorias -->
+  <nav class="navBottom">
     <ul class="navLinks">
       <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
       <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
@@ -81,111 +69,97 @@
       <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
     </ul>
   </nav>
-  
+
   <main>
     <section class="containerCarrinho">
       <section class="secaoProdutoCarrinho">
         
-        <!--Produto 1-->
+        <!-- Produto 1 -->
         <article class="produtoCarrinho">
-          <img src="../imagens/imagens_whey/whey3.png" alt="Produto 1" class="imagemProdutoCarrinho"/>
+          <img src="../imagens/imagens_whey/whey3.png" alt="100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã" class="imagemProdutoCarrinho"/>
           <div class="detalhesProdutoCarrinho">
-            <h2 class="tituloProdutoCarrinho">
-              100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã
-            </h2>
+            <h2 class="tituloProdutoCarrinho">100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã</h2>
             <p class="descricaoProdutoCarrinho">
               Whey Protein MAX Titanium Dr. Peanut (900 g), sabor Avelã. Oferece 20 g de proteína
               e 4.405 mg de BCAA por dose, ideal para recuperação muscular e ganho de força.
             </p>
-            <p class="precoProdutoCarrinho">
-              R$ 145,60
-            </p>
+            <p class="precoProdutoCarrinho">R$ 145,60</p>
           </div>
           
           <article class="quantidadeProdutosCarrinho"> 
             <p class="tituloQuantidadeProdutos">Quantidade</p>
             <button class="buttonProdutoCarrinho" type="button" aria-label="Diminuir quantidade">-</button>
-            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output> <!--o output é usado quando existe um interação ou resultado de um cáculo-->
+            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output>
             <button class="buttonProdutoCarrinho" type="button" aria-label="Aumentar quantidade">+</button>
           </article>   
         </article>
         
-        <!--Produto 2-->
+        <!-- Produto 2 -->
         <article class="produtoCarrinho">
-          <img src="../imagens/imagens_whey/whey20.png" alt="Produto 1" class="imagemProdutoCarrinho"/>
+          <img src="../imagens/imagens_whey/whey20.png" alt="Suplemento Fresh Whey Dux 900g – Sabor Chocolate e Avelã" class="imagemProdutoCarrinho"/>
           <div class="detalhesProdutoCarrinho">
-            <h2 class="tituloProdutoCarrinho">
-              Suplemento Fresh Whey Dux 900g – Sabor Chocolate e Avelã
-            </h2>
+            <h2 class="tituloProdutoCarrinho">Suplemento Fresh Whey Dux 900g – Sabor Chocolate e Avelã</h2>
             <p class="descricaoProdutoCarrinho">
               Shake proteico sabor chocolate com avelã, com 20 g de proteína natural por dose. Contém 29 
               doses, ideal para recuperação muscular e receitas fitness.
             </p>
-            <p class="precoProdutoCarrinho">
-              R$ 148,00
-            </p>
+            <p class="precoProdutoCarrinho">R$ 148,00</p>
           </div>
           
           <article class="quantidadeProdutosCarrinho"> 
             <p class="tituloQuantidadeProdutos">Quantidade</p>
             <button class="buttonProdutoCarrinho" type="button" aria-label="Diminuir quantidade">-</button>
-            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output> <!--o output é usado quando existe um interação ou resultado de um cáculo-->
+            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output>
             <button class="buttonProdutoCarrinho" type="button" aria-label="Aumentar quantidade">+</button>
           </article> 
         </article>
         
-        <!--Produto 3-->
+        <!-- Produto 3 -->
         <article class="produtoCarrinho">
-          <img src="../imagens/imagens_snacks/snack_b3.png" alt="Produto 1" class="imagemProdutoCarrinho"/>
+          <img src="../imagens/imagens_snacks/snack_b3.png" alt="Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades" class="imagemProdutoCarrinho"/>
           <div class="detalhesProdutoCarrinho">
-            <h2 class="tituloProdutoCarrinho">
-              Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades
-            </h2>
+            <h2 class="tituloProdutoCarrinho">Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades</h2>
             <p class="descricaoProdutoCarrinho">
               Caixa da linha BOLD com mix de sabores de barras proteicas prontas para consumo. Cada 
               unidade traz um sabor diferente, como Cookies & Cream, Chocolate com Avelã, entre outros.
             </p>
-            <p class="precoProdutoCarrinho">
-              R$ 139,70
-            </p>
+            <p class="precoProdutoCarrinho">R$ 139,70</p>
           </div>
           
           <article class="quantidadeProdutosCarrinho"> 
             <p class="tituloQuantidadeProdutos">Quantidade</p>
             <button class="buttonProdutoCarrinho" type="button" aria-label="Diminuir quantidade">-</button>
-            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output> <!--o output é usado quando existe um interação ou resultado de um cáculo-->
+            <output class="quantidadeProdutoCarrinho" aria-label="Quantidade atual">1</output>
             <button class="buttonProdutoCarrinho" type="button" aria-label="Aumentar quantidade">+</button>
           </article>  
         </article>
         
       </section>
       
+      <!-- Resumo da compra -->
       <aside class="containerResumoCompra">
         <h2 class="tituloResumoCompra">Resumo</h2>
         <article class="containerPrecos">
-          <p class="textoResumoCompra">Subtotal: </p>
+          <p class="textoResumoCompra">Subtotal:</p>
           <p class="precoResumoCompra">R$ 433,30</p>
         </article>
         
         <article class="containerPrecos">
-          <p class="textoResumoCompra">Frete: </p>
+          <p class="textoResumoCompra">Frete:</p>
           <p class="precoResumoCompra">Grátis</p>
         </article>
         
         <article class="containerPrecos">
-          <p class="textoResumoCompra">Total: </p>
+          <p class="textoResumoCompra">Total:</p>
           <p class="precoResumoCompra">R$ 433,30</p>
         </article>
         
-        <a href="login.html" class="botaoCompra" role="button">
-          Comprar
-        </a>
+        <a href="login.html" class="botaoCompra" role="button">Comprar</a>
       </aside>
     </section>
   </main>
   
-  
-  <!--Rodapé-->
+  <!-- Rodapé -->
   <footer class="rodape">
     <section class="footerTop">
       <a href="index.html" class="logoFooter">
@@ -208,19 +182,19 @@
       <article class="colunaFooter">
         <h3 class="titleColunaRodape">Formas de Pagamento</h3>
         <ul class="iconsPagamento">
-          <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix"/></li>
-          <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa"/></li>
-          <li><img src="../imagens/icones/mastercard.png" alt="Forma de pagamento - Cartão Mastercard" id="iconMastercard"/></li>
-          <li><img src="../imagens/icones/boleto.png" alt="Forma de pagamento - Boleto Bancário" id="iconBoleto"/></li>
+          <li><img src="../imagens/icones/pix.png" alt="Pix" id="iconPix"/></li>
+          <li><img src="../imagens/icones/visa.png" alt="Cartão Visa" id="iconVisa"/></li>
+          <li><img src="../imagens/icones/mastercard.png" alt="Cartão Mastercard" id="iconMastercard"/></li>
+          <li><img src="../imagens/icones/boleto.png" alt="Boleto Bancário" id="iconBoleto"/></li>
         </ul>
       </article>
       
       <article class="colunaFooter">
         <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
         <ul class="iconsRedesSociais">
-          <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Logo do Facebook"/></a></li>
-          <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Logo do Instagram"/></a></li>
-          <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Logo do Whatsapp"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Facebook"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Instagram"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Whatsapp"/></a></li>
         </ul>
       </article>
     </section>

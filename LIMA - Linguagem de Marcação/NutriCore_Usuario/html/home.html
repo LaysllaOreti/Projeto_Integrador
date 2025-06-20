@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Configurações iniciais da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | NutriCore</title>
+  <link rel="icon" href="../imagens/identidadeVisual/iconNutriCore.png" type="image/png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho principal com navegação -->
+  <header class="headerSite">
+    <h1 class="logoSite">
+      <!-- Link para página inicial -->
+      <a href="home.html" aria-label="Página inicial - NutriCore">
+        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <h2 id="nomeEcommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <!-- Menu principal do site -->
+    <nav class="navTop" aria-label="Menu Principal">
+      <ul>
+        <li><a href="home.html" class="textNavTop">Início</a></li>
+        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+        <li><a href="contato.html" class="textNavTop">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Menu de navegação do usuário -->
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>
+        <li>
+          <a href="perfil.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pesquisar">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="carrinho.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Barra de navegação secundária por categoria -->
+  <nav class="navBottom">
+    <ul class="navLinks">
+      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <!-- Banner promocional principal -->
+    <section class="containerBanner" aria-label="Banner com o tempo restante da promoção do site">
+      <figure class="banner">
+        <img src="../imagens/banner_promocional.png" class="imagemBanner" alt="Banner indicando o tempo promocional do e-commerce" />
+      </figure>
+    </section>
+    
+    <!-- Seção de categorias com imagens clicáveis -->
+    <section class="containerCategorias">
+      <h2 id="tituloCategorias">Categorias</h2>
+      <section class="categoriaProdutos">
+        <!-- Cada article representa uma categoria -->
+        <article class="produtoWhey"> ... </article>
+        <article class="produto"> ... </article>
+        <article class="produto"> ... </article>
+        <article class="produtoSnack"> ... </article>
+      </section>
+    </section>
+    
+    <!-- Carrossel de produtos mais vendidos -->
+    <section class="produtosMaisVendidos" aria-label="Carrossel de Produtos mais vendidos na Semana">
+      <h2 id="tituloProdutosVendidos">Produtos mais vendidos da semana</h2>
+      <article class="containerCarrosselVendidos">
+        <ul class="carrosselMaisVendidos">
+          <!-- Lista de produtos representada por <li> -->
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+            <li class="produtoCard"> ... </li>
+          </ul>
+        </article>
+      </section>
+      
+      <!-- Benefícios oferecidos pela loja -->
+      <section class="beneficiosEmpresa">
+        <article class="beneficio"> ... </article>
+        <article class="beneficio"> ... </article>
+        <article class="beneficio"> ... </article>
+        <article class="beneficio"> ... </article>
+        <article class="beneficio"> ... </article>
+      </section>
+    </main>
+    
+    <!-- Rodapé com informações institucionais e formas de pagamento -->
+    <footer class="rodape">
+      <section class="footerTop">
+        <a href="index.html" class="logoFooter">
+          <img src="../imagens/" alt="Logo NutriCore"/>
+        </a>
+      </section>
+      
+      <section class="contentFooter">
+        <article class="colunaFooter"> ... </article>
+        <article class="colunaFooter"> ... </article>
+        <article class="colunaFooter"> ... </article>
+        <article class="colunaFooter"> ... </article>
+      </section>
+      
+      <section class="footerBottom">
+        <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Layslla Eduarda Oreti.</p>
+      </section>
+    </footer>
+  </body>
+  </html>
+  

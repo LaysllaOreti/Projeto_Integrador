@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conclusão Pagamento | NutriCore</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho principal com navegação do site -->
+  <header class="headerSite">
+    <h1 class="logoSite">
+      <a href="home.html" aria-label="Página inicial - NutriCore">
+        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Logo do e-commerce NutriCore" class="logoImagem"/>
+        <h2 id="nomeEcommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <!-- Navegação principal -->
+    <nav class="navTop" aria-label="Menu Principal">
+      <ul>
+        <li><a href="home.html" class="textNavTop">Início</a></li>
+        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+        <li><a href="contato.html" class="textNavTop">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Navegação do usuário -->
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>
+        <li>
+          <a href="perfil.html" aria-label="Perfil do usuário">
+            <figure class="navIcones">
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#" aria-label="Pesquisar no site">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisar"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <li>
+          <a href="carrinho.html" aria-label="Carrinho de compras">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone do Carrinho de Compras"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Segunda Navbar (secundária) -->
+  <nav class="navBottom">
+    <ul class="navLinks">
+      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Seção de confirmação de pagamento -->
+    <article class="containerConclusaoPagamento" role="region" aria-labelledby="tituloConfirmacaoCompra">
+      <figure class="boxImagemConclusao">
+        <img src="../imagens/icones/iconVerificacaoCompra.png" alt="Ícone de verificação de compra concluída" />
+      </figure>
+      
+      <h2 id="tituloConfirmacaoCompra" class="tituloConfirmacaoCompra">Compra Confirmada!</h2>
+      <p class="textoConfirmacaoCompra">Acompanhe seu pedido por meio do Código de Rastreio:</p>
+      <p class="codigoRastreio" aria-live="polite" aria-atomic="true" aria-label="Código de rastreio do pedido">
+        AB123456789BR
+      </p>
+      
+      <a href="acompanharPedido.html" class="botaoIrPerfil" role="button">Acompanhar Pedido</a>
+      <a href="home.html" class="botaoVoltarHome">Voltar para a Home</a>
+    </article>
+  </main>
+  
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <section class="footerTop">
+      <a href="index.html" class="logoFooter">
+        <img src="../imagens/" alt="Logo NutriCore"/>
+      </a>
+    </section>
+    
+    <section class="contentFooter">
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
+        <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento, feita por pessoas apaixonadas por saúde, performance e bem-estar.</p>
+      </article>
+      
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Atendimento</h3>
+        <p>Email: nutricore@empresa.com</p>
+        <p>Telefone: (19) 99999-9999</p>
+      </article>
+      
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Formas de Pagamento</h3>
+        <ul class="iconsPagamento">
+          <li><img src="../imagens/icones/pix.png" alt="Pix" id="iconPix"/></li>
+          <li><img src="../imagens/icones/visa.png" alt="Cartão Visa" id="iconVisa"/></li>
+          <li><img src="../imagens/icones/mastercard.png" alt="Cartão Mastercard" id="iconMastercard"/></li>
+          <li><img src="../imagens/icones/boleto.png" alt="Boleto Bancário" id="iconBoleto"/></li>
+        </ul>
+      </article>
+      
+      <article class="colunaFooter">
+        <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
+        <ul class="iconsRedesSociais">
+          <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Facebook"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Instagram"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Whatsapp"/></a></li>
+        </ul>
+      </article>
+    </section>
+    
+    <section class="footerBottom">
+      <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Layslla Eduarda Oreti.</p>
+    </section>
+  </footer>
+</body>
+</html>

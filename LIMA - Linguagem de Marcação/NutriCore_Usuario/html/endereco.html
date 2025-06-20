@@ -8,30 +8,17 @@
 </head>
 
 <body>
-  
-  <!--Carrosel de frases no início da página-->
-  <!--
-  <section class="avisoCarrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-    <button class="setasAviso setaEsquerdaAviso" aria-hidden="true">❮</button>
-    <ul class="mensagensAvisos">
-      <li class="mensagemAviso">Frete grátis em compras acima de R$159</li>
-      <li class="mensagemAviso">Segurança e Entrega Rápida</li>
-      <li class="mensagemAviso">30% de Desconto em todos os produtos (por tempo limitado)</li>
-    </ul>
-    <button class="setasAviso setaDireitaAviso" aria-hidden="true">❯</button> 
-  </section>-->
-  <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
-  
-  <!--Primeira navbar (Principal)-->
   <header class="headerSite">
     <h1 class="logoSite">
+      <!-- Logo da NutriCore com link para a página inicial -->
       <a href="home.html" aria-label="Página inicial - NutriCore">
-        <img src="../imagens/icones/icon-ecommerce.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
         <h2 id="nomeEcommerce">NutriCore</h2>
       </a>
     </h1>
     
-    <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+    <!-- Navegação principal do site -->
+    <nav class="navTop" aria-label="Menu Principal">
       <ul>
         <li><a href="home.html" class="textNavTop">Início</a></li>
         <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
@@ -40,42 +27,39 @@
       </ul>
     </nav>
     
+    <!-- Navegação com ícones do usuário (perfil, pesquisa e carrinho) -->
     <nav class="navUsuario" aria-label="Menu Usuário">
       <ul>
         <li>
-          <a href="perfil.html" aria-label="Pefil">
+          <a href="perfil.html" aria-label="Perfil">
             <figure class="navIcones">
               <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
               <figcaption class="legendaIcones">Perfil</figcaption>
             </figure>
           </a>
         </li>
-        
         <li>
           <a href="#" aria-label="Pesquisar">
             <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="icones" alt="Ícone de Pesquisarx"/>
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisa"/>
               <figcaption class="legendaIcones">Pesquisar</figcaption>
             </figure>
           </a>
         </li>
-        
         <li>
-          <a href="carrinho.html" aria-label="Pefil">
+          <a href="carrinho.html" aria-label="Carrinho">
             <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone do Carrinho"/>
               <figcaption class="legendaIcones">Carrinho</figcaption>
             </figure>
           </a>
         </li>
-        
       </ul>
     </nav>
-    
   </header>
   
-  <!--Segunda Navbar (secundária)-->
-  <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
+  <!-- Navegação secundária com categorias de produtos -->
+  <nav class="navBottom">
     <ul class="navLinks">
       <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
       <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
@@ -84,21 +68,25 @@
     </ul>
   </nav>
   
+  <!-- Conteúdo principal da página de endereço -->
   <main>
-    
     <section class="containerEndereco">
+      
+      <!-- Formulário para o usuário inserir os dados de entrega -->
       <article class="formEndereco">
         <h2 id="tituloContainerEndereco">Endereço de Entrega</h2>
         <p class="subtitleContainerEndereco">Preencha os dados abaixo para receber seus produtos em casa com segurança.</p>
         
         <form action="/finalizar-compra" method="post">
-          
+          <!-- Campo para inserção do CEP -->
           <label for="cep" class="labelContainerEndereco">CEP</label>
           <input type="text" id="cep" name="cep" placeholder="Ex: 00000-000" class="inputContainerEndereco" autofocus/>
           
+          <!-- Campo para nome da rua -->
           <label for="rua" class="labelContainerEndereco">Rua</label>
           <input type="text" id="rua" name="rua" placeholder="Ex: Rua Cícero Canuto" class="inputContainerEndereco"/>
           
+          <!-- Campos agrupados: número e complemento -->
           <article class="dupla">
             <article>
               <label for="numero" class="labelContainerEndereco">Número</label>
@@ -110,77 +98,66 @@
             </article>
           </article>
           
+          <!-- Campo para inserção do bairro -->
           <label for="bairro" class="labelContainerEndereco">Bairro</label>
           <input type="text" id="bairro" name="bairro" placeholder="Ex: Jardim Esmeralda" class="inputContainerEndereco"/>
           
+          <!-- Campos agrupados: cidade e estado -->
           <article class="duplaLabel">
             <article>
-              
               <label for="cidade" class="labelContainerEndereco">Cidade</label>
               <input type="text" id="cidade" name="cidade" placeholder=" Ex: Hortolândia" class="inputContainerEndereco"/>
-              
             </article>
-            
             <article>
-              
               <label for="estado" class="labelContainerEndereco">Estado</label>
               <select id="estado" name="estado" class="selectContainerEndereco">
                 <option value="">Selecione</option>
-                
+                <!-- Lista de estados brasileiros -->
                 <option value="AC" class="opcaoSelecionarEstado">AC - Acre</option>
                 <option value="AL" class="opcaoSelecionarEstado">AL - Alagoas</option>
                 <option value="AP" class="opcaoSelecionarEstado">AP - Amapá</option>
                 <option value="AM" class="opcaoSelecionarEstado">AM - Amazonas</option>
                 <option value="BA" class="opcaoSelecionarEstado">BA - Bahia</option>
-                
                 <option value="CE" class="opcaoSelecionarEstado">CE - Ceará</option>
                 <option value="DF" class="opcaoSelecionarEstado">DF - Distrito Federal</option>
                 <option value="ES" class="opcaoSelecionarEstado">ES - Espírito Santo</option>
                 <option value="GO" class="opcaoSelecionarEstado">GO - Goiás</option>
                 <option value="MA" class="opcaoSelecionarEstado">MA - Maranhão</option>
-                
                 <option value="MS" class="opcaoSelecionarEstado">MS - Mato Grosso do Sul</option>
                 <option value="MT" class="opcaoSelecionarEstado">MT - Mato Grosso</option>
                 <option value="MG" class="opcaoSelecionarEstado">MG - Minas Gerais</option>
                 <option value="PA" class="opcaoSelecionarEstado">PA - Pará</option>
                 <option value="PB" class="opcaoSelecionarEstado">PB - Paraíba</option>
-                
                 <option value="PR" class="opcaoSelecionarEstado">PR - Paraná</option>
                 <option value="PE" class="opcaoSelecionarEstado">PE - Pernambuco</option>
                 <option value="PI" class="opcaoSelecionarEstado">PI - Piauí</option>
                 <option value="RJ" class="opcaoSelecionarEstado">RJ - Rio de Janeiro</option>
                 <option value="RN" class="opcaoSelecionarEstado">RN - Rio Grande do Norte</option>
-                
                 <option value="RS" class="opcaoSelecionarEstado">RS - Rio Grande do Sul</option>
-                <option value="RO" class="opcaoSelecionarEstado">RO - Rondânia</option>
+                <option value="RO" class="opcaoSelecionarEstado">RO - Rondônia</option>
                 <option value="RR" class="opcaoSelecionarEstado">RR - Roraima</option>
                 <option value="SC" class="opcaoSelecionarEstado">SC - Santa Catarina</option>
                 <option value="SP" class="opcaoSelecionarEstado">SP - São Paulo</option>
-                
                 <option value="SE" class="opcaoSelecionarEstado">SE - Sergipe</option>
                 <option value="TO" class="opcaoSelecionarEstado">TO - Tocantins</option>
               </select>
-              
             </article>
-            
           </article>
           
+          <!-- Botão/link para seguir para a próxima etapa (pagamento) -->
           <a href="pagamento.html" class="botaoIrPagamento">
             Ir para a Tela de Pagamento
           </a>
-          
         </form>
       </article>
       
+      <!-- Espaço reservado para elementos decorativos ou informativos -->
       <article class="decorationContainerEndereco" aria-label="Informações para contato">
-        
       </article>
     </section>
-    
   </main>
   
-  
-  <!--Rodapé-->
+  <!-- Rodapé do site com informações institucionais e de contato -->
   <footer class="rodape">
     <section class="footerTop">
       <a href="index.html" class="logoFooter">
@@ -202,6 +179,7 @@
       
       <article class="colunaFooter">
         <h3 class="titleColunaRodape">Formas de Pagamento</h3>
+        <!-- Ícones representando os meios de pagamento aceitos -->
         <ul class="iconsPagamento">
           <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix"/></li>
           <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa"/></li>
@@ -226,4 +204,5 @@
     </section>
   </footer>
 </body>
+
 </html>
