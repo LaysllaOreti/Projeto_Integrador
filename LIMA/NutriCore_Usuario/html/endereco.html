@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endereço de Entrega | NutriCore</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- Cabeçalho com logo, navegação principal e ícones do usuário -->
+  <header class="headerSite">
+    <h1 class="logoSite">
+      <!-- Link da logo que leva à home -->
+      <a href="home.html" aria-label="Página inicial - NutriCore">
+        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <h2 id="nomeEcommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <!-- Menu superior com as principais páginas do site -->
+    <nav class="navTop" aria-label="Menu Principal">
+      <ul>
+        <li><a href="home.html" class="textNavTop">Início</a></li>
+        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+        <li><a href="contato.html" class="textNavTop">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Menu do usuário com ícones de perfil, busca e carrinho -->
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>
+        <li>
+          <a href="perfil.html" aria-label="Perfil">
+            <figure class="navIcones">
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Pesquisar">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisa"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="carrinho.html" aria-label="Carrinho">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone do Carrinho"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Barra de navegação secundária com links para categorias de produtos -->
+  <nav class="navBottom">
+    <ul class="navLinks">
+      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Conteúdo principal da tela de endereço -->
+  <main>
+    <section class="containerEndereco">
+      <!-- Formulário para inserção dos dados de entrega -->
+      <article class="formEndereco">
+        <h2 id="tituloContainerEndereco">Endereço de Entrega</h2>
+        <p class="subtitleContainerEndereco">Preencha os dados abaixo para receber seus produtos em casa com segurança.</p>
+        
+        <form action="/finalizar-compra" method="post">
+          <!-- Campo de CEP (futuramente pode ter auto-preenchimento com API ViaCEP) -->
+          <label for="cep" class="labelContainerEndereco">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="Ex: 00000-000" class="inputContainerEndereco" autofocus/>
+          
+          <!-- Rua -->
+          <label for="rua" class="labelContainerEndereco">Rua</label>
+          <input type="text" id="rua" name="rua" placeholder="Ex: Rua Cícero Canuto" class="inputContainerEndereco"/>
+          
+          <!-- Número e Complemento agrupados -->
+          <article class="dupla">
+            <article>
+              <label for="numero" class="labelContainerEndereco">Número</label>
+              <input type="text" id="numero" name="numero" placeholder="Ex: 900" class="inputContainerEndereco"/>
+            </article>
+            <article>
+              <label for="complemento" class="labelContainerEndereco">Complemento</label>
+              <input type="text" id="complemento" name="complemento" placeholder="Ex: Apto. 34 Bloco C" class="inputContainerEndereco"/>
+            </article>
+          </article>
+          
+          <!-- Bairro -->
+          <label for="bairro" class="labelContainerEndereco">Bairro</label>
+          <input type="text" id="bairro" name="bairro" placeholder="Ex: Jardim Esmeralda" class="inputContainerEndereco"/>
+          
+          <!-- Cidade e Estado agrupados -->
+          <article class="duplaLabel">
+            <article>
+              <label for="cidade" class="labelContainerEndereco">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder=" Ex: Hortolândia" class="inputContainerEndereco"/>
+            </article>
+            <article>
+              <label for="estado" class="labelContainerEndereco">Estado</label>
+              <select id="estado" name="estado" class="selectContainerEndereco">
+                <option value="">Selecione</option>
+                <!-- Todos os estados brasileiros listados aqui -->
+                <!-- ... (todos os options já estavam ok) -->
+              </select>
+            </article>
+          </article>
+          
+          <!-- Botão para ir para a tela de pagamento -->
+          <a href="pagamento.html" class="botaoIrPagamento">Ir para a Tela de Pagamento</a>
+        </form>
+      </article>
+      
+      <!-- Área decorativa ou para mensagens, imagens, ícones etc. -->
+      <article class="decorationContainerEndereco" aria-label="Informações para contato">
+      </article>
+    </section>
+  </main>
+  
+  <!-- Rodapé com informações institucionais, de contato e formas de pagamento -->
+  <footer class="rodape">
+    <section class="footerTop">
+      <a href="index.html" class="logoFooter">
+        <img src="../imagens/" alt="Logo NutriCore"/>
+      </a>
+    </section>
+    
+    <section class="contentFooter">
+      <!-- Sobre -->
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
+        <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento...</p>
+      </article>
+      
+      <!-- Contato -->
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Atendimento</h3>
+        <p>Email: nutricore@empresa.com</p>
+        <p>Telefone: (19) 99999-9999</p>
+      </article>
+      
+      <!-- Pagamentos -->
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Formas de Pagamento</h3>
+        <ul class="iconsPagamento">
+          <li><img src="../imagens/icones/pix.png" alt="Pix" id="iconPix"/></li>
+          <li><img src="../imagens/icones/visa.png" alt="Visa" id="iconVisa"/></li>
+          <li><img src="../imagens/icones/mastercard.png" alt="Mastercard" id="iconMastercard"/></li>
+          <li><img src="../imagens/icones/boleto.png" alt="Boleto" id="iconBoleto"/></li>
+        </ul>
+      </article>
+      
+      <!-- Redes sociais -->
+      <article class="colunaFooter">
+        <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
+        <ul class="iconsRedesSociais">
+          <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Facebook"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Instagram"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Whatsapp"/></a></li>
+        </ul>
+      </article>
+    </section>
+    
+    <!-- Créditos e direitos autorais -->
+    <section class="footerBottom">
+      <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Layslla Eduarda Oreti.</p>
+    </section>
+  </footer>
+</body>
+
+</html>

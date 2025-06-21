@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Editar Produto | Administrador NutriCore</title>
+    <link rel="icon" href="../imagem/identidadeVisual/iconNutriCore.png" type="image/png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <aside class="menuLateral" aria-label="Menu de navegação administrativo">
+        
+        <header class="areaLogotipo">
+            <img src="../imagem/identidadeVisual/logotipoNutriCore.png" alt="Logo NutriCore" class="logotipoNutriCore"/>
+        </header>
+        
+        <nav>
+            <ul class="menuLateralPrincipal">
+                <li><a href="dashboard.html"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+                <li><a href="gestaoProdutos.html"><i class="bi bi-box-seam"></i> Gestão de Produtos</a></li>
+                <li><a href="gerenciamentoPedidos.html"><i class="bi bi-cart3"></i> Gerenciamento de Pedidos</a></li>
+                <li><a href="gestaoClientes.html"><i class="bi bi-people"></i> Painel de Clientes</a></li>
+            </ul>
+            
+            <ul class="menuLateralSair">
+                <li><a href="login.html"><i class="bi bi-box-arrow-right"></i> Sair</a></li>
+            </ul>
+        </nav>
+        
+    </aside>
+    <main>
+        
+        <article class="containerEditarProduto">
+            <section class="secaoFormEdicao">
+                <h1 class="tituloEdicaoProduto">Editar Produto</i></h1>
+                
+                <section class="secaoProdutoEdicao">
+                    <img src="../imagem/imagens_whey/whey3.png" alt="Imagem Whey Protein" class="imagemProdutoEdicao" />
+                    <figcaption class="legendaProdutoEdicao">Imagem Whey-Protein</figcaption>
+                </section>
+                
+                <form class="formularioEdicao">
+                    
+                    <label for="categoriaProduto" class="labelFormEdicao">Categoria do Produto:</label>
+                    <select id="categoriaProduto" name="categoriaProduto" class="inputFormEdicao">
+                        <option value="whey-protein" selected>Whey-Protein</option>
+                        <option value="creatina">Creatina</option>
+                        <option value="pre-treino">Pré-Treino</option>
+                        <option value="snacks">Snacks</option>
+                    </select>
+                    
+                    <label for="nomeProduto" class="labelFormEdicao">Nome do Produto:</label>
+                    <input type="text" id="nomeProduto" name="nomeProduto" value="Whey 100% Max Titanium & Dr. Peanut Whey Concentrado 900g Sabor Avelã" class="inputFormEdicao" required>
+                    
+                    <label for="precoProduto" class="labelFormEdicao">Preço Unitário:</label>
+                    <input type="number" id="precoProduto" name="precoProduto" value="131.80" step="0.01" class="inputFormEdicao" required>
+                    
+                    <label for="estoqueProduto" class="labelFormEdicao">Estoque:</label>
+                    <input type="number" id="estoqueProduto" name="estoqueProduto" value="165" class="inputFormEdicao" required>
+                    
+                    <label for="descricaoProduto" class="labelFormEdicao">Descrição:</label>
+                    <textarea id="descricaoProduto" name="descricaoProduto" rows="4" class="inputFormEdicao">Whey Protein 100% Max Titanium Dr. Peanut (900g) é um suplemento proteicoque une performance e sabor. Feito com Whey Protein Concentrado, contribui para o desenvolvimento de músculos e ossos.</textarea>
+                    
+                    <footer class="botoesFormEdicao">
+                        <a href="gestaoProdutos.html" class="botaoSalvarEdicao"><i class="bi bi-check2-circle"></i> Salvar</a>
+                        <a href="gestaoProdutos.html" class="botaoCancelarEdicao"><i class="bi bi-x-circle"></i> Cancelar</a>
+                    </footer>
+                    
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

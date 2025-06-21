@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | NutriCore</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    
+    <!-- Container principal da página de login -->
+    <main class="containerPaginaCadastro">
+        
+        <!-- Artigo que envolve toda a estrutura do formulário -->
+        <article class="containerFormLogin">
+            
+            <!-- Seção que delimita o formulário em si -->
+            <section class="formBoxLogin">
+                
+                <!-- Área com link para voltar à página de produtos -->
+                <article class="voltarProdutos">
+                    <a href="produtos.html">
+                        <!-- Ícone de seta para voltar -->
+                        <img src="../imagens/icones/setaVoltar.png" alt="Seta indicando para voltar" class="iconSetaVoltar">
+                        <!-- Texto que acompanha a seta -->
+                        <p class="textVoltarCompras">Continue comprando</p>
+                    </a>
+                </article> 
+                
+                <!-- Título de boas-vindas ao usuário -->
+                <h2 class="tituloFormLogin">
+                    Bem-vindo de volta!
+                </h2>
+                
+                <!-- Subtítulo com instruções -->
+                <p class="subtitleFormLogin">
+                    Acesse com a sua conta e efetue o pagamento.
+                </p>
+                
+                <!-- Formulário de login (método POST) -->
+                <form action="#" method="POST" class="formLogin">
+                    
+                    <!-- Campo de e-mail com rótulo e placeholder -->
+                    <label for="email" class="labelFormLogin">Email *</label>
+                    <input 
+                    class="campoInputForm" 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Insira seu e-mail 'seu@email.com'" 
+                    autofocus
+                    />
+                    
+                    <!-- Campo de senha com rótulo e placeholder -->
+                    <label for="nome" class="labelFormLogin">Senha *</label>
+                    <input 
+                    class="campoInputLogin" 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Insira sua senha" 
+                    />
+                    
+                    <!-- Botão de login (simulado com link para a página de endereço) -->
+                    <a href="endereco.html" class="botaoAcessarLogin">
+                        Acessar Conta
+                    </a>
+                    
+                    <!-- Área com links para recuperação de senha e cadastro -->
+                    <article class="botaoFormLogin">
+                        <a href="recuperarSenha.html" class="botaoEsqueceuSenha">Esqueceu a senha?</a>
+                        <a href="cadastro.html" class="botaoIrCadastro">Não possui uma conta? Cadastre-se</a>
+                    </article>  
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

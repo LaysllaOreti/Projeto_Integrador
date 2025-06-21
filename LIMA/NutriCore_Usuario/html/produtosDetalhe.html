@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Produto | NutriCore</title>
+  <link rel="icon" href="../imagens/identidadeVisual/iconNutriCore.png" type="image/png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- Cabeçalho principal com logo e menus de navegação -->
+  <header class="headerSite">
+    
+    <!-- Logotipo da NutriCore com link para a página inicial -->
+    <h1 class="logoSite">
+      <a href="home.html" aria-label="Página inicial - NutriCore">
+        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+        <h2 id="nomeEcommerce">NutriCore</h2>
+      </a>
+    </h1>
+    
+    <!-- Menu de navegação principal do site -->
+    <nav class="navTop" aria-label="Menu Principal">
+      <ul>
+        <li><a href="home.html" class="textNavTop">Início</a></li>
+        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+        <li><a href="contato.html" class="textNavTop">Contato</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Menu do usuário com ícones para perfil, busca e carrinho -->
+    <nav class="navUsuario" aria-label="Menu Usuário">
+      <ul>
+        <!-- Ícone do perfil do usuário -->
+        <li>
+          <a href="perfil.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Perfil</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <!-- Ícone de pesquisa -->
+        <li>
+          <a href="#" aria-label="Pesquisar">
+            <figure class="navIcones">
+              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
+              <figcaption class="legendaIcones">Pesquisar</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        <!-- Ícone do carrinho de compras -->
+        <li>
+          <a href="carrinho.html" aria-label="Pefil">
+            <figure class="navIcones">
+              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
+              <figcaption class="legendaIcones">Carrinho</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Segunda barra de navegação com links para categorias de produtos -->
+  <nav class="navBottom">
+    <ul class="navLinks">
+      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Conteúdo principal da página do produto -->
+  <main>
+    <article class="containerDetalheProduto">
+      
+      <!-- Galeria de miniaturas do produto -->
+      <aside class="galeriaMiniaturaProdutos">
+        <img src="../imagens/imagens_whey/whey3.png" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+        <img src="../imagens/imagens_detalhadas/imagemDetalheWhey.jpg" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+        <img src="../imagens/imagens_detalhadas/imagemTabelaNutricional.jpg" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+        <img src="../imagens/imagens_detalhadas/imagemDetalhesProduto.jpg" alt="Miniatura Foto do Produto (Whey Protein)" class="imagemMiniaturaProduto">
+      </aside>
+      
+      <!-- Imagem principal destacada do produto -->
+      <figure class="imagemPrincipalProduto">
+        <img src="../imagens/imagens_whey/whey3.png" alt="Imagem principal do produto">
+      </figure>
+      
+      <!-- Informações detalhadas do produto -->
+      <section class="containerInformacoesProduto">
+        <!-- Nome e preço do produto -->
+        <h1 id="tituloDescricaoProduto">Whey 100% Max Titanium & Dr. Peanut Whey Concentrado 900g Sabor Avelã</h1>
+        <p class="textoPreco">R$ 131,80</p>
+        <p class="textParcelasPreco">ou 3X R$ 43,66</p>
+        
+        <!-- Seção para selecionar quantidade -->
+        <article class="quantidadeProdutosDetalhe"> 
+          <p class="tituloQuantidadeProdutoDetalhe">Quantidade</p>
+          <button class="buttonProdutoDetalhe" type="button" aria-label="Diminuir quantidade">-</button>
+          <output class="quantidadeProdutoDetalhe" aria-label="Quantidade atual">1</output> <!-- Output usado para mostrar o valor da quantidade selecionada -->
+          <button class="buttonProdutoDetalhe" type="button" aria-label="Aumentar quantidade">+</button>
+        </article>
+        
+        <!-- Botões de ação: adicionar ao carrinho ou comprar agora -->
+        <nav class="botoesDescricaoProduto">
+          <a href="carrinho.html" class="botaoIrCarrinho">Adicionar ao carrinho</a>
+          <a href="login.html" class="botaoComprarAgora">Comprar agora</a>
+        </nav>
+        
+        <!-- Descrição do produto -->
+        <p class="textoDescricaoProduto">
+          Whey Protein 100% Max Titanium Dr. Peanut (900g) é um suplemento proteico que une performance e sabor. 
+          Feito com Whey Protein Concentrado, contribui para o desenvolvimento de músculos e ossos. Tem rápida digestão, 
+          alto valor biológico e conta com os sabores exclusivos da Dr. Peanut.
+        </p>
+        
+        <!-- Recomendação de uso -->
+        <h2 class="subtituloDescricaoProduto">Recomendação de Uso</h2>
+        <p class="textoDescricaoProduto">
+          Utilize de uma a duas porções ao dia, ou conforme orientação profissional. Indicado para pessoas de 9 a 18 anos e maiores de 19 anos.
+        </p>
+        
+        <!-- Ingredientes do produto -->
+        <h2 class="subtituloDescricaoProduto">Ingredientes do Whey Dr. Peanut + MAX:</h2>
+        <p class="textoDescricaoProduto">
+          Proteína concentrada do soro do leite (WPC), amendoim torrado, cacau alcalino, aromatizantes, corantes, espessantes e sucralose. NÃO CONTÉM GLÚTEN.
+        </p>
+        
+        <!-- Alerta de alergênicos -->
+        <h2 class="subtituloDescricaoProdutoAtencao">Alérgicos</h2>
+        <p class="textoDescricaoProdutoAtencao">Contém Amendoim e derivados do leite</p>
+        <p class="textoDescricaoProdutoAtencao">Pode conter Soja e Ovo</p>
+        
+      </section>
+    </article>
+  </main>
+  
+  <!-- Rodapé do site -->
+  <footer class="rodape">
+    
+    <!-- Logo da empresa no rodapé -->
+    <section class="footerTop">
+      <a href="index.html" class="logoFooter">
+        <img src="../imagens/" alt="Logo NutriCore"/>
+      </a>
+    </section>
+    
+    <!-- Conteúdo informativo e institucional -->
+    <section class="contentFooter">
+      <!-- Sobre a empresa -->
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
+        <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento, feita por pessoas apaixonadas por saúde, performance e bem-estar.</p>
+      </article>
+      
+      <!-- Informações de contato -->
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Atendimento</h3>
+        <p>Email: nutricore@empresa.com</p>
+        <p>Telefone: (19) 99999-9999</p>
+      </article>
+      
+      <!-- Formas de pagamento aceitas -->
+      <article class="colunaFooter">
+        <h3 class="titleColunaRodape">Formas de Pagamento</h3>
+        <ul class="iconsPagamento">
+          <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix"/></li>
+          <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa"/></li>
+          <li><img src="../imagens/icones/mastercard.png" alt="Forma de pagamento - Cartão Mastercard" id="iconMastercard"/></li>
+          <li><img src="../imagens/icones/boleto.png" alt="Forma de pagamento - Boleto Bancário" id="iconBoleto"/></li>
+        </ul>
+      </article>
+      
+      <!-- Redes sociais -->
+      <article class="colunaFooter">
+        <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
+        <ul class="iconsRedesSociais">
+          <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Logo do Facebook"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Logo do Instagram"/></a></li>
+          <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Logo do Whatsapp"/></a></li>
+        </ul>
+      </article>
+    </section>
+    
+    <!-- Direitos autorais -->
+    <section class="footerBottom">
+      <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Layslla Eduarda Oreti.</p>
+    </section>
+  </footer>
+</body>
+</html>
