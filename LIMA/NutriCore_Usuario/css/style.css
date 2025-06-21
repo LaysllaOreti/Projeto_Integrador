@@ -29,7 +29,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #92488f;
+    background-color: #602F5E;
     position: relative;
     padding: 0 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -85,14 +85,12 @@ nav {
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
-    color: #f2f0ef;
+    color: #ffffff;
 }
 
-.textNavTop:hover,
-.textNavTop:focus {
-    outline: none;
+.textNavTop:hover {
     transform: scale(1.02);
-    color: #30072f;
+    color: #EBD0E9;
 }
 
 .navUsuario li a {
@@ -165,7 +163,7 @@ nav {
 
 .navBottom li {
     text-decoration: none;
-    color: #7c377a;
+    color: #552553;
     font-size: 36;
     font-weight: 500;
     transition: color 0.3s;
@@ -177,14 +175,14 @@ nav {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    color: #572656;
+    color: #552553;
 }
 
 .textNavBottom:hover,
 .textNavBottom:focus {
     outline: none;
     transform: scale(1.1);
-    color: #f56511;
+    color: #873709;
 }
 
 /*Estilização Banner*/
@@ -433,7 +431,7 @@ nav {
 
 .especificarProduto {
     display: block;
-    background-color: #92488f;
+    background-color: #370b36;
     color: #f2f0ef;
     font-size: 16px;
     font-weight: 600;
@@ -449,12 +447,12 @@ nav {
 }
 
 .especificarProduto:hover {
-    background-color: #370b36;
+    background-color: #602F5E;
 }
 
 .adicionarCarrinho {
     display: block;
-    background-color: #d96710;
+    background-color: #b65103;
     color: #f2f0ef;
     font-size: 15px;
     font-weight: 600;
@@ -470,7 +468,8 @@ nav {
 }
 
 .adicionarCarrinho:hover {
-    background-color: #b65103;
+    background-color: #d96710;
+    
 }
 
 @keyframes moverProdutos {
@@ -638,7 +637,7 @@ nav {
 
 .botaoAdicionarCarrinho{
     display: block;
-    background-color: #d96710;
+    background-color: #ba5a11;
     color: #f2f0ef;
     font-weight: 600;
     border: none;
@@ -910,7 +909,7 @@ nav {
 .botaoForm {
     margin-top: 16px;
     padding: 15px;
-    background-color: #752074;
+    background-color: #430742;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -924,7 +923,7 @@ nav {
 }
 
 .botaoForm:hover {
-    background-color: #430742;
+    background-color: #752074;
     transform: scale(1.02);
 }
 
@@ -1102,7 +1101,7 @@ nav {
 .botaoCompra {    
     display: flex;
     padding: 12px;
-    background-color: #f4811d;
+    background-color: #e05c03;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -1117,7 +1116,7 @@ nav {
 }
 
 .botaoCompra:hover {
-    background-color: #e05c03;
+    background-color: #f4811d;
 }
 
 .precoResumoCompra {
@@ -1131,7 +1130,7 @@ nav {
     width: auto;
 }
 .rodape {
-    background-color: #7e347c;
+    background-color: #602F5E;
     color: #f2f0ef;
     padding-top: 40px;
 }
@@ -1345,7 +1344,7 @@ nav {
 .botaoAcessarLogin {
     margin-top: 16px;
     padding: 12px;
-    background-color: #752074;
+    background-color: #430742;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1360,7 +1359,7 @@ nav {
 }
 
 .botaoAcessarLogin:hover {
-    background-color: #430742;
+    background-color: #752074;
     transform: scale(1.02);
 }
 
@@ -1521,7 +1520,7 @@ nav {
 .botaoCadastrar {
     margin-top: 16px;
     padding: 15px;
-    background-color: #752074;
+    background-color: #430742;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1536,7 +1535,7 @@ nav {
 }
 
 .botaoCadastrar:hover {
-    background-color: #430742;
+    background-color: #752074;
     transform: scale(1.02);
 }
 
@@ -1709,7 +1708,7 @@ fieldset {
 .botaoIrPagamento {
     width: 100%;
     padding: 18px;
-    background-color: #752074;
+    background-color: #430742;
     color: white;
     border: none;
     border-radius: 6px;
@@ -1726,7 +1725,7 @@ fieldset {
 }
 
 .botaoIrPagamento:hover {
-    background-color: #430742;
+    background-color: #752074;
     transform: scale(1.02);
 }
 
@@ -1959,7 +1958,7 @@ fieldset {
 .botaoFinalizarCompra {
     margin-top: 16px;
     padding: 16px;
-    background-color: #752074;
+    background-color: #430742;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1976,7 +1975,7 @@ fieldset {
 }
 
 .botaoFinalizarCompra:hover {
-    background-color: #430742;
+    background-color: #752074;
     transform: scale(1.02);
 }
 
@@ -2003,7 +2002,7 @@ fieldset {
     height: 50px;
     padding: 16px;
     border-radius: 6px;
-    background-color: #752074;
+    background-color: #430742;
     font-size: 16px;
     transition: .5s;
     color: #ffffff;
@@ -2011,7 +2010,7 @@ fieldset {
 }
 
 .botaoIrPerfil:hover {
-    background-color: #430742;
+    background-color: #752074;
     transform: scale(1.02);
 }
 
@@ -2337,7 +2336,7 @@ fieldset {
 /*Estilização para o ASIDE (Página Perfil)*/
 
 .menuLateralAside {
-    background-color: #752074;
+    background-color: #602F5E;
     color: #fff;
     width: 300px;
     height: 100%;
