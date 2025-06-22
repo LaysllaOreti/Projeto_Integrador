@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -24,21 +25,26 @@ nav {
     display: block;
 }
 
+.iconNutriCore {
+    width: 15px;
+    height: 15px;
+}
+
 /*Estilização Navbar*/
 .headerSite {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #602F5E;
+    background-color: #602f5e;
     position: relative;
-    padding: 0 18px;
+    padding: 15px 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logoSite {
     margin: 0;
-    font-weight: bold;
-    margin-left: 80px;
+    font-weight: 600;
+    margin-left: 120px;
 }
 
 .logoSite a {
@@ -50,7 +56,8 @@ nav {
 
 .logoImagem {
     height: auto;
-    width: 120px;
+    width: 60px;
+    margin-right: 5px;
 }
 
 #nomeEcommerce {
@@ -64,14 +71,14 @@ nav {
 .navUsuario ul {
     list-style: none;
     display: flex;
-    gap: 4rem; /*espaçamento*/
-    margin-right: 80px;
+    gap: 4rem; 
+    margin-right: 120px;
 }
 
 .navUsuario a {
     list-style: none;
     display: flex;
-    gap: 4rem; /*espaçamento*/
+    gap: 4rem; 
 }
 
 .navTop li {
@@ -89,8 +96,7 @@ nav {
 }
 
 .textNavTop:hover {
-    transform: scale(1.02);
-    color: #EBD0E9;
+    color: #ebd0e9;
 }
 
 .navUsuario li a {
@@ -287,7 +293,6 @@ nav {
     margin-top: 32px;
 }
 
-
 .produtoSnack {
     background: linear-gradient(to top, #801c7c, #d9d9d9);
     border-radius: 50%;
@@ -447,13 +452,13 @@ nav {
 }
 
 .especificarProduto:hover {
-    background-color: #602F5E;
+    background-color: #602f5e;
 }
 
 .adicionarCarrinho {
     display: block;
-    background-color: #b65103;
-    color: #f2f0ef;
+    background-color: #ea8639;
+    color: #000000;
     font-size: 15px;
     font-weight: 600;
     border: none;
@@ -468,8 +473,7 @@ nav {
 }
 
 .adicionarCarrinho:hover {
-    background-color: #d96710;
-    
+    background-color: #ef7c25;
 }
 
 @keyframes moverProdutos {
@@ -477,32 +481,32 @@ nav {
     8.33% {
         transform: translateX(0);
     }
-    
+
     16.66%,
     24.99% {
         transform: translateX(-42.42%);
     }
-    
+
     33.33%,
     41.66% {
         transform: translateX(-82.82%);
     }
-    
+
     50%,
     58.33% {
         transform: translateX(0);
     }
-    
+
     66.66%,
     74.99% {
         transform: translateX(-42.42%);
     }
-    
+
     83.33%,
     91.66% {
         transform: translateX(-82.82%);
     }
-    
+
     100% {
         transform: translateX(0);
     }
@@ -534,7 +538,7 @@ nav {
     33.33% {
         background-color: #bbadff;
     }
-    
+
     33.34%,
     100% {
         background-color: #222;
@@ -635,34 +639,11 @@ nav {
     background-color: #370b36;
 }
 
-.botaoAdicionarCarrinho{
-    display: block;
-    background-color: #ba5a11;
-    color: #f2f0ef;
-    font-weight: 600;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 12px auto;
-    cursor: pointer;
-    width: 90%;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.botaoAdicionarCarrinho:hover {
-    background-color: #370b36;
-}
-
-
 .botaoAdicionarCarrinho {
     display: block;
-    background-color: #d16303;
-    color: #f2f0ef;
-    font-weight: 600;
+    background-color: #ea8639;
+    color: #000000;
+    font-weight: 500;
     border: none;
     border-radius: 6px;
     padding: 11px;
@@ -677,7 +658,7 @@ nav {
 }
 
 .botaoAdicionarCarrinho:hover {
-    background-color: #c55205;
+    background-color: #ef7c25;
 }
 
 /*Estilização Página Sobre Nós*/
@@ -687,7 +668,7 @@ nav {
     flex-wrap: wrap;
     text-align: left;
     gap: 2rem;
-    margin: 70px 90px;
+    margin: 70px 120px;
     padding: 0 2rem;
     align-items: center;
 }
@@ -698,8 +679,13 @@ nav {
 
 .imagemSobreNos {
     max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 620px;
+    height: auto;
+    margin-left: 18%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .informacoesSobreNos {
@@ -913,7 +899,7 @@ nav {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     color: white;
     font-weight: 700;
@@ -928,7 +914,7 @@ nav {
 }
 
 .informacoesContatoBox {
-    background-color: #752074;
+    background-color: #602f5e;
     color: #ecf0f1;
     width: 300px;
     padding: 50px 40px;
@@ -964,7 +950,7 @@ nav {
 .iconsRedesSociaisContato img {
     width: 40px;
     height: 40px;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 .iconsRedesSociaisContato img:hover {
@@ -1084,7 +1070,7 @@ nav {
     text-align: left;
 }
 
-.containerPrecos{
+.containerPrecos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1098,25 +1084,25 @@ nav {
     text-align: left;
 }
 
-.botaoCompra {    
+.botaoCompra {
     display: flex;
     padding: 12px;
-    background-color: #e05c03;
+    background-color: #ea8639;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background .5s;
-    
-    color: white;
+    transition: background 0.5s;
+
+    color: #000000;
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 
 .botaoCompra:hover {
-    background-color: #f4811d;
+    background-color: #ef7c25;
 }
 
 .precoResumoCompra {
@@ -1130,38 +1116,9 @@ nav {
     width: auto;
 }
 .rodape {
-    background-color: #602F5E;
+    background-color: #602f5e;
     color: #f2f0ef;
     padding-top: 40px;
-}
-
-.footerTop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.logoFooter img {
-    height: 100px;
-}
-
-.navFooter {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.navFooter a {
-    color: #f2f0ef;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color .5s ease;
-}
-
-.navFooter a:hover {
-    color: #2e052d;
 }
 
 .contentFooter {
@@ -1169,8 +1126,8 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    margin: 23px auto 0 auto;
+    padding: 10px 20px;
     border-top: 1px solid #d4d2d2;
     border-bottom: 1px solid #d4d2d2;
 }
@@ -1181,15 +1138,16 @@ nav {
 }
 
 .titleColunaRodape {
+    font-weight: 600;
     font-size: 20px;
-    margin-bottom: 10px;
-    color: #2e052d;
+    margin-bottom: 15px;
+    color: #f2f0ef;
 }
 
 #tituloRedesSociais {
     font-size: 20px;
     margin-bottom: 26px;
-    color: #2e052d;
+    color: #f2f0ef;
 }
 
 .colunaFooter p {
@@ -1215,13 +1173,13 @@ nav {
     width: 60px;
     margin-top: 15px;
     height: auto;
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .iconsRedesSociais img {
     width: 40px;
     height: 40px;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 .iconsRedesSociais img:hover {
@@ -1260,7 +1218,8 @@ nav {
 .footerBottom {
     text-align: center;
     font-size: 0.9rem;
-    color: #2e052d;
+    color: #f2f0ef;
+    margin-top: 12px;
     padding: 20px 20px 40px;
 }
 
@@ -1410,13 +1369,13 @@ nav {
     text-align: center;
 }
 
-.botaoEsqueceuSenha{
+.botaoEsqueceuSenha {
     color: #000000;
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;
     font-weight: 500;
-    transition: color .5s;
+    transition: color 0.5s;
     margin-bottom: 12px;
     justify-content: center;
     align-items: center;
@@ -1428,14 +1387,14 @@ nav {
     text-decoration: underline;
 }
 
-.botaoIrCadastro{
+.botaoIrCadastro {
     display: block;
     color: #30072f;
     text-decoration: none;
     border-radius: 8px;
     font-size: 19px;
     font-weight: 600;
-    transition: color .3s;
+    transition: color 0.3s;
 }
 
 .botaoIrCadastro:hover {
@@ -1526,7 +1485,7 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 3px 3px rgba(117, 32, 116, 0.3);
-    
+
     color: white;
     font-size: 17px;
     font-weight: 600;
@@ -1549,7 +1508,7 @@ nav {
     font-weight: 600;
     text-align: center;
     font-size: 18px;
-    transition: color .2s;
+    transition: color 0.2s;
 }
 
 .botaoFazerLogin:hover {
@@ -1630,7 +1589,7 @@ fieldset {
     background-color: #f9f7f7;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     max-width: 900px;
     margin: 3rem auto;
 }
@@ -1712,7 +1671,7 @@ fieldset {
     color: white;
     border: none;
     border-radius: 6px;
-    
+
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -1729,7 +1688,7 @@ fieldset {
     transform: scale(1.02);
 }
 
-.resumoPedido{
+.resumoPedido {
     padding: 16px;
     flex: 1;
 }
@@ -1754,7 +1713,7 @@ fieldset {
     padding-top: 8px;
 }
 
-.decorationContainerEndereco{
+.decorationContainerEndereco {
     background-color: #752074;
     width: 300px;
     display: flex;
@@ -1788,7 +1747,7 @@ fieldset {
     background-color: #fff;
     padding: 2rem;
     border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ladoDireito {
@@ -1886,7 +1845,7 @@ fieldset {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    color: #4CAF50;
+    color: #4caf50;
     font-size: 16px;
 }
 
@@ -1905,7 +1864,7 @@ fieldset {
     font-size: 28px;
 }
 
-.formCartao{
+.formCartao {
     display: flex;
     flex-direction: column;
 }
@@ -1942,7 +1901,7 @@ fieldset {
     margin-top: 10px;
     width: 480px;
     height: auto;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .imagemCartao:hover {
@@ -1996,7 +1955,7 @@ fieldset {
     justify-content: center;
     align-items: center;
     display: flex;
-    
+
     margin-top: 5px;
     width: 200px;
     height: 50px;
@@ -2004,7 +1963,7 @@ fieldset {
     border-radius: 6px;
     background-color: #430742;
     font-size: 16px;
-    transition: .5s;
+    transition: 0.5s;
     color: #ffffff;
     font-weight: 600;
 }
@@ -2075,7 +2034,7 @@ fieldset {
     justify-content: center;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
-    padding-bottom: 0 ;
+    padding-bottom: 0;
 }
 
 .tituloBoxSenha {
@@ -2117,13 +2076,13 @@ fieldset {
     text-align: center;
 }
 
-.botaoLembrouSenha{    
+.botaoLembrouSenha {
     color: #000000;
     text-decoration: none;
     margin-top: 15px;
     font-size: 18px;
     font-weight: 500;
-    transition: color .5s;
+    transition: color 0.5s;
     margin-bottom: 12px;
     justify-content: center;
     align-items: center;
@@ -2141,7 +2100,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    
+
     margin: 45px 8%;
     padding: 18px 20px;
 }
@@ -2159,7 +2118,7 @@ fieldset {
     border: 1px solid #b9b6b6;
     border-radius: 8px;
     cursor: pointer;
-    transition: border .3s;
+    transition: border 0.3s;
 }
 
 .imagemMiniaturaProduto:hover {
@@ -2241,7 +2200,7 @@ fieldset {
 
 .subtituloDescricaoProduto {
     color: #282626;
-    font-weight:600;
+    font-weight: 600;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -2250,7 +2209,7 @@ fieldset {
 
 .subtituloDescricaoProdutoAtencao {
     color: #8e1313;
-    font-weight:600;
+    font-weight: 600;
     font-size: 30px;
     margin-bottom: 10px;
     text-align: left;
@@ -2276,7 +2235,7 @@ fieldset {
     margin-bottom: 2px;
     font-weight: 600;
     color: #146c38;
-} 
+}
 
 .textParcelasPreco {
     font-size: 24px;
@@ -2294,7 +2253,7 @@ fieldset {
 }
 
 .botaoIrCarrinho {
-    background-color: #92488f;
+    background-color: #571a55;
     color: white;
     padding: 16px;
     border-radius: 6px;
@@ -2302,41 +2261,38 @@ fieldset {
     font-weight: 600;
     font-size: 18px;
     display: inline-block;
-    transition: background .5s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .botaoIrCarrinho:hover {
-    background-color: #4f1c4d;
+    background-color: #3a0f38;
 }
 
-.botaoComprarAgora {    
+.botaoComprarAgora {
     display: flex;
     padding: 12px;
-    background-color: #f4811d;
+    background-color: #ea8639;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background .5s;
-    
-    color: white;
+
+    color: #000000;
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
 }
 
 .botaoComprarAgora:hover {
-    background-color: #e05c03;
+    background-color: #ef7c25;
 }
 
 /*Estilização para o ASIDE (Página Perfil)*/
 
 .menuLateralAside {
-    background-color: #602F5E;
+    background-color: #602f5e;
     color: #fff;
     width: 300px;
     height: 100%;
@@ -2360,7 +2316,7 @@ fieldset {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    transition: color .5s;
+    transition: color 0.5s;
     gap: 20px;
 }
 
@@ -2470,7 +2426,7 @@ fieldset {
     justify-content: center;
 }
 
-.imagemHistoricoCompras img{
+.imagemHistoricoCompras img {
     width: auto;
     height: 240px;
 }
@@ -2484,7 +2440,7 @@ fieldset {
     justify-content: center;
 }
 
-.produtoHistoricoCompras{
+.produtoHistoricoCompras {
     position: relative;
     border-radius: 6px;
     box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
@@ -2572,12 +2528,12 @@ fieldset {
     border-radius: 4px;
     background-color: #4f1c4d;
     box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
-    
+
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    transition: background .5s;
+    transition: background 0.5s;
 }
 
 .botaoEditarPerfil:hover {
@@ -2587,18 +2543,18 @@ fieldset {
 .botaoSairPerfil {
     padding: 10px;
     border-radius: 4px;
-    background-color: #db0707;
+    background-color: #8b0303;
     box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
-    
+
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    transition: background .5s;
+    transition: background 0.5s;
 }
 
 .botaoSairPerfil:hover {
-    background-color: #8b0303;
+    background-color: #570b0b;
 }
 
 .formulario {
@@ -2626,7 +2582,7 @@ fieldset {
     border: 1.2px solid #370b36;
     background-color: #fdf9f6;
     border-radius: 6px;
-    
+
     font-size: 16px;
     margin-bottom: 6px;
     box-shadow: 0 2px 2px rgba(117, 32, 116, 0.3);
@@ -2670,22 +2626,21 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     padding: 10px;
     border-radius: 4px;
-    background-color: #1c5b11;
+    background-color: #0e3d06;
     box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
-    
+
     text-decoration: none;
     text-align: center;
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-    transition: background .5s;
+    transition: background 0.5s;
 }
 
 .botaoSalvarPerfil:hover {
-    background-color: #0e3d06;
+    background-color: #2a5c21;
 }
-
-
+ 

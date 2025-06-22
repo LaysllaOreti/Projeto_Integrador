@@ -1,279 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produtos Favoritos| NutriCore</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Produtos Favoritos| NutriCore</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" href="../imagens/identidadeVisual/icon.png" type="image/png" class="iconNutriCore" sizes="16x16"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    </head>
 
-<body>  
-    <!-- Cabeçalho principal com navegação do site -->
-    <header class="headerSite">
-        <h1 class="logoSite">
-            <a href="home.html" aria-label="Página inicial - NutriCore">
-                <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
-                <h2 id="nomeEcommerce">NutriCore</h2>
-            </a>
-        </h1>
-        
-        <!-- Navegação principal -->
-        <nav class="navTop" aria-label="Menu Principal">
-            <ul>
-                <li><a href="home.html" class="textNavTop">Início</a></li>
-                <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
-                <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
-                <li><a href="contato.html" class="textNavTop">Contato</a></li>
+    <body>
+        <!--Primeira navbar (Principal)-->
+        <header class="headerSite">
+            <h1 class="logoSite">
+                <a href="home.html" aria-label="Página inicial - NutriCore">
+                    <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+                    <h2 id="nomeEcommerce">NutriCore</h2>
+                </a>
+            </h1>
+
+            <!-- Navegação do usuário -->
+            <nav class="navUsuario" aria-label="Menu Usuário">
+                <ul>
+                    <li>
+                        <a href="perfil.html" aria-label="Pefil">
+                            <figure class="navIcones">
+                                <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário" />
+                                <figcaption class="legendaIcones">Perfil</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" aria-label="Pesquisar">
+                            <figure class="navIcones">
+                                <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx" />
+                                <figcaption class="legendaIcones">Pesquisar</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="carrinho.html" aria-label="Pefil">
+                            <figure class="navIcones">
+                                <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário" />
+                                <figcaption class="legendaIcones">Carrinho</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Segunda Navbar (secundária)-->
+        <nav class="navBottom">
+            <!--Segunda navbar com acesso as categorias dos produtos-->
+            <ul class="navLinks">
+                <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+                <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+                <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+                <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
             </ul>
         </nav>
-        
-        <!-- Navegação do usuário -->
-        <nav class="navUsuario" aria-label="Menu Usuário">
-            <ul>
-                <li>
-                    <a href="perfil.html" aria-label="Pefil">
-                        <figure class="navIcones">
-                            <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
-                            <figcaption class="legendaIcones">Perfil</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#" aria-label="Pesquisar">
-                        <figure class="navIcones">
-                            <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
-                            <figcaption class="legendaIcones">Pesquisar</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="carrinho.html" aria-label="Pefil">
-                        <figure class="navIcones">
-                            <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
-                            <figcaption class="legendaIcones">Carrinho</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                
-            </ul>
-        </nav>
-    </header>
-    
-    <!--Segunda Navbar (secundária)-->
-    <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
-        <ul class="navLinks">
-            <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
-            <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
-            <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
-            <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
-        </ul>
-    </nav> 
-    
-    <!--Container da Página Perfil - Produtos favoritos-->
-    <main class="containerPagePerfil">    
-        <!---Menu lateral do Perfil-->
-        <aside>
-            <nav class="menuLateralAside">
-                <ul class="navListAside">
-                    <li><a href="perfil.html"><i class="bi bi-person"></i>Meu Perfil</a></li> 
-                    <li><a href="acompanharPedido.html"><i class="bi bi-basket3"></i> Acompanhar Pedidos</a></li>
-                    <li><a href="historicoCompras.html"><i class="bi bi-box-seam"></i> Histórico de Compras</a></li>
-                    <li><a href="produtosFavoritos.html"><i class="bi bi-heart"></i> Produtos Favoritos</a></li>
-                </ul>
-                
-                <ul class="logoutList">
-                    <li><a href="home.html"><i class="bi bi-box-arrow-right"></i> Sair da Conta</a></li>
-                </ul>
-                
-            </nav>      
-        </aside>
-        <!--Fim do Menu Lateral-->
-        
-        <!--Conteúdo Principal da Págin-->
-        <section class="conteudoPerfil">
-            <header>
-                <h1 class="nomeUsuarioPerfil">Lais de Paiva</h1>
-            </header>
-            
-            <section>
-                
-                <h2 class="tituloContainerPerfil">Produtos Favoritos</h2>
-                <p class="textoAcompanhamentoPedido">Visualize a sua lista de produtos favoritos da NutriCore!</p>
-                
-                <article>
-                    <ul class="secaoProdutosHistorico">
-                        
-                        <!--Produto 1-->
-                        <li class="produtoHistoricoCompras">
-                            
-                            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-                                <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
-                            </button>
-                            
-                            <figure>
-                                <img src="../imagens/imagens_whey/whey13.png" class="imagemHistoricoCompras" alt="100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã" />
-                                <figcaption></figcaption>
-                            </figure>
-                            
-                            <h3 class="nomeProdutoHistoricoCompras">100% Whey Max Titanium - 900g Sabor Capuccino</h3>
-                            <p class="precoProduto">
-                                R$ 99,40
-                            </p>
-                            
-                            <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
-                                Ver Mais
-                            </a>
-                            
-                            <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
-                                Adicionar ao Carrinho
-                            </a>
+
+        <!--Container da Página Perfil - Produtos favoritos-->
+        <main class="containerPagePerfil">
+            <!---Menu lateral do Perfil-->
+            <aside>
+                <nav class="menuLateralAside">
+                    <ul class="navListAside">
+                        <li>
+                            <a href="perfil.html"><i class="bi bi-person"></i>Meu Perfil</a>
                         </li>
-                        
-                        <!--Produto 2-->
-                        <li class="produtoHistoricoCompras">
-                            
-                            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-                                <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
-                            </button>
-                            
-                            <figure>
-                                <img src="../imagens/imagens_creatina/creatina10.png" class="imagemHistoricoCompras" alt="Creatina Neutro 100% Pura - Sanavita 300g" />
-                                <figcaption></figcaption>
-                            </figure>
-                            
-                            <h3 class="nomeProdutoHistoricoCompras">Creatina Neutro 100% Pura - Sanavita 300g</h3>
-                            
-                            <p class="precoProduto">
-                                R$ 92,00
-                            </p>
-                            
-                            <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
-                                Ver Mais
-                            </a>
-                            
-                            <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
-                                Adicionar ao Carrinho
-                            </a>
+                        <li>
+                            <a href="acompanharPedido.html"><i class="bi bi-basket3"></i> Acompanhar Pedidos</a>
                         </li>
-                        
-                        <!--Produto 3-->
-                        <li class="produtoHistoricoCompras">
-                            
-                            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-                                <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
-                            </button>
-                            
-                            <figure>
-                                <img src="../imagens/imagens_snacks/snack_b3.png" class="imagemHistoricoCompras" alt="Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades" />
-                                <figcaption></figcaption>
-                            </figure>
-                            
-                            <h3 class="nomeProdutoHistoricoCompras">Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades</h3>
-                            
-                            <p class="precoProduto">
-                                R$ 139,70
-                            </p>
-                            
-                            <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
-                                Ver Mais
-                            </a>
-                            
-                            <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
-                                Adicionar ao Carrinho
-                            </a>
+                        <li>
+                            <a href="historicoCompras.html"><i class="bi bi-box-seam"></i> Histórico de Compras</a>
                         </li>
-                        
-                        <!--Produto 4-->
-                        <li class="produtoHistoricoCompras">
-                            
-                            <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
-                                <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
-                            </button>
-                            
-                            <figure>
-                                <img src="../imagens/imagens_pre-treino/p2.png" class="imagemHistoricoCompras" alt="Pré-Treino Hardcore Growth Suplements - Sabor Laranja 300g" />
-                                <figcaption></figcaption>
-                            </figure>
-                            
-                            <h3 class="nomeProdutoHistoricoCompras">Pré-Treino Hardcore Growth Suplements - Sabor Laranja 300g</h3>
-                            
-                            <p class="precoProduto">
-                                R$ 100,00
-                            </p>
-                            
-                            <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
-                                Ver Mais
-                            </a>
-                            
-                            <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
-                                Adicionar ao Carrinho
-                            </a>
+                        <li>
+                            <a href="produtosFavoritos.html"><i class="bi bi-heart"></i> Produtos Favoritos</a>
                         </li>
                     </ul>
-                    
-                    
+
+                    <ul class="logoutList">
+                        <li>
+                            <a href="home.html"><i class="bi bi-box-arrow-right"></i> Sair da Conta</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!--Fim do Menu Lateral-->
+
+            <!--Conteúdo Principal da Págin-->
+            <section class="conteudoPerfil">
+                <header>
+                    <h1 class="nomeUsuarioPerfil">Lais de Paiva</h1>
+                </header>
+
+                <section>
+                    <h2 class="tituloContainerPerfil">Produtos Favoritos</h2>
+                    <p class="textoAcompanhamentoPedido">Visualize a sua lista de produtos favoritos da NutriCore!</p>
+
+                    <article>
+                        <ul class="secaoProdutosHistorico">
+                            <!--Produto 1-->
+                            <li class="produtoHistoricoCompras">
+                                <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                                    <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
+                                </button>
+
+                                <figure>
+                                    <img src="../imagens/imagens_whey/whey13.png" class="imagemHistoricoCompras" alt="100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã" />
+                                    <figcaption></figcaption>
+                                </figure>
+
+                                <h3 class="nomeProdutoHistoricoCompras">100% Whey Max Titanium - 900g Sabor Capuccino</h3>
+                                <p class="precoProduto">
+                                    R$ 99,40
+                                </p>
+
+                                <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
+                                    Ver Mais
+                                </a>
+
+                                <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </li>
+
+                            <!--Produto 2-->
+                            <li class="produtoHistoricoCompras">
+                                <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                                    <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
+                                </button>
+
+                                <figure>
+                                    <img src="../imagens/imagens_creatina/creatina10.png" class="imagemHistoricoCompras" alt="Creatina Neutro 100% Pura - Sanavita 300g" />
+                                    <figcaption></figcaption>
+                                </figure>
+
+                                <h3 class="nomeProdutoHistoricoCompras">Creatina Neutro 100% Pura - Sanavita 300g</h3>
+
+                                <p class="precoProduto">
+                                    R$ 92,00
+                                </p>
+
+                                <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
+                                    Ver Mais
+                                </a>
+
+                                <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </li>
+
+                            <!--Produto 3-->
+                            <li class="produtoHistoricoCompras">
+                                <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                                    <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
+                                </button>
+
+                                <figure>
+                                    <img src="../imagens/imagens_snacks/snack_b3.png" class="imagemHistoricoCompras" alt="Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades" />
+                                    <figcaption></figcaption>
+                                </figure>
+
+                                <h3 class="nomeProdutoHistoricoCompras">Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades</h3>
+
+                                <p class="precoProduto">
+                                    R$ 139,70
+                                </p>
+
+                                <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
+                                    Ver Mais
+                                </a>
+
+                                <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </li>
+
+                            <!--Produto 4-->
+                            <li class="produtoHistoricoCompras">
+                                <button class="botaoFavoritoCard" aria-label="Adicionar aos favoritos">
+                                    <img src="../imagens/icones/icon-coracaoColorido.png" alt="Ícone de Coração" aria-hidden="true" />
+                                </button>
+
+                                <figure>
+                                    <img src="../imagens/imagens_pre-treino/p2.png" class="imagemHistoricoCompras" alt="Pré-Treino Hardcore Growth Suplements - Sabor Laranja 300g" />
+                                    <figcaption></figcaption>
+                                </figure>
+
+                                <h3 class="nomeProdutoHistoricoCompras">Pré-Treino Hardcore Growth Suplements - Sabor Laranja 300g</h3>
+
+                                <p class="precoProduto">
+                                    R$ 100,00
+                                </p>
+
+                                <a href="produtosDetalhe.html" class="botaoEspecificarProduto" role="button">
+                                    Ver Mais
+                                </a>
+
+                                <a href="carrinho.html" class="botaoAdicionarCarrinho" role="button">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+            <!--Fim do conteúdo principal-->
+        </main>
+        <!-- Rodapé do site -->
+        <footer class="rodape">
+            <!-- Logo da empresa no rodapé -->
+            <section class="footerTop">
+                <a href="index.html" class="logoFooter">
+                    <img src="../imagens/" alt="Logo NutriCore" />
+                </a>
+            </section>
+
+            <!-- Conteúdo informativo e institucional -->
+            <section class="contentFooter">
+                <!-- Sobre a empresa -->
+                <article class="colunaFooter">
+                    <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
+                    <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento, feita por pessoas apaixonadas por saúde, performance e bem-estar.</p>
+                </article>
+
+                <!-- Informações de contato -->
+                <article class="colunaFooter">
+                    <h3 class="titleColunaRodape">Atendimento</h3>
+                    <p>Email: nutricore@empresa.com</p>
+                    <p>Telefone: (19) 99999-9999</p>
+                </article>
+
+                <!-- Formas de pagamento aceitas -->
+                <article class="colunaFooter">
+                    <h3 class="titleColunaRodape">Formas de Pagamento</h3>
+                    <ul class="iconsPagamento">
+                        <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix" /></li>
+                        <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa" /></li>
+                        <li><img src="../imagens/icones/mastercard.png" alt="Forma de pagamento - Cartão Mastercard" id="iconMastercard" /></li>
+                        <li><img src="../imagens/icones/boleto.png" alt="Forma de pagamento - Boleto Bancário" id="iconBoleto" /></li>
+                    </ul>
+                </article>
+
+                <!-- Redes sociais -->
+                <article class="colunaFooter">
+                    <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
+                    <ul class="iconsRedesSociais">
+                        <li>
+                            <a href="#"><img src="../imagens/icones/facebook.png" alt="Logo do Facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../imagens/icones/instagram.png" alt="Logo do Instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../imagens/icones/whatsapp.png" alt="Logo do Whatsapp" /></a>
+                        </li>
+                    </ul>
                 </article>
             </section>
-            
-        </section>
-        <!--Fim do conteúdo principal-->
-    </main>
-    <!-- Rodapé do site -->
-    <footer class="rodape">
-        
-        <!-- Logo da empresa no rodapé -->
-        <section class="footerTop">
-            <a href="index.html" class="logoFooter">
-                <img src="../imagens/" alt="Logo NutriCore"/>
-            </a>
-        </section>
-        
-        <!-- Conteúdo informativo e institucional -->
-        <section class="contentFooter">
-            <!-- Sobre a empresa -->
-            <article class="colunaFooter">
-                <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
-                <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento, feita por pessoas apaixonadas por saúde, performance e bem-estar.</p>
-            </article>
-            
-            <!-- Informações de contato -->
-            <article class="colunaFooter">
-                <h3 class="titleColunaRodape">Atendimento</h3>
-                <p>Email: nutricore@empresa.com</p>
-                <p>Telefone: (19) 99999-9999</p>
-            </article>
-            
-            <!-- Formas de pagamento aceitas -->
-            <article class="colunaFooter">
-                <h3 class="titleColunaRodape">Formas de Pagamento</h3>
-                <ul class="iconsPagamento">
-                    <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix"/></li>
-                    <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa"/></li>
-                    <li><img src="../imagens/icones/mastercard.png" alt="Forma de pagamento - Cartão Mastercard" id="iconMastercard"/></li>
-                    <li><img src="../imagens/icones/boleto.png" alt="Forma de pagamento - Boleto Bancário" id="iconBoleto"/></li>
-                </ul>
-            </article>
-            
-            <!-- Redes sociais -->
-            <article class="colunaFooter">
-                <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
-                <ul class="iconsRedesSociais">
-                    <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Logo do Facebook"/></a></li>
-                    <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Logo do Instagram"/></a></li>
-                    <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Logo do Whatsapp"/></a></li>
-                </ul>
-            </article>
-        </section>
-        
-        <!-- Direitos autorais -->
-        <section class="footerBottom">
-            <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
-            <p>Desenvolvido por Layslla Eduarda Oreti.</p>
-        </section>
-    </footer>
-</body>
+
+            <!-- Direitos autorais -->
+            <section class="footerBottom">
+                <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Layslla Eduarda Oreti.</p>
+            </section>
+        </footer>
+    </body>
 </html>

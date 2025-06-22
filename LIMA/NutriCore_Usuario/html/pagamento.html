@@ -1,234 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pagamento | NutriCore</title>
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-<!DOCTYPE html>
-<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagamento | NutriCore</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" href="../imagens/identidadeVisual/icon.png" type="image/png" class="iconNutriCore" sizes="16x16"/>
+    </head>
 
-<body>
-  <!--Primeira navbar (Principal)-->
-  <header class="headerSite">
-    <h1 class="logoSite">
-      <a href="home.html" aria-label="Página inicial - NutriCore">
-        <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
-        <h2 id="nomeEcommerce">NutriCore</h2>
-      </a>
-    </h1>
-    
-    <nav class="navTop" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
-      <ul>
-        <li><a href="home.html" class="textNavTop">Início</a></li>
-        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
-        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
-        <li><a href="contato.html" class="textNavTop">Contato</a></li>
-      </ul>
-    </nav>
-    
-    <nav class="navUsuario" aria-label="Menu Usuário">
-      <ul>
-        <li>
-          <a href="perfil.html" aria-label="Pefil">
-            <figure class="navIcones">
-              <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
-              <figcaption class="legendaIcones">Perfil</figcaption>
-            </figure>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#" aria-label="Pesquisar">
-            <figure class="navIcones">
-              <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx"/>
-              <figcaption class="legendaIcones">Pesquisar</figcaption>
-            </figure>
-          </a>
-        </li>
-        
-        <li>
-          <a href="carrinho.html" aria-label="Pefil">
-            <figure class="navIcones">
-              <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário"/>
-              <figcaption class="legendaIcones">Carrinho</figcaption>
-            </figure>
-          </a>
-        </li>
-        
-      </ul>
-    </nav>
-    
-  </header>
-  
-  <!--Segunda Navbar (secundária)-->
-  <nav class="navBottom">  <!--Segunda navbar com acesso as categorias dos produtos-->
-    <ul class="navLinks">
-      <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
-      <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
-      <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
-      <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
-    </ul>
-  </nav>
-  
-  <main>
-    <article class="containerPagePagamento">
-      <section class="ladoEsquerdo">
-        
-        <article class="dadosCliente">
-          <h2 class="tituloComecoPagamento">Seus Dados</h2>
-          <p class="textoDadosPagamento">Laís de Paiva</p>
-          <p  class="textoDadosPagamento">laisPaiva@gmail.com</p>
-          <p  class="textoDadosPagamento">(00) 99999-9999</p>
-        </article>
-        
-        <hr class="linhaDivisaoPagamento"/>
-        
-        <article class="enderecoEntrega">
-          <h2 class="tituloDadosPagamento">Endereço de Entrega</h2>
-          <p class="textoDadosPagamento">Rua Clóvis, 180</p>
-          <p class="textoDadosPagamento">Apto. 109 Bloco E</p>
-          <p class="textoDadosPagamento">12345-678</p>
-          <p class="textoDadosPagamento">Hortolândia (Jardim Esmeralda) - SP</p>
-        </article>
-        
-        <hr class="linhaDivisaoPagamento"/>
-        
-        <article class="resumoPedidoPagamento">
-          <h2 class="tituloDadosPagamento">Resumo do Pedido</h2>
-          
-          <p class="textoDadosPagamento">100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã</p>
-          <p class="precoProdutoPagamento">R$ 145,60</p>
-          
-          <p class="textoDadosPagamento">Suplemento Fresh Whey Dux 900g – Sabor Chocolate e Avelã</p>
-          <p class="precoProdutoPagamento">R$ 148,00</p>
-          
-          <p class="textoDadosPagamento">Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades</p>
-          <p class="precoProdutoPagamento">R$ 139,70</p>
-          
-          <article class="resumoCompraPreco">
-            <p class="textoCompraPagamento">Subtotal: </p>
-            <p class="precoProdutoPagamento">R$ 433,30</p>
-          </article>
-          
-          <article class="resumoCompraPreco">
-            <p class="textoCompraPagamento">Frete: </p>
-            <p class="precoProdutoPagamento">Grátis</p>
-          </article>
-          
-          <article class="resumoCompraPreco ">
-            <p class="textoCompraPagamento">Total da Compra: </p>
-            <p class="precoProdutoPagamento">R$ 433,30</p>
-          </article>
-        </article>
-        
-        <hr class="linhaDivisaoPagamento"/>
-        
-        <article class="formaPagamento">
-          <h2 class="tituloDadosPagamento">Formas de Pagamento</h2>
-          <ul class="listaPagamento">
-            <li class="opcaoPagamento">
-              <input type="radio" name="pagamento" id="cartao" class="inputMetodoPagamento"/>
-              <label for="cartao" class="labelMetodoPagamento">Cartão de Crédito</label>
-            </li>
-            
-            <li class="opcaoPagamento">
-              <input type="radio" name="pagamento" id="pix" class="inputMetodoPagamento"/>
-              <label for="pix" class="labelMetodoPagamento">Cartão de Débito</label>
-            </li>
-            
-            <li class="opcaoPagamento">
-              <input type="radio" name="pagamento" id="boleto" class="inputMetodoPagamento"/>
-              <label for="boleto" class="labelMetodoPagamento">PIX</label>
-            </li>
-          </ul>
-        </article>
-        
-      </section>
-      
-      <section class="ladoDireito">
-        <h2 class="tituloDadosPagamento">Pagamento com Cartão</h2>
-        <form class="formCartao">
-          <label for="numero-cartao" class="labelFormCartao">Número do Cartão</label>
-          <input type="text" id="numero-cartao" placeholder="Ex: 0000 0000 0000 0000" class="inputFormCartao" autofocus/>
-          
-          <label for="nome-cartao" class="labelFormCartao">Nome no Cartão</label>
-          <input type="text" id="nome-cartao" placeholder="Ex: Eduardo T Oreti" class="inputFormCartao"/>
-          
-          <div class="duplaLabelCartao">
-            <div>
-              <label for="validade" class="labelFormCartao">Validade</label>
-              <input type="text" id="validade" placeholder="Ex: MM/AA" class="inputFormCartao"/>
-            </div>
-            <div>
-              <label for="cvv" class="labelFormCartao">CVV</label>
-              <input type="text" id="cvv" placeholder="Ex: 123" class="inputFormCartao"/>
-            </div>
-          </div>
-          
-          <figure class="boxImagemCartao">
-            <img src="../imagens/cartaoExemplo.png" alt="Imagem de um cartão " class="imagemCartao">
-          </figure>
-          
-          <a href="conclusaoPagamento.html" class="botaoFinalizarCompra">
-            Finalizar Compra
-          </a>
-        </form>
-        
-      </section>
-    </article>
-  </main>
-</body>
-</html>
+    <body>
+        <!--Primeira navbar (Principal)-->
+        <header class="headerSite">
+            <h1 class="logoSite">
+                <a href="home.html" aria-label="Página inicial - NutriCore">
+                    <img src="../imagens/identidadeVisual/iconNutriCore.png" alt="Imagem de logo do e-commerce" class="logoImagem"/>
+                    <h2 id="nomeEcommerce">NutriCore</h2>
+                </a>
+            </h1>
 
-</main>
+                <nav class="navTop" aria-label="Menu Principal">
+                    <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+                    <ul>
+                        <li><a href="home.html" class="textNavTop">Início</a></li>
+                        <li><a href="produtos.html" class="textNavTop">Produtos</a></li>
+                        <li><a href="sobreNos.html" class="textNavTop">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="textNavTop">Contato</a></li>
+                    </ul>
+                </nav>
 
-<!--Rodapé-->
-<footer class="rodape">
-  <section class="footerTop">
-    <a href="index.html" class="logoFooter">
-      <img src="../imagens/" alt="Logo NutriCore"/>
-    </a>
-  </section>
-  
-  <section class="contentFooter">
-    <article class="colunaFooter">
-      <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
-      <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento, feita por pessoas apaixonadas por saúde, performance e bem-estar.</p>
-    </article>
-    
-    <article class="colunaFooter">
-      <h3 class="titleColunaRodape">Atendimento</h3>
-      <p>Email: nutricore@empresa.com</p>
-      <p>Telefone: (19) 99999-9999</p>
-    </article>
-    
-    <article class="colunaFooter">
-      <h3 class="titleColunaRodape">Formas de Pagamento</h3>
-      <ul class="iconsPagamento">
-        <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix"/></li>
-        <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa"/></li>
-        <li><img src="../imagens/icones/mastercard.png" alt="Forma de pagamento - Cartão Mastercard" id="iconMastercard"/></li>
-        <li><img src="../imagens/icones/boleto.png" alt="Forma de pagamento - Boleto Bancário" id="iconBoleto"/></li>
-      </ul>
-    </article>
-    
-    <article class="colunaFooter">
-      <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
-      <ul class="iconsRedesSociais">
-        <li><a href="#"><img src="../imagens/icones/facebook.png" alt="Logo do Facebook"/></a></li>
-        <li><a href="#"><img src="../imagens/icones/instagram.png" alt="Logo do Instagram"/></a></li>
-        <li><a href="#"><img src="../imagens/icones/whatsapp.png" alt="Logo do Whatsapp"/></a></li>
-      </ul>
-    </article>
-  </section>
-  
-  <section class="footerBottom">
-    <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
-    <p>Desenvolvido por Layslla Eduarda Oreti.</p>
-  </section>
-</footer>
-</body>
-</html>
+                <nav class="navUsuario" aria-label="Menu Usuário">
+                    <ul>
+                        <li>
+                            <a href="perfil.html" aria-label="Pefil">
+                                <figure class="navIcones">
+                                    <img src="../imagens/fotoUsuarioLogaddo.jpg" class="iconUsuarioLogado" alt="Ícone de Perfil do Usuário" />
+                                    <figcaption class="legendaIcones">Perfil</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Pesquisar">
+                                <figure class="navIcones">
+                                    <img src="../imagens/icones/iconPesquisar.png" class="iconeUsuarioLogado" alt="Ícone de Pesquisarx" />
+                                    <figcaption class="legendaIcones">Pesquisar</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="carrinho.html" aria-label="Pefil">
+                                <figure class="navIcones">
+                                    <img src="../imagens/icones/icon-carrinho.png" class="iconeUsuarioLogado" alt="Ícone de Perfil do Usuário" />
+                                    <figcaption class="legendaIcones">Carrinho</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!--Segunda Navbar (secundária)-->
+            <nav class="navBottom">
+                <!--Segunda navbar com acesso as categorias dos produtos-->
+                <ul class="navLinks">
+                    <li><a href="produtos.html#categoriaWhey" class="textNavBottom">Whey-Protein</a></li>
+                    <li><a href="produtos.html#categoriaCreatina" class="textNavBottom">Creatina</a></li>
+                    <li><a href="produtos.html#categoriaPreTreino" class="textNavBottom">Pré-Treino</a></li>
+                    <li><a href="produtos.html#categoriaSnacks" class="textNavBottom">Snacks</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <article class="containerPagePagamento">
+                    <section class="ladoEsquerdo">
+                        <article class="dadosCliente">
+                            <h2 class="tituloComecoPagamento">Seus Dados</h2>
+                            <p class="textoDadosPagamento">Laís de Paiva</p>
+                            <p class="textoDadosPagamento">laisPaiva@gmail.com</p>
+                            <p class="textoDadosPagamento">(00) 99999-9999</p>
+                        </article>
+
+                        <hr class="linhaDivisaoPagamento" />
+
+                        <article class="enderecoEntrega">
+                            <h2 class="tituloDadosPagamento">Endereço de Entrega</h2>
+                            <p class="textoDadosPagamento">Rua Clóvis, 180</p>
+                            <p class="textoDadosPagamento">Apto. 109 Bloco E</p>
+                            <p class="textoDadosPagamento">12345-678</p>
+                            <p class="textoDadosPagamento">Hortolândia (Jardim Esmeralda) - SP</p>
+                        </article>
+
+                        <hr class="linhaDivisaoPagamento" />
+
+                        <article class="resumoPedidoPagamento">
+                            <h2 class="tituloDadosPagamento">Resumo do Pedido</h2>
+
+                            <p class="textoDadosPagamento">100% Whey Max Titanium + Dr. Peanut - 900g Sabor Avelã</p>
+                            <p class="precoProdutoPagamento">R$ 145,60</p>
+
+                            <p class="textoDadosPagamento">Suplemento Fresh Whey Dux 900g – Sabor Chocolate e Avelã</p>
+                            <p class="precoProdutoPagamento">R$ 148,00</p>
+
+                            <p class="textoDadosPagamento">Barra de Proteína Snacks BOLD - Caixa Mix 12 Unidades</p>
+                            <p class="precoProdutoPagamento">R$ 139,70</p>
+
+                            <article class="resumoCompraPreco">
+                                <p class="textoCompraPagamento">Subtotal:</p>
+                                <p class="precoProdutoPagamento">R$ 433,30</p>
+                            </article>
+
+                            <article class="resumoCompraPreco">
+                                <p class="textoCompraPagamento">Frete:</p>
+                                <p class="precoProdutoPagamento">Grátis</p>
+                            </article>
+
+                            <article class="resumoCompraPreco">
+                                <p class="textoCompraPagamento">Total da Compra:</p>
+                                <p class="precoProdutoPagamento">R$ 433,30</p>
+                            </article>
+                        </article>
+
+                        <hr class="linhaDivisaoPagamento" />
+
+                        <article class="formaPagamento">
+                            <h2 class="tituloDadosPagamento">Formas de Pagamento</h2>
+                            <ul class="listaPagamento">
+                                <li class="opcaoPagamento">
+                                    <input type="radio" name="pagamento" id="cartao" class="inputMetodoPagamento" />
+                                    <label for="cartao" class="labelMetodoPagamento">Cartão de Crédito</label>
+                                </li>
+
+                                <li class="opcaoPagamento">
+                                    <input type="radio" name="pagamento" id="pix" class="inputMetodoPagamento" />
+                                    <label for="pix" class="labelMetodoPagamento">Cartão de Débito</label>
+                                </li>
+
+                                <li class="opcaoPagamento">
+                                    <input type="radio" name="pagamento" id="boleto" class="inputMetodoPagamento" />
+                                    <label for="boleto" class="labelMetodoPagamento">PIX</label>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="ladoDireito">
+                        <h2 class="tituloDadosPagamento">Pagamento com Cartão</h2>
+                        <form class="formCartao">
+                            <label for="numero-cartao" class="labelFormCartao">Número do Cartão</label>
+                            <input type="text" id="numero-cartao" placeholder="Ex: 0000 0000 0000 0000" class="inputFormCartao" autofocus />
+
+                            <label for="nome-cartao" class="labelFormCartao">Nome no Cartão</label>
+                            <input type="text" id="nome-cartao" placeholder="Ex: Eduardo T Oreti" class="inputFormCartao" />
+
+                            <div class="duplaLabelCartao">
+                                <div>
+                                    <label for="validade" class="labelFormCartao">Validade</label>
+                                    <input type="text" id="validade" placeholder="Ex: MM/AA" class="inputFormCartao" />
+                                </div>
+                                <div>
+                                    <label for="cvv" class="labelFormCartao">CVV</label>
+                                    <input type="text" id="cvv" placeholder="Ex: 123" class="inputFormCartao" />
+                                </div>
+                            </div>
+
+                            <figure class="boxImagemCartao">
+                                <img src="../imagens/cartaoExemplo.png" alt="Imagem de um cartão " class="imagemCartao" />
+                            </figure>
+
+                            <a href="conclusaoPagamento.html" class="botaoFinalizarCompra">
+                                Finalizar Compra
+                            </a>
+                        </form>
+                    </section>
+                </article>
+
+                <!--Rodapé-->
+                <footer class="rodape">
+                    <section class="contentFooter">
+                        <article class="colunaFooter">
+                            <h3 class="titleColunaRodape">Sobre a NutriCore</h3>
+                            <p>Somos mais do que um e-commerce de suplementos alimentares — somos uma comunidade em movimento, feita por pessoas apaixonadas por saúde, performance e bem-estar.</p>
+                        </article>
+
+                        <article class="colunaFooter">
+                            <h3 class="titleColunaRodape">Atendimento</h3>
+                            <p>Email: nutricore@empresa.com</p>
+                            <p>Telefone: (19) 99999-9999</p>
+                        </article>
+
+                        <article class="colunaFooter">
+                            <h3 class="titleColunaRodape">Formas de Pagamento</h3>
+                            <ul class="iconsPagamento">
+                                <li><img src="../imagens/icones/pix.png" alt="Forma de pagamento - Pix" id="iconPix" /></li>
+                                <li><img src="../imagens/icones/visa.png" alt="Forma de pagamento - Cartão Visa" id="iconVisa" /></li>
+                                <li><img src="../imagens/icones/mastercard.png" alt="Forma de pagamento - Cartão Mastercard" id="iconMastercard" /></li>
+                                <li><img src="../imagens/icones/boleto.png" alt="Forma de pagamento - Boleto Bancário" id="iconBoleto" /></li>
+                            </ul>
+                        </article>
+
+                        <article class="colunaFooter">
+                            <h3 id="tituloRedesSociais">Siga as nossas Redes</h3>
+                            <ul class="iconsRedesSociais">
+                                <li>
+                                    <a href="#"><img src="../imagens/icones/facebook.png" alt="Logo do Facebook" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imagens/icones/instagram.png" alt="Logo do Instagram" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="../imagens/icones/whatsapp.png" alt="Logo do Whatsapp" /></a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="footerBottom">
+                        <p>&copy; 2025 NutriCore. Todos os direitos reservados.</p>
+                        <p>Desenvolvido por Layslla Eduarda Oreti.</p>
+                    </section>
+                </footer>
+            </main>
+        </body>
+    </html>
 </html>
