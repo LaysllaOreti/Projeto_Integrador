@@ -3,8 +3,8 @@
 ### Desenvolvedora: Layslla Eduarda Oreti
 
 ### 🏋️‍♀️ Introdução
-A NutriCore é uma plataforma dedicada ao bem-estar, saúde e desenvolvimento físico dos usuários, oferecendo uma ampla variedade de produtos nas categorias de Whey-Protein, Creatina, Pré-Treino e Snacks.
-O principal objetivo da NutriCore é proporcionar uma experiência de compra fácil, rápida, segura e eficiente, permitindo a visualização clara dos produtos e de suas especificações, sempre prezando pela qualidade e praticidade.
+- A NutriCore é uma plataforma dedicada ao bem-estar, saúde e desenvolvimento físico dos usuários, oferecendo uma ampla variedade de produtos nas categorias de Whey-Protein, Creatina, Pré-Treino e Snacks.
+- O principal objetivo da NutriCore é proporcionar uma experiência de compra fácil, rápida, segura e eficiente, permitindo a visualização clara dos produtos e de suas especificações, sempre prezando pela qualidade e praticidade.
 --- 
 
 ## 💡 Funcionalidades da Plataforma
